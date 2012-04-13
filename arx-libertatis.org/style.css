@@ -5,8 +5,12 @@ body {
 	padding-top: 8px;
 	background-color: #1a1a1a;
 	color: #ccc;
-	font-family: sans-serif;
-	font-size: 10.5pt;
+	font-family: "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Arial, sans-serif;
+	font-size: 10pt;
+	padding-top: 20px;
+}
+
+h1 {
 	text-align: center;
 }
 
@@ -24,15 +28,150 @@ a:hover {
 }
 
 #link-bar {
+	font-size: 0;
+	letter-spacing: -1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#link-bar * {
+	padding-right: 8px;
+	padding-left: 8px;
 	font-weight: bold;
 	font-size: 12pt;
-	color: #444;
+	letter-spacing: 0px;
+}
+
+#link-bar * + * {
+	border-left: 2px solid #444;
 }
 
 #content {
 	margin-left:auto;
 	margin-right:auto;
-	text-align: left;
 	width: 600px;
 	border-top: 2px solid #444;
+	padding: 5px;
+}
+
+img {
+	vertical-align: text-bottom;
+}
+
+.vertical {
+	-moz-transform:rotate(-270deg);
+	-moz-transform-origin: bottom left;
+	-webkit-transform: rotate(-270deg);
+	-webkit-transform-origin: bottom left;
+	-o-transform: rotate(-270deg);
+	-o-transform-origin:  bottom left;
+}
+
+#share {
+	padding: none;
+	width: 32px;
+	float: right;
+	margin-left: 5px;
+	margin-top: 2px;
+	padding-top: 68px; /* TODO remove after enabling other links */
+}
+
+#share > a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin: none;
+	background-image: url('images/icons.png');
+	background-repeat: no-repeat;
+	margin-bottom: 6px;
+	filter: url(images/filters.svg#grayscale); /* Firefox 3.5+ */
+	filter: gray;
+	opacity: 0.15;
+	filter: alpha(opacity=15); /* IE8 and earlier */
+}
+
+#share > a:hover {
+	opacity: 1;
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
+
+#share #identica    { background-position:   -0px; }
+#share #reddit      { background-position:  -32px; }
+#share #google-plus { background-position:  -64px; }
+#share #twitter     { background-position:  -96px; }
+#share #facebook    { background-position: -128px; }
+#share #ohloh       { background-position: -160px; }
+#share #github      { background-position: -192px; }
+#share #sourceforge { background-position: -224px; }
+#share #freecode    { background-position: -256px; }
+#share #rss         { background-position: -288px; }
+
+#screenshot {
+	float: left;
+	margin: 10px;
+	margin-right: 20px;
+	text-shadow: #000 1px 1px 2px;
+	font-size: 8pt;
+}
+#screenshot img {
+	display: block;
+	box-shadow: 0px 0px 3px 1px #654;
+	margin-bottom: 7px;
+}
+
+#news {
+	margin-left:auto;
+	margin-right:auto;
+	width: 600px;
+	margin-top: 10px;
+}
+
+h2 {
+	color: #777;
+	margin: 5px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+h3 {
+	color: #eee;
+	margin: 7px;
+	margin-top: 15px;
+}
+
+#news h3:before {
+	content: "\00bb\0020";
+	color: #555;
+}
+
+#news h3:after {
+	content: "\0020\00ab";
+	color: #555;
+}
+
+#footer {
+	font-size: 8pt;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	padding-top: 8px;
+	margin-top: 40px;
+	border-top: 2px solid #444;
+	color: #555;
+}
+
+#footer a {
+	color: #543;
+	text-shadow: none;
+}
+
+.box {
+	background-color: #2c2c2a;
+	padding: 5px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding-left: 10px;
+	box-shadow: 0px 0px 10px 2px #2a2a2a;
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Arx Libertatis Announcements</title>
+		<link>http://arx-libertatis.org/</link>
+		<description>News of Arx Libertatis, a cross-platform port of Arx Fatalis.</description>
+		<language>en-us</language>
+		<atom:link href="http://arx-libertatis.org/feed.rss" rel="self" type="application/rss+xml" />
+		<!--
+		<item>
+			<title>Arx Libertatis 1.0 "Bloody Gobblers!" released</title>
+			<link>http://arx-libertatis.org/</link>
+			<pubDate>Sat, 14 Apr 2012 09:39:21 GMT</pubDate>
+			<guid isPermaLink="false">http://arx-libertatis.org/releases/1.0</guid>
+			<description>
+				&lt;p&gt;
+					After over a year of work we are proud to announce the first release of Arx Libertatis.
+					While some minor graphical glitches remain, the game is fully playable on both Windows and Linux as well as other platforms.
+					There are &lt;a href="http://wiki.arx-libertatis.org/Download_and_installation"&gt;packages available for Windows and Linux&lt;/a&gt;. On other systems you may still be able to run the game by compiling the &lt;a href="http://wiki.arx-libertatis.org/Download_and_installation#Source_Code"&gt;source code&lt;/a&gt; yourself.
+				&lt;/p&gt;
+				&lt;p&gt;
+					Besides porting the game to SDL, OpenGL, OpenAL and the amd64 architecture while maintaining native Direct X backends, we fixed some performance issues with newer operating systems, added more configuration options and improved the interface scaling for widescreen resolutions. See the wiki for the &lt;a href="http://wiki.arx-libertatis.org/Changelog#Arx_Libertatis_1.0_.22Bloody_Gobblers.22"&gt;full changelog&lt;/a&gt;.
+				&lt;/p&gt;
+			</description>
+		</item>
+		-->
+	</channel>
+</rss> 
