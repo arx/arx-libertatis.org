@@ -27,6 +27,12 @@ a:hover {
 	text-decoration: underline;
 }
 
+a:focus {
+	color: #aaf;
+	text-shadow: #aa5 0px 0px 5px;
+	text-decoration: underline
+}
+
 #link-bar {
 	font-size: 0;
 	letter-spacing: -1px;
@@ -59,15 +65,6 @@ img {
 	vertical-align: text-bottom;
 }
 
-.vertical {
-	-moz-transform:rotate(-270deg);
-	-moz-transform-origin: bottom left;
-	-webkit-transform: rotate(-270deg);
-	-webkit-transform-origin: bottom left;
-	-o-transform: rotate(-270deg);
-	-o-transform-origin:  bottom left;
-}
-
 #share {
 	padding: 0;
 	width: 32px;
@@ -91,7 +88,7 @@ img {
 	filter: alpha(opacity=15); /* IE8 and earlier */
 }
 
-#share > a:hover {
+#share > a:hover, #share > a:focus {
 	opacity: 1;
 	filter: none;
 	-webkit-filter: grayscale(0);
@@ -116,10 +113,16 @@ img {
 	text-shadow: #000 1px 1px 2px;
 	font-size: 8pt;
 }
+
 #screenshot img {
 	display: block;
 	box-shadow: 0px 0px 3px 1px #654;
 	margin-bottom: 7px;
+}
+
+a:focus > img, #share > a:focus, #screenshot a:focus img {
+	box-shadow: 0px 0px 5px 1px #aaa;
+	background-color: #666;
 }
 
 #news {
