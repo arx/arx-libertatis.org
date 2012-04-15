@@ -16,7 +16,7 @@
 				&lt;p&gt;
 					After over a year of work we are proud to announce the first release of Arx Libertatis.
 					While some minor graphical glitches remain, the game is fully playable on both Windows and Linux as well as other platforms.
-					There are &lt;a href="http://wiki.arx-libertatis.org/Download_and_installation"&gt;packages available for Windows and Linux&lt;/a&gt;. On other systems you may still be able to run the game by compiling the &lt;a href="http://wiki.arx-libertatis.org/Download_and_installation#Source_Code"&gt;source code&lt;/a&gt; yourself.
+					There are &lt;a href="http://wiki.arx-libertatis.org/Download"&gt;packages available for Windows and Linux&lt;/a&gt;. On other systems you may still be able to run the game by compiling the &lt;a href="http://wiki.arx-libertatis.org/Download#Source_Code"&gt;source code&lt;/a&gt; yourself.
 				&lt;/p&gt;
 				&lt;p&gt;
 					Besides porting the game to SDL, OpenGL, OpenAL and the amd64 architecture while maintaining native Direct X backends, we fixed some performance issues with newer operating systems, added more configuration options and improved the interface scaling for widescreen resolutions. See the wiki for the &lt;a href="http://wiki.arx-libertatis.org/Changelog#Arx_Libertatis_1.0_.22Bloody_Gobblers.22"&gt;full changelog&lt;/a&gt;.
