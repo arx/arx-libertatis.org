@@ -120,7 +120,7 @@ img {
 	margin-bottom: 7px;
 }
 
-a:focus > img, #share > a:focus, #screenshot a:focus img {
+#share > a:focus, #screenshot a:focus img {
 	box-shadow: 0px 0px 5px 1px #aaa;
 	background-color: #666;
 }
