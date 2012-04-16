@@ -54,8 +54,8 @@ a:focus {
 }
 
 #content {
-	margin-left:auto;
-	margin-right:auto;
+	margin-left: auto;
+	margin-right: auto;
 	width: 600px;
 	border-top: 2px solid #444;
 	padding: 5px;
