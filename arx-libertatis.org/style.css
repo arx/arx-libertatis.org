@@ -179,3 +179,19 @@ h3 {
 	padding-left: 10px;
 	box-shadow: inset 0px 0px 10px 2px #1a1a1a;
 }
+
+.os {
+	width: 16px;
+	height: 16px;
+	background-image: url('images/icons.png');
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 3px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.os.windows { background-position:   -320px  -0px; }
+.os.linux   { background-position:   -336px  -0px; }
+.os.macosx  { background-position:   -320px -16px; }
+.os.freebsd { background-position:   -336px -16px; }
