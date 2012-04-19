@@ -71,7 +71,7 @@ img {
 	float: right;
 	margin-left: 5px;
 	margin-top: 2px;
-	padding-top: 68px; /* TODO remove after enabling other links */
+	padding-top: 46px; /* TODO remove after enabling other links */
 }
 
 #share > a {
