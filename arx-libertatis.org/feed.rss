@@ -14,7 +14,7 @@
 			<description>
 				&lt;p&gt;
 					Due to a text rendering bug in 1.0 that breaks the Russian version, we have decided to publish a bugfix release.
-					This version also fixes a crash on some linux systems and uses DirectX by default for rendering and input under Windows - see the &lt;a href="http://arx.parpg.net/Changelog#Patch_1.0.1"&gt;changelog&lt;/a&gt;.
+					This version also fixes a crash on some Linux systems and uses DirectX by default for rendering and input under Windows - see the &lt;a href="http://arx.parpg.net/Changelog#Patch_1.0.1"&gt;changelog&lt;/a&gt;.
 				&lt;/p&gt;
 				&lt;p&gt;
 					As before, &lt;a href="http://wiki.arx-libertatis.org/Download"&gt;packages for Windows and Linux&lt;/a&gt; are available.
