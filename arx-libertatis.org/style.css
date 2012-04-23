@@ -33,6 +33,12 @@ a:focus {
 	text-decoration: underline
 }
 
+#content, #news, #footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+
 #link-bar {
 	font-size: 0;
 	letter-spacing: -1px;
@@ -54,9 +60,6 @@ a:focus {
 }
 
 #content {
-	margin-left: auto;
-	margin-right: auto;
-	width: 600px;
 	border-top: 2px solid #444;
 	padding: 5px;
 }
@@ -125,9 +128,6 @@ img {
 }
 
 #news {
-	margin-left:auto;
-	margin-right:auto;
-	width: 600px;
 	margin-top: 10px;
 }
 
@@ -154,15 +154,27 @@ h3 {
 	color: #555;
 }
 
+#news h3 time {
+	float: right;
+	font-size: 10pt;
+	color: #555;
+	text-shadow: #000 1px 1px 2px;
+}
+
 #footer {
 	font-size: 8pt;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 600px;
 	padding-top: 8px;
 	margin-top: 40px;
 	border-top: 2px solid #444;
 	color: #555;
+}
+
+#news .item {
+	padding-bottom: 5px;
+}
+
+#news .item + .item {
+	border-top: 1px dotted #333;
 }
 
 #footer a {
