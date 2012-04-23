@@ -157,7 +157,7 @@ h3 {
 #news h3 time {
 	float: right;
 	font-size: 10pt;
-	color: #555;
+	color: #666;
 	text-shadow: #000 1px 1px 2px;
 }
 
@@ -174,7 +174,7 @@ h3 {
 }
 
 #news .item + .item {
-	border-top: 1px dotted #333;
+	border-top: 1px dotted #555;
 }
 
 #footer a {
@@ -182,13 +182,14 @@ h3 {
 	text-shadow: none;
 }
 
-.box {
+#news , .box {
 	background-color: #2c2c2a;
 	padding: 5px;
 	margin-bottom: 30px;
 	margin-top: 20px;
-	padding-left: 10px;
-	box-shadow: inset 0px 0px 10px 2px #1a1a1a;
+	padding-left: 15px;
+	padding-right: 10px;
+	box-shadow: inset 0px 0px 10px 2px #181818;
 }
 
 .os {
