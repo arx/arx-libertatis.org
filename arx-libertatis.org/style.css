@@ -76,7 +76,7 @@ img {
 	margin-top: 2px;
 }
 
-#share > a {
+#share > a, #rss {
 	display: block;
 	width: 32px;
 	height: 32px;
@@ -90,22 +90,31 @@ img {
 	filter: alpha(opacity=15); /* IE8 and earlier */
 }
 
-#share > a:hover, #share > a:focus {
+#share > a:hover, #share > a:focus, #rss:hover, #rss:focus {
 	opacity: 1;
 	filter: none;
 	-webkit-filter: grayscale(0);
 }
 
-#share #identica    { background-position:   -0px; }
-#share #reddit      { background-position:  -32px; }
-#share #google-plus { background-position:  -64px; }
-#share #twitter     { background-position:  -96px; }
-#share #facebook    { background-position: -128px; }
-#share #ohloh       { background-position: -160px; }
-#share #github      { background-position: -192px; }
-#share #sourceforge { background-position: -224px; }
-#share #freecode    { background-position: -256px; }
-#share #rss         { background-position: -288px; }
+#identica    { background-position:   -0px; }
+#reddit      { background-position:  -32px; }
+#google-plus { background-position:  -64px; }
+#twitter     { background-position:  -96px; }
+#facebook    { background-position: -128px; }
+#ohloh       { background-position: -160px; }
+#github      { background-position: -192px; }
+#sourceforge { background-position: -224px; }
+#moddb       { background-position: -256px; }
+#freecode    { background-position: -288px; }
+
+#rss {
+	float: right;
+	width: 24px;
+	height: 24px;
+	background-position: -320px 0px;
+	margin: 4px;
+	margin-right: 0px;
+}
 
 #screenshot {
 	float: left;
@@ -203,7 +212,7 @@ h3 {
 	display: inline-block;
 	vertical-align: bottom;
 }
-.os.windows { background-position:   -320px  -0px; }
-.os.linux   { background-position:   -336px  -0px; }
-.os.macosx  { background-position:   -320px -16px; }
-.os.freebsd { background-position:   -336px -16px; }
+.os.windows { background-position:   -344px  -0px; }
+.os.linux   { background-position:   -360px  -0px; }
+.os.macosx  { background-position:   -344px -16px; }
+.os.freebsd { background-position:   -360px -16px; }
