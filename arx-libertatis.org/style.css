@@ -148,9 +148,13 @@ h2 {
 }
 
 h3 {
-	color: #eee;
 	margin: 7px;
 	margin-top: 15px;
+}
+
+h3 a {
+	color: #eee;
+	text-shadow: none;
 }
 
 #news h3:before {
