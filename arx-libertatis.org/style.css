@@ -83,11 +83,18 @@ img {
 	margin: 0;
 	background-image: url('images/icons.png');
 	background-repeat: no-repeat;
-	margin-bottom: 6px;
+	margin-bottom: 5px;
 	filter: url(images/filters.svg#grayscale); /* Firefox 3.5+ */
 	filter: gray;
 	opacity: 0.15;
 	filter: alpha(opacity=15); /* IE8 and earlier */
+}
+
+#share > hr {
+	margin: 5px;
+	border: 1px solid #2a2a2a;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 
 #share > a:hover, #share > a:focus, #rss:hover, #rss:focus {

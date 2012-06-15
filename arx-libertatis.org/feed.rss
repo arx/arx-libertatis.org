@@ -7,14 +7,31 @@
 		<language>en-us</language>
 		<atom:link href="http://arx-libertatis.org/feed.rss" rel="self" type="application/rss+xml" />
 		<item>
+			<title>Arx Libertatis 1.0.2 bugfix release</title>
+			<link>http://arx-libertatis.org/releases/1.0.2</link>
+			<pubDate>Thu, 14 Jun 2012 17:42:42 GMT</pubDate>
+			<guid isPermaLink="true">http://arx-libertatis.org/releases/1.0.2</guid>
+			<description>
+				&lt;p&gt;
+					Version 1.0.2 fixes various crashes, disappearing items when sorting the inventory, and minor rendering and input bugs. This release also fixes a bug that left the Spanish version with no text. See the &lt;a href="http://wiki.arx-libertatis.org/Changelog#Patch_1.0.2"&gt;changelog&lt;/a&gt; for more details.
+				&lt;/p&gt;
+				&lt;p&gt;
+					&lt;a href="http://wiki.arx-libertatis.org/Download"&gt;Windows and Linux&lt;/a&gt; packages are available. We still don't have Mac OS X binaries, but a user has created a &lt;a href="http://portingteam.com/files/file/7385-arx-libertatis-wine/"&gt;Wine-based wrapper&lt;/a&gt; that allows the Windows version to run on Mac for those that don't want to compile from source. We recommend switching to the OpenGL renderer when running under Wine. Arx Libertatis is also &lt;a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/games/arx-libertatis/"&gt;available as a FreeBSD port&lt;/a&gt;.
+				&lt;/p&gt;
+				&lt;p&gt;
+					Fans of Arx Fatalis might also be interested in &lt;a href="http://openmw.org/"&gt;OpenMW&lt;/a&gt;, a project to create an open source and cross-platform engine for Morrowind. While they haven't yet reached a stable release, the current progress looks promising.
+				&lt;/p&gt;
+			</description>
+		</item>
+		<item>
 			<title>Arx Libertatis 1.0.1 bugfix release</title>
-			<link>http://arx-libertatis.org/</link>
-			<pubDate>Thu, 22 Apr 2012 21:42:42 GMT</pubDate>
+			<link>http://arx-libertatis.org/releases/1.0.1</link>
+			<pubDate>Sun, 22 Apr 2012 21:42:42 GMT</pubDate>
 			<guid isPermaLink="true">http://arx-libertatis.org/releases/1.0.1</guid>
 			<description>
 				&lt;p&gt;
 					Due to a text rendering bug in 1.0 that breaks the Russian version, we have decided to publish a bugfix release.
-					This version also fixes a crash on some Linux systems and uses DirectX by default for rendering and input under Windows - see the &lt;a href="http://arx.parpg.net/Changelog#Patch_1.0.1"&gt;changelog&lt;/a&gt;.
+					This version also fixes a crash on some Linux systems and uses DirectX by default for rendering and input under Windows - see the &lt;a href="http://wiki.arx-libertatis.org/Changelog#Patch_1.0.1"&gt;changelog&lt;/a&gt;.
 				&lt;/p&gt;
 				&lt;p&gt;
 					As before, &lt;a href="http://wiki.arx-libertatis.org/Download"&gt;packages for Windows and Linux&lt;/a&gt; are available.
@@ -23,7 +40,7 @@
 		</item>
 		<item>
 			<title>Arx Libertatis 1.0 "Bloody Gobblers!" released</title>
-			<link>http://arx-libertatis.org/</link>
+			<link>http://arx-libertatis.org/releases/1.0</link>
 			<pubDate>Thu, 19 Apr 2012 09:42:42 GMT</pubDate>
 			<guid isPermaLink="true">http://arx-libertatis.org/releases/1.0</guid>
 			<description>
