@@ -59,9 +59,22 @@ a:focus {
 	border-left: 2px solid #444;
 }
 
-#content {
+#content, #news {
 	border-top: 2px solid #444;
+}
+
+#content + #news {
+	border-top: none;
+	margin-top: 15px;
+}
+
+#content {
 	padding: 5px;
+	text-shadow: #000 0px 0px 5px;
+}
+
+#content .box {
+	text-shadow: none;
 }
 
 img {
@@ -123,28 +136,36 @@ img {
 	margin-right: 0px;
 }
 
-#screenshot {
+.screenshot {
 	float: left;
-	margin: 10px;
+	margin-left: 10px;
 	margin-right: 20px;
-	margin-top: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	text-shadow: #000 1px 1px 2px;
 	font-size: 8pt;
+	text-align: center;
 }
 
-#screenshot img {
+.screenshot.right {
+	float: right;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+.screenshot img {
 	display: block;
 	box-shadow: 0px 0px 3px 1px #654;
 	margin-bottom: 7px;
 }
 
-#share > a:focus, #screenshot a:focus img {
-	box-shadow: 0px 0px 5px 1px #aaa;
-	background-color: #666;
+.section + .section {
+	padding-top: 2px;
 }
 
-#news {
-	margin-top: 10px;
+#share > a:focus, .screenshot a:focus img {
+	box-shadow: 0px 0px 5px 1px #aaa;
+	background-color: #666;
 }
 
 h2 {
@@ -227,3 +248,18 @@ h3 a {
 .os.linux   { background-position:   -360px  -0px; }
 .os.macosx  { background-position:   -344px -16px; }
 .os.freebsd { background-position:   -360px -16px; }
+
+#older-news:before {
+	content: "\00bb\0020";
+	color: #555;
+}
+
+#older-news {
+	display: block;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 2px;
+	position: relative;
+	top: -20px;
+}
