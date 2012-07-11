@@ -263,3 +263,7 @@ h3 a {
 	position: relative;
 	top: -20px;
 }
+
+.center {
+	text-align: center;
+}
