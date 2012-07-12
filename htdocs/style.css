@@ -249,19 +249,57 @@ h3 a {
 .os.macosx  { background-position:   -344px -16px; }
 .os.freebsd { background-position:   -360px -16px; }
 
-#older-news:before {
+#news .navigate {
+	height: 1em;
+	padding-top: 2px;
+	padding-bottom: 6px;
+	border-top: 1px dotted #3a3a3a;
+}
+
+#news .navigate .next:before {
 	content: "\00bb\0020";
 	color: #555;
 }
 
-#older-news {
-	display: block;
+#news .navigate .prev:after {
+	content: "\0020\00ab";
+	color: #555;
+}
+
+#news .navigate .prev, #news .navigate .next {
 	float: right;
 	margin: 0px;
 	padding: 0px;
-	margin-bottom: 2px;
+}
+
+#news .navigate .prev {
+	float: left;
+}
+
+#news .item .more {
+	height: 1em;
 	position: relative;
-	top: -20px;
+	top: -6px;
+	padding-bottom: 2px;
+}
+
+#news .item .more:before {
+	content: "[...]";
+	color: #666;
+}
+
+#news .item .more a:before {
+	content: "(";
+	font-size: 80%;
+}
+
+#news .item .more a:after {
+	content: ")";
+	font-size: 80%;
+}
+
+#news .item .more a {
+	float: right;
 }
 
 .center {

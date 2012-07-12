@@ -7,6 +7,20 @@
 		<language>en-us</language>
 		<atom:link href="http://arx-libertatis.org/feed.rss" rel="self" type="application/rss+xml" />
 		<item>
+			<title>Gentoo, Mandriva and ROSA Linux Packages</title>
+			<link>http://arx-libertatis.org/news/0-linux-packages</link>
+			<pubDate>Thu, 12 Jul 2012 00:42:42 GMT</pubDate>
+			<guid isPermaLink="true">http://arx-libertatis.org/news/0-linux-packages</guid>
+			<description>
+				&lt;p&gt;
+					Thanks to Gentoo developer &lt;i&gt;hasufell&lt;/i&gt;, &lt;a href="http://wiki.arx-libertatis.org/Linux_packages#Gentoo_Linux"&gt;Arx Libertatis ebuilds&lt;/a&gt; are now available in the portage tree. This means Gentoo users no longer need the &lt;b&gt;arx-libertatis&lt;/b&gt; overlay. &lt;a href="http://wiki.arx-libertatis.org/Linux_packages#Mandriva"&gt;Mandriva&lt;/a&gt; and &lt;a href="http://wiki.arx-libertatis.org/Linux_packages#ROSA"&gt;ROSA&lt;/a&gt; packages have also been available in the distribution repositories for a while now.
+				&lt;/p&gt;
+				&lt;p&gt;
+					If you want to see Arx Libertatis available in the default repositories of more Linux distributions, please open a package request for your favorite distro at the appropriate location - even if we already &lt;a href="http://wiki.arx-libertatis.org/Download#Packages"&gt;provide our own packages for that distribution&lt;/a&gt;.
+				&lt;/p&gt;
+			</description>
+		</item>
+		<item>
 			<title>Arx Libertatis 1.0.2 bugfix release</title>
 			<link>http://arx-libertatis.org/releases/1.0.2</link>
 			<pubDate>Thu, 14 Jun 2012 17:42:42 GMT</pubDate>
