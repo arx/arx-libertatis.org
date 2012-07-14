@@ -37,6 +37,17 @@ a:focus {
 	margin-left: auto;
 	margin-right: auto;
 	width: 600px;
+	border-top: 2px solid #444;
+}
+
+#content {
+	padding: 5px;
+	text-shadow: #000 0px 0px 5px;
+}
+
+#news {
+	border-top: none;
+	margin-top: 15px;
 }
 
 #link-bar {
@@ -59,26 +70,13 @@ a:focus {
 	border-left: 2px solid #444;
 }
 
-#content, #news {
-	border-top: 2px solid #444;
-}
-
-#content + #news {
-	border-top: none;
-	margin-top: 15px;
-}
-
-#content {
-	padding: 5px;
-	text-shadow: #000 0px 0px 5px;
-}
-
 #content .box {
 	text-shadow: none;
 }
 
 img {
 	vertical-align: text-bottom;
+	border: none;
 }
 
 #share {
@@ -206,8 +204,11 @@ h3 a {
 	font-size: 8pt;
 	padding-top: 8px;
 	margin-top: 40px;
-	border-top: 2px solid #444;
 	color: #555;
+}
+
+#content + #footer {
+	margin-top: 0px;
 }
 
 #news .item {
@@ -304,4 +305,8 @@ h3 a {
 
 .center {
 	text-align: center;
+}
+
+.hidden {
+	display: none;
 }
