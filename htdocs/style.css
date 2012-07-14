@@ -219,6 +219,11 @@ h3 a {
 	border-top: 1px dotted #555;
 }
 
+#news .navigate + .item {
+	margin-top: 5px;
+	border-top: 1px dotted #555;
+}
+
 #footer a {
 	color: #543;
 	text-shadow: none;

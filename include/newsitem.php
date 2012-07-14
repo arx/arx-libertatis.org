@@ -136,9 +136,9 @@ elseif($p->format == 'rss'):
 
 <item>
 	<title><? text('title') ?></title>
-	<link><? url($news_url, false) ?></link>
+	<link><? url($news_url) ?></link>
 	<pubDate><? echo encode_text(date('r', $p->time)) ?></pubDate>
-	<guid isPermaLink="true"><? url($news_url, false) ?></guid>
+	<guid isPermaLink="true"><? url($news_url) ?></guid>
 	<description>
 <?
 	
