@@ -35,7 +35,7 @@ PP::route('p', [
 	'news'         => 'news',
 	'irclogs'      => 'irclogs/',
 	'rss'          => 'feed.rss',
-	'bugs'         => 'https://bugs.arx-libertatis.org/arx/issues/',
+	'bugs'         => 'https://bugs.arx-libertatis.org/',
 	// Wiki
 	'wiki'         => 'http://wiki.arx-libertatis.org/',
 	'gallery'      => 'wiki:Gallery',
