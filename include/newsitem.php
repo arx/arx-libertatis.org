@@ -19,16 +19,18 @@ if(substr($news_url, -5) == ".html") {
 }
 $p->news_url = $news_url;
 
-$news_id = preg_replace('/^.*?\/((releases|news)\/[^\/]+$)/', '$1', $news_url);
+$p->news_id = preg_replace('/^.*?\/((releases|news)\/[^\/]+$)/', '$1', $news_url);
 
-if(substr($news_id, 0, 5) === 'news/') {
+if(substr($p->news_id, 0, 5) === 'news/') {
 	$p->type = 'news';
-	$elem_id = 'item-' . substr($news_id, 5);
-} else if(substr($news_id, 0, 9) === 'releases/') {
+	$p->version = substr($p->news_id, 5);
+	$elem_id = 'item-' . $p->version;
+} else if(substr($p->news_id, 0, 9) === 'releases/') {
 	$p->type = 'release';
-	$elem_id = 'release-' . substr($news_id, 9);
+	$p->version = substr($p->news_id, 9);
+	$elem_id = 'release-' . $p->version;
 } else {
-	error('unsupported news category in', v($news_id));
+	error('unsupported news category in', v($p->news_id));
 }
 
 if($p->format == 'html'):

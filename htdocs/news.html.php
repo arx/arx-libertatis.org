@@ -17,6 +17,8 @@ $typed_counts = [ ];
 
 $more_shown = false;
 
+$latest = [ ];
+
 foreach($p->items as $item) {
 	
 	if($count >= $p->max_items):

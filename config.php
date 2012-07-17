@@ -64,6 +64,7 @@ PP::route('p', [
 	'opengameart'  => 'http://opengameart.org/',
 	'constexpr'    => 'http://constexpr.org/',
 	'gpl'          => 'http://www.gnu.org/licenses/gpl.html',
+	'openmw'       => 'http://openmw.org/',
 ]);
 
 PP::route('share', [
@@ -77,16 +78,10 @@ PP::route('share', [
 // Constants
 PP::route('c', [
 	'irc'     => ':#arxfatalis',
-	'version' => ':1.0.2',
-]);
-
-PP::route('changelog', [
-	'1.0'   => 'wiki:Changelog#Arx_Libertatis_1.0_.22Bloody_Gobblers.21.22',
-	'1.0.1' => 'wiki:Changelog#Patch_1.0.1',
-	'1.0.2' => 'wiki:Changelog#Patch_1.0.2',
 ]);
 
 PP::route('wiki', 'p:wiki');
+PP::route('changelog', 'wiki:Changelog#');
 PP::route('news', 'news/');
 PP::route('release', 'releases/');
 PP::route('sfdl', 'p:sfdl');

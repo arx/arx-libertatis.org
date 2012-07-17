@@ -6,13 +6,28 @@ $p->import('icons');
 
 $p->title = 'Arx Libertatis - a cross-platform port of Arx Fatalis';
 
+$news = compile('news.html', [
+	'max_items' => 2,
+	'typed_max_items' => [ 'news' => 1, 'release' => 1 ],
+	'typed_detail' => [ 'news' => 'synopsis', 'release' => 'detail' ],
+	'frame' => false
+]);
+
+$version = null;
+foreach($news->items as $item) {
+	if($item->type == 'release') {
+		$version = $item->version;
+		break;
+	}
+}
+
 ?>
 
 <div id="content" itemscope itemtype="http://schema.org/SoftwareApplication" itemid="<? url('p:home', false) ?>">
 	<link itemprop="url" href="<? url('p:home', false) ?>" />
 	<link itemprop="softwareApplicationCategory" href="http://schema.org/GameApplication" />
 	<link itemprop="downloadURL" href="<? url('p:download') ?>" />
-	<meta itemprop="softwareVersion" content="<? url('c:version') ?>" />
+	<meta itemprop="softwareVersion" content="<? echo encode_attr($version) ?>" />
 	<link itemprop="versionChanges" href="<? url('p:changelog') ?>" />
 	<link itemprop="image" href="<? url('r:icon-80') ?>" />
 	
@@ -50,7 +65,7 @@ $p->title = 'Arx Libertatis - a cross-platform port of Arx Fatalis';
 		</p>
 		
 		<p>
-			Arx Libertatis updates and improves Arx Fatalis by supporting modern systems, porting the game to new systems as well as eliminating bugs and limitations. In the future we plan to improve and modernize the engine as well as enable customizations and mods by the community.
+			Arx Libertatis <b><? echo encode_text($version) ?></b> updates and improves Arx Fatalis by supporting modern systems, porting the game to new systems as well as eliminating bugs and limitations. In the future we plan to improve and modernize the engine as well as enable customizations and mods by the community.
 		</p>
 		
 	</div>
@@ -78,12 +93,7 @@ $p->title = 'Arx Libertatis - a cross-platform port of Arx Fatalis';
 
 <?
 
-inject_page('news.html', [
-	'max_items' => 2,
-	'typed_max_items' => [ 'news' => 1, 'release' => 1 ],
-	'typed_detail' => [ 'news' => 'synopsis', 'release' => 'detail' ],
-	'frame' => false
-])
+echo $news->content;
 
 ?>
 

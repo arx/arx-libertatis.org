@@ -4,8 +4,10 @@
 $p->inherit('newsitem');
 $p->import('icons');
 
-$p->title = 'Arx Libertatis 1.0 "Bloody Gobblers!" released';
-$p->time  = strtotime('2012-04-19 09:42:42');
+$p->codename  = 'Bloody Gobblers!';
+$p->title     = 'Arx Libertatis 1.0 "Bloody Gobblers!" released';
+$p->time      = strtotime('2012-04-19 09:42:42');
+$p->changelog = get_url('changelog:Arx_Libertatis_1.0_.22Bloody_Gobblers.21.22');
 
  $p->synopsis()
 ?>
@@ -18,7 +20,7 @@ $p->time  = strtotime('2012-04-19 09:42:42');
  $p->details()
 ?>
 <p>
-	Besides porting the game to SDL, OpenGL, OpenAL and the amd64 architecture while maintaining native Direct X backends, we fixed some performance issues with newer operating systems, added more configuration options and improved the interface scaling for widescreen resolutions. See the wiki for the <a href="<? url('changelog:1.0') ?>">full changelog</a>.
+	Besides porting the game to SDL, OpenGL, OpenAL and the amd64 architecture while maintaining native Direct X backends, we fixed some performance issues with newer operating systems, added more configuration options and improved the interface scaling for widescreen resolutions. See the wiki for the <a href="<? url($p->changelog) ?>">full changelog</a>.
 </p>
 <p>
 	But that does not mean that the work on Arx Libertatis is done.
