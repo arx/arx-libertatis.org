@@ -81,7 +81,34 @@ if($p->format == 'html'):
 <?
 		
 		// Post-publishing updates are only shown with the highest detail level
-		if($p->detail == 'full') { inject('updates'); }
+		if($p->detail == 'full'):
+			
+			inject('updates');
+			
+			// Add a link to the next release if there is any
+			if($p->type == 'release'):
+			
+				$next = null;
+				foreach($p->items as $item) {
+					if($item->page == $p->page) {
+						break;
+					}
+					if($item->type == 'release') {
+						$next = $item;
+					}
+				}
+				
+				if($next !== null):
+?>
+<p>
+	<b>Update:</b> <a href="<? url($next->news_url) ?>">Arx Libertatis <? echo encode_text($next->version) ?></a> has been released. <a href="<? url('sfdl:arx-libertatis-' . $p->version . '/') ?>">Version <? text('version') ?> is archived at SourceForge.</a>
+</p>
+<?
+				endif;
+				
+			endif /* $p->type == 'release' */;
+			
+		endif /* $p->detail == 'full' */;
 		
 ?>
 <?
