@@ -15,38 +15,37 @@ $p->import('newslist');
 $count = 0;
 $typed_counts = [ ];
 
-$more_shown = false;
+$skipped_items = 0;
 
 $latest = [ ];
 
 foreach($p->items as $item) {
-	
-	if($count >= $p->max_items):
-		if(!$more_shown):
-?>
-<div class="navigate">
-	<div class="next"><a href="<? url('p:news') ?>">older entries</a></div>
-</div>
-<?
-		endif /* !$more_shown */;
-		break;
-	endif /* $count >= $p->max_items */;
 	
 	if(!isset($typed_counts[$item->type])) {
 		$typed_counts[$item->type] = 0;
 	}
 	if(is_array($p->typed_max_items) && (!isset($p->typed_max_items[$item->type])
 	   || $typed_counts[$item->type] >= $p->typed_max_items[$item->type])):
-		if(!$more_shown):
-?>
-<div class="navigate">
-	<div class="next"><a href="<? url('p:news') ?>">(more entries)</a></div>
-</div>
-<?
-		endif /* !$more_shown */;
-		$more_shown = true;
+		if(isset($p->typed_max_items[$item->type])) {
+			$skipped_items++;
+		}
 		continue;
 	endif /* filtered out */;
+	
+	if($count >= $p->max_items):
+		$skipped_items++;
+		break;
+	endif /* $count >= $p->max_items */;
+	
+	// Insert a placeholder for skipped items
+	if($count > 0 && $skipped_items > 0):
+?>
+<div class="navigate">
+	<div class="more"><a href="<? url('p:news') ?>">(more entries)</a></div>
+</div>
+<?
+	endif /* $count > 0 && $skipped_items > 0 */;
+	$skipped_items = 0;
 	
 	// Determine the level of detail for this news item
 	if(isset($p->typed_detail[$item->type])) {
@@ -75,8 +74,15 @@ foreach($p->items as $item) {
 	
 	inject_page($item->page, [ 'detail' => $detail ]);
 	
-	$more_shown = false;
-	
 	$typed_counts[$item->type]++;
 	$count++;
 }
+
+// Add a link to the remaining items
+if($count > 0 && $skipped_items > 0):
+?>
+<div class="navigate">
+	<div class="more"><a href="<? url('p:news') ?>">older entries</a></div>
+</div>
+<?
+endif /* $count > 0 && $skipped_items > 0 */;

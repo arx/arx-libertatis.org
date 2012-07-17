@@ -262,12 +262,12 @@ h3 a {
 	border-top: 1px dotted #3a3a3a;
 }
 
-#news .navigate .next:before {
+#news .navigate .next:before, #news .navigate .more:before {
 	content: "\00bb\0020";
 	color: #555;
 }
 
-#news .navigate .prev:after {
+#news .navigate .prev:after, #news .navigate .more:after {
 	content: "\0020\00ab";
 	color: #555;
 }
@@ -280,6 +280,10 @@ h3 a {
 
 #news .navigate .prev {
 	float: left;
+}
+
+#news .navigate .more {
+	text-align: center;
 }
 
 #news .item .more {
