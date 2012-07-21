@@ -1,13 +1,10 @@
 <?
-// News item
+// Release announcement
 
-$p->inherit('newsitem');
-$p->import('icons');
+$p->codename = 'Bloody Gobblers!';
+$p->time     = strtotime('2012-04-19 09:42:42');
 
-$p->codename  = 'Bloody Gobblers!';
-$p->title     = 'Arx Libertatis 1.0 "Bloody Gobblers!" released';
-$p->time      = strtotime('2012-04-19 09:42:42');
-$p->changelog = get_url('changelog:Arx_Libertatis_1.0_.22Bloody_Gobblers.21.22');
+$p->import('makenews');
 
  $p->synopsis()
 ?>

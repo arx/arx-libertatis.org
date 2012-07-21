@@ -116,3 +116,7 @@ function inject_page($file, $options) {
 		echo $page->content;
 	}
 }
+
+function to_url($page) {
+	return PP::to_url(PP::find_file($page));
+}

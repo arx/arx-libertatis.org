@@ -1,12 +1,9 @@
 <?
-// News item
+// Release announcement
 
-$p->inherit('newsitem');
-$p->import('icons');
+$p->time = strtotime('2012-04-22 21:42:42');
 
-$p->title     = 'Arx Libertatis 1.0.1 bugfix release';
-$p->time      = strtotime('2012-04-22 21:42:42');
-$p->changelog = get_url('changelog:Patch_1.0.1');
+$p->import('makenews');
 
  $p->synopsis()
 ?>

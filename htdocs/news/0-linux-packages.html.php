@@ -1,11 +1,10 @@
 <?
 // News item
 
-$p->inherit('newsitem');
-$p->import('icons');
-
 $p->title = 'Gentoo, Mandriva and ROSA Linux Packages';
 $p->time  = strtotime('2012-07-12 00:42:42');
+
+$p->import('makenews');
 
  $p->synopsis()
 ?>

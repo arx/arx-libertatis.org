@@ -9,29 +9,6 @@ $p->param('updates', 'Post-publishing additions', '');
 $p->param('format', 'Generate the news item as HTML or rss', 'html');
 // title -> synopsis -> details -> full
 $p->param('detail', 'Post-publishing additions', 'full');
-$p->param('id', 'News id', '');
-
-$news_date = encode_text(date('Y-m-d', $p->time));
-
-$news_url = get_url('main:' . $p->page);
-if(substr($news_url, -5) == ".html") {
-	$news_url = substr($news_url, 0, -5);
-}
-$p->news_url = $news_url;
-
-$p->news_id = preg_replace('/^.*?\/((releases|news)\/[^\/]+$)/', '$1', $news_url);
-
-if(substr($p->news_id, 0, 5) === 'news/') {
-	$p->type = 'news';
-	$p->version = substr($p->news_id, 5);
-	$elem_id = 'item-' . $p->version;
-} else if(substr($p->news_id, 0, 9) === 'releases/') {
-	$p->type = 'release';
-	$p->version = substr($p->news_id, 9);
-	$elem_id = 'release-' . $p->version;
-} else {
-	error('unsupported news category in', v($p->news_id));
-}
 
 if($p->format == 'html'):
 	
@@ -40,13 +17,11 @@ if($p->format == 'html'):
 		$p->import('newslist');
 	}
 	
-	$news_datetime = encode_attr(date('c', $p->time));
-	
 ?>
 
-<div class="item" id="<? echo $elem_id ?>" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" itemid="<? url($news_url, false) ?>">
-	<link itemprop="url" href="<? url($news_url, false) ?>" />
-	<h3><a itemprop="name" href="<? url($news_url) ?>"><? text('title') ?></a> <time itemprop="datePublished" datetime="<? echo $news_datetime ?>"><? echo $news_date ?></time></h3>
+<div class="item" id="<? echo $p->elem_id ?>" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" itemid="<? url($p->news_url, false) ?>">
+	<link itemprop="url" href="<? url($p->news_url, false) ?>" />
+	<h3><a itemprop="name" href="<? url($p->news_url) ?>"><? text('title') ?></a> <time itemprop="datePublished" datetime="<? echo encode_attr(date('c', $p->time)) ?>"><? echo encode_text(date('Y-m-d', $p->time)) ?></time></h3>
 <?
 	
 	// For the lowest detail level, only show the title and date
@@ -73,7 +48,7 @@ if($p->format == 'html'):
 		if($p->detail != 'synopsis') {
 			inject('details');
 		} else if($p->details != ''): ?>
-		<div class="more"><a href="<? url($news_url) ?>">read more</a></div><?
+		<div class="more"><a href="<? url($p->news_url) ?>">read more</a></div><?
 		endif;
 		
 ?>
@@ -165,9 +140,9 @@ elseif($p->format == 'rss'):
 
 <item>
 	<title><? text('title') ?></title>
-	<link><? url($news_url) ?></link>
+	<link><? url($p->news_url) ?></link>
 	<pubDate><? echo encode_text(date('r', $p->time)) ?></pubDate>
-	<guid isPermaLink="true"><? url($news_url) ?></guid>
+	<guid isPermaLink="true"><? url($p->news_url) ?></guid>
 	<description>
 <?
 	
