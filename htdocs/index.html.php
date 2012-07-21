@@ -103,6 +103,7 @@ echo $news->content;
 
 <meta name="description" content="Arx Libertatis is a cross-platform, open source port of Arx Fatalis, a 2002 first-person role-playing game developed by Arkane Studios.">
 <meta name="keywords" content="arx, arx fatalis, linux, port, fixed, patch, update, arx libertatis, cross-platform, open source, role-playing, game">
+<? if(isset($news->header)) { echo $news->header; } ?>
 
 <?
  $p->footer()->append()
@@ -110,4 +111,5 @@ echo $news->content;
 
 <p>
 	This page uses <a href="http://icondock.com/free/vector-social-media-icons">Vector Social Media Icons</a> by IconDock.com &amp; <a href="http://www.doublejdesign.co.uk">Double-J Design</a>.
-</p><?
+</p>
+<? if(isset($news->footer)) { echo $news->footer; } ?>
