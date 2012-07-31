@@ -12,12 +12,14 @@ if(substr($p->news_id, 0, 5) === 'news/') {
 	$p->type = 'news';
 	$p->version = substr($p->news_id, 5);
 	$p->elem_id = 'item-' . $p->version;
+	$p->imgdir = 'news/images/' . $p->version . '/';
 	
 } else if(substr($p->news_id, 0, 9) === 'releases/') {
 	
 	$p->type = 'release';
 	$p->version = substr($p->news_id, 9);
 	$p->elem_id = 'release-' . $p->version;
+	$p->imgdir = 'releases/images/' . $p->version . '/';
 	
 	if(!isset($p->title)) {
 		if(isset($p->codename)) {

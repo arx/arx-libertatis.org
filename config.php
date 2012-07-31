@@ -42,6 +42,7 @@ PP::route('p', [
 	'faq'          => 'wiki:FAQ',
 	'download'     => 'wiki:Download',
 	'changelog'    => 'wiki:Changelog',
+	'forums'       => 'wiki:FAQ#Are_there_any_Arx_Libertatis_discussion_forums.3F',
 	// external pages
 	'git'          => 'https://github.com/arx/ArxLibertatis',
 	'sfdl'         => 'https://sourceforge.net/projects/arx/files/',
@@ -85,6 +86,8 @@ PP::route('changelog', 'wiki:Changelog#');
 PP::route('news', 'news/');
 PP::route('release', 'releases/');
 PP::route('sfdl', 'p:sfdl');
+
+PP::route('bug', 'https://bugs.arx-libertatis.org/arx/issues/');
 
 PP::optimize_urls(PP::URL_RELATIVE);
 PP::minify(true);

@@ -9,6 +9,7 @@ class PP {
 	const URL_ABSOLUTE = 0;
 	const URL_ROOT_RELATIVE = 1;
 	const URL_RELATIVE = 2;
+	const URL_RELATIVE_ONLY = 3;
 	
 	private static $url_optimization = self::URL_ABSOLUTE;
 	
@@ -33,7 +34,7 @@ class PP {
 	
 	static function optimize_urls($opt) {
 		if($opt != self::URL_ABSOLUTE && $opt != self::URL_ROOT_RELATIVE
-		   && $opt != self::URL_RELATIVE) {
+		   && $opt != self::URL_RELATIVE && $opt != self::URL_RELATIVE_ONLY) {
 			error('invalid URL optimization option:', v($opt));
 		}
 		self::$url_optimization = $opt;
@@ -375,7 +376,9 @@ class PP {
 		}
 		
 		$up = $u['path'];
-		$alt[] = $up . $query . $fragment;
+		if(self::$url_optimization != self::URL_RELATIVE_ONLY) {
+			$alt[] = $up . $query . $fragment;
+		}
 		
 		if(self::$url_optimization <= self::URL_ROOT_RELATIVE) {
 			return self::shortest($alt);

@@ -9,7 +9,7 @@ $p->title = 'Arx Libertatis - a cross-platform port of Arx Fatalis';
 $news = compile('news.html', [
 	'max_items' => 2,
 	'typed_max_items' => [ 'news' => 1, 'release' => 1 ],
-	'typed_detail' => [ 'news' => 'synopsis', 'release' => 'detail' ],
+	'detail' => 'synopsis',
 	'frame' => false
 ]);
 
@@ -53,12 +53,15 @@ foreach($news->items as $item) {
 	
 	<div class="section">
 		
-		<div class="screenshot" itemprop="screenshots" itemscope itemtype="http://schema.org/ImageObject">
-			<a itemprop="url" href="<? url('p:gallery') ?>">
-				<img itemprop="thumbnail" src="<? url('r:spellcasting') ?>" width="156" height="130" alt="Spellcasting screenshot">
-			</a>
-			<span itemprop="caption">Spellcasting in Arx Fatalis</span>
-		</div>
+<?
+		inject_page('screenshot', [
+			'float' => 'left',
+			'link' => 'p:gallery',
+			'image' => 'r:spellcasting',
+			'caption' => 'Spellcasting in Arx Fatalis',
+			'microcode' => true
+		])
+?>
 		
 		<p>
 			Arx Fatalis features crafting, melee and ranged combat, as well as a unique casting system where the player draws runes in real time to effect the desired spell.
@@ -72,12 +75,15 @@ foreach($news->items as $item) {
 	
 	<div class="section">
 		
-		<div class="right screenshot" itemprop="screenshots" itemscope itemtype="http://schema.org/ImageObject">
-			<a itemprop="url" href="<? url('p:gallery') ?>">
-				<img itemprop="thumbnail" src="<? url('r:castle-of-arx') ?>" width="156" height="130" alt="Screenshot of the Castle of Arx">
-			</a>
-			<span itemprop="caption">Castle of Arx</span>
-		</div>
+<?
+		inject_page('screenshot', [
+			'float' => 'right',
+			'link' => 'p:gallery',
+			'image' => 'r:castle-of-arx',
+			'caption' => 'Castle of Arx',
+			'microcode' => true
+		])
+?>
 		
 		<p>
 			Arx Libertatis is based on the publicly released <a href="<? url('p:patch') ?>">Arx Fatalis sources</a> and available under the <a href="<? url('p:gpl') ?>">GPL 3+ license</a>. This does however not include the game data, so you need to <a href="<? url('wiki:Getting_the_game_data') ?>">obtain a copy of the original Arx Fatalis</a>  or its demo to play Arx Libertatis.
