@@ -28,7 +28,7 @@ if($p->format == 'html'):
 elseif($p->format == 'rss'):
 ?>
 
-<div style="float: <? echo $p->float ?>; margin: 5px; text-align: center; width: <? attr('width') ?>px;">
+<div style="float: <? echo $p->float ?>; clear: <? echo $p->float ?>; margin: 15px; margin-top: 0px; text-align: center; width: <? attr('width') ?>px;">
 	<a href="<? url($p->link) ?>">
 		<img src="<? url($p->image) ?>" width="<? attr('width') ?>" height="<? attr('height') ?>" alt="Screenshot: <? attr('caption') ?>" style="border: none">
 	</a><br>
