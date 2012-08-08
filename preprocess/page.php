@@ -171,12 +171,12 @@ class Page {
 		return new ApendSetter($this);
 	}
 	
-	function optimize_url($url) {
+	function optimize_url($url, $protocol_relative = false) {
 		global $megalog;
 		list($base, $exists) = $this->_get('url');
 		if($exists) {
 			$megalog .= "\n base: \"" . $base . "\"";
-			return PP::optimize_url($url, $base);
+			return PP::optimize_url($url, $base, $protocol_relative);
 		} else {
 			$megalog .= "\n no base";
 			return $url;

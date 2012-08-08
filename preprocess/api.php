@@ -15,15 +15,19 @@ function get_url($resource) {
 /*!
  * Resolve a virtual URL, minimize it, encode it and echo it.
  */
-function url($resource, $optimize = true) {
+function url($resource, $optimize = true, $protocol_relative = false) {
 	global $p;
 	$url = get_url($resource);
 	if($optimize) {
 		global $megalog;
 		$megalog .= "\n + \"" . $resource . "\" = \"" . $url . "\"";
-		$url = $p->optimize_url($url);
+		$url = $p->optimize_url($url, $protocol_relative);
 	}
 	echo encode_attr($url);
+}
+
+function ref($resource) {
+	url($resource, true, true);
 }
 
 function inject($var = 'content') {

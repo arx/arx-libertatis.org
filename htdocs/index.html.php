@@ -49,7 +49,7 @@ foreach($news->items as $item) {
 		<b itemprop="name">Arx Libertatis</b> is a cross-platform, open source port of <a href="<? url('p:arxfatalis') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<? url('p:arkane') ?>">Arkane Studios</a>.
 	</p>
 	
-	<iframe width="560" height="315" src="<? url('r:video') ?>" frameborder="0" allowfullscreen itemprop="videos" itemscope itemtype="http://schema.org/VideoObject"></iframe>
+	<iframe width="560" height="315" src="<? ref('r:video') ?>" frameborder="0" allowfullscreen itemprop="videos" itemscope itemtype="http://schema.org/VideoObject"></iframe>
 	
 	<div class="section">
 		

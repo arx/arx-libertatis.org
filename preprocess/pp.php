@@ -323,17 +323,23 @@ class PP {
 		return $best;
 	}
 	
-	static function optimize_url($url, $base) {
+	static function optimize_url($url, $base, $protocol_relative = false) {
 		
 		global $megalog;
 		$megalog .= "\n[" . $base . "]";
 		
-		// TODO self::URL_LOCAL
-		
-		$alt = [ $url ];
-		
 		if(self::$url_optimization <= self::URL_ABSOLUTE) {
-			return self::shortest($alt);
+			return self::shortest([ $url ]);
+		}
+		
+		$alt = [ ];
+		
+		if($protocol_relative && substr($url, 0, 7) == "http://") {
+			$alt[] = substr($url, 5);
+		} else if($protocol_relative && substr($url, 0, 8) == "https://") {
+			$alt[] = substr($url, 6);
+		} else {
+			$alt[] = $url;
 		}
 		
 		$u = parse_url($url);

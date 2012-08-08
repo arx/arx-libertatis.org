@@ -16,7 +16,7 @@ $p->mimetype = 'text/html';
 <html>
 	
 	<head>
-		<link rel="shortcut icon" href="<? url('r:favicon') ?>">
+		<link rel="shortcut icon" href="<? ref('r:favicon') ?>">
 		<link rel="stylesheet" type="text/css" href="<? url('r:style') ?>" title="...">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<title><?
@@ -36,7 +36,7 @@ $p->mimetype = 'text/html';
 		
 		<h1>
 			<a href="<? url('p:home') ?>">
-				<img src="<? url('r:logo') ?>" alt="Arx Libertatis">
+				<img src="<? ref('r:logo') ?>" alt="Arx Libertatis">
 			</a>
 		</h1>
 		
