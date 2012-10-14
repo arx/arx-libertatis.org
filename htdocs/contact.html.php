@@ -29,6 +29,12 @@ $p->title = 'Contact';
 		If your are more comfortable with message boards, feel free to post to <a href="<? url('p:subreddit') ?>">/r/ArxFatalis</a>.
 	</p>
 	
+	<h3>Forums</h3>
+	
+	<p>
+		We don't have our own forum, but you'll probably be able to find help on one of the various existing <a href="<? url('wiki:FAQ#Are_there_any_Arx_Libertatis_discussion_forums.3F') ?>">Arx Fatalis forums</a>.
+	</p>
+	
 	<h3>Bug Tracker</h3>
 	
 	<p>
