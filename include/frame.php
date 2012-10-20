@@ -16,9 +16,11 @@ $p->mimetype = 'text/html';
 <html>
 	
 	<head>
-		<link rel="shortcut icon" href="<? ref('r:favicon') ?>">
-		<link rel="stylesheet" type="text/css" href="<? url('r:style') ?>" title="...">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="shortcut icon" href="<? ref('r:favicon_ie') ?>">
+		<link rel="icon" href="<? ref('r:icon') ?>" sizes="<? ref('c:icon_size') ?>">
+		<link rel="icon" href="<? ref('r:favicon') ?>" sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="<? url('r:style') ?>" title="...">
 		<title><?
 			$title = $p->title;
 			if(strpos($title, $project) === false) {

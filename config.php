@@ -20,8 +20,10 @@ PP::route('irc', ':irc:');
 PP::route('r', [
 	'style'         => 'style.css',
 	'favicon'       => 'favicon.png',
+	'favicon_ie'    => 'favicon.ico',
 	'logo'          => 'images/logo.png',
 	'icon-80'       => 'images/arx-libertatis-80.png',
+	'icon'          => 'images/arx-libertatis.png',
 	'spellcasting'  => 'images/spellcasting.jpg',
 	'castle-of-arx' => 'images/castle-of-arx.jpg',
 	'video'         => 'http://www.youtube.com/embed/mIribIqKee8?rel=0',
@@ -78,7 +80,9 @@ PP::route('share', [
 
 // Constants
 PP::route('c', [
-	'irc'     => ':#arxfatalis',
+	'irc'          => ':#arxfatalis',
+	'icon-80_size' => '80x80',
+	'icon_size'    => '128x128',
 ]);
 
 PP::route('wiki', 'p:wiki');
