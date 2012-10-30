@@ -23,7 +23,7 @@ foreach($news->items as $item) {
 
 ?>
 
-<div id="content" itemscope itemtype="http://schema.org/SoftwareApplication" itemid="<? url('p:home', false) ?>">
+<article itemscope itemtype="http://schema.org/SoftwareApplication" itemid="<? url('p:home', false) ?>">
 	<link itemprop="url" href="<? url('p:home', false) ?>" />
 	<link itemprop="softwareApplicationCategory" href="http://schema.org/GameApplication" />
 	<link itemprop="downloadURL" href="<? url('p:download') ?>" />
@@ -31,27 +31,13 @@ foreach($news->items as $item) {
 	<link itemprop="versionChanges" href="<? url('p:changelog') ?>" />
 	<link itemprop="image" href="<? url('r:icon-80') ?>" />
 	
-	<div id="share">
-		<a id="identica" href="<? url('share:identica') ?>" title="share on identi.ca"></a>
-		<a id="reddit" href="<? url('share:reddit') ?>" title="submit to reddit"></a>
-		<a id="google-plus" href="<? url('share:google-plus') ?>" title="share on Google+"></a>
-		<a id="twitter" href="<? url('share:twitter') ?>" title="share on Twitter"></a>
-		<a id="facebook" href="<? url('share:facebook') ?>" title="share on Facebook"></a>
-		<hr>
-		<a id="ohloh" href="<? url('p:ohloh') ?>" title="ohloh page"></a>
-		<a id="github" href="<? url('p:git') ?>" title="GitHub project"></a>
-		<a id="sourceforge" href="<? url('p:sourceforge') ?>" title="SourceForge.net project"></a>
-		<a id="moddb" href="<? url('p:moddb') ?>" title="Mod DB page"></a>
-		<a id="freecode" href="<? url('p:freecode') ?>" title="free(code) page"></a>
-	</div>
-	
 	<p itemprop="description">
 		<b itemprop="name">Arx Libertatis</b> is a cross-platform, open source port of <a href="<? url('p:arxfatalis') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<? url('p:arkane') ?>">Arkane Studios</a>.
 	</p>
 	
 	<iframe width="560" height="315" src="<? ref('r:video') ?>" frameborder="0" allowfullscreen itemprop="videos" itemscope itemtype="http://schema.org/VideoObject"></iframe>
 	
-	<div class="section">
+	<section>
 		
 <?
 		inject_page('screenshot', [
@@ -71,9 +57,9 @@ foreach($news->items as $item) {
 			Arx Libertatis <b><? echo encode_text($version) ?></b> updates and improves Arx Fatalis by supporting modern systems, porting the game to new systems as well as eliminating bugs and limitations. In the future we plan to improve and modernize the engine as well as enable customizations and mods by the community.
 		</p>
 		
-	</div>
+	</section>
 	
-	<div class="section">
+	<section>
 		
 <?
 		inject_page('screenshot', [
@@ -93,9 +79,23 @@ foreach($news->items as $item) {
 			There are <a href="<? url('p:download') ?>">packages</a> for <span itemprop="operatingSystems"><? echo $p->i_windows ?></span>, <span itemprop="operatingSystems"><? echo $p->i_linux ?></span> and <span itemprop="operatingSystems"><? echo $p->i_freebsd ?></span>, but you might also get it to compile and run under <span itemprop="operatingSystems"><? echo $p->i_macosx ?></span> and other operating systems.
 		</p>
 		
-	</div>
+	</section>
 	
-</div>
+	<footer id="share">
+		<a id="identica" href="<? url('share:identica') ?>" title="share on identi.ca"></a>
+		<a id="reddit" href="<? url('share:reddit') ?>" title="submit to reddit"></a>
+		<a id="google-plus" href="<? url('share:google-plus') ?>" title="share on Google+"></a>
+		<a id="twitter" href="<? url('share:twitter') ?>" title="share on Twitter"></a>
+		<a id="facebook" href="<? url('share:facebook') ?>" title="share on Facebook"></a>
+		<hr>
+		<a id="ohloh" href="<? url('p:ohloh') ?>" title="ohloh page"></a>
+		<a id="github" href="<? url('p:git') ?>" title="GitHub project"></a>
+		<a id="sourceforge" href="<? url('p:sourceforge') ?>" title="SourceForge.net project"></a>
+		<a id="moddb" href="<? url('p:moddb') ?>" title="Mod DB page"></a>
+		<a id="freecode" href="<? url('p:freecode') ?>" title="free(code) page"></a>
+	</footer>
+	
+</article>
 
 <?
 

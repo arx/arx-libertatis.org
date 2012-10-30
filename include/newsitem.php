@@ -19,9 +19,12 @@ if($p->format == 'html'):
 	
 ?>
 
-<div class="item" id="<? echo $p->elem_id ?>" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" itemid="<? url($p->news_url, false) ?>">
-	<link itemprop="url" href="<? url($p->news_url, false) ?>" />
-	<h3><a itemprop="name" href="<? url($p->news_url) ?>"><? text('title') ?></a> <time itemprop="datePublished" datetime="<? echo encode_attr(date('c', $p->time)) ?>"><? echo encode_text(date('Y-m-d', $p->time)) ?></time></h3>
+<article id="<? echo $p->elem_id ?>" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" itemid="<? url($p->news_url, false) ?>">
+	<header>
+		<link itemprop="url" href="<? url($p->news_url, false) ?>" />
+		<h1 itemprop="name"><a href="<? url($p->news_url) ?>"><? text('title') ?></a></h1>
+		<time itemprop="datePublished" datetime="<? echo encode_attr(date('c', $p->time)) ?>"><? echo encode_text(date('Y-m-d', $p->time)) ?></time>
+	</header>
 <?
 	
 	// For the lowest detail level, only show the title and date
@@ -75,9 +78,9 @@ if($p->format == 'html'):
 				
 				if($next !== null):
 ?>
-<p>
-	<b>Update:</b> <a href="<? url($next->news_url) ?>">Arx Libertatis <? echo encode_text($next->version) ?></a> has been released. <a href="<? url('sfdl:arx-libertatis-' . $p->version . '/') ?>">Version <? text('version') ?> is archived at SourceForge.</a>
-</p>
+	<p>
+		<b>Update:</b> <a href="<? url($next->news_url) ?>">Arx Libertatis <? echo encode_text($next->version) ?></a> has been released. <a href="<? url('sfdl:arx-libertatis-' . $p->version . '/') ?>">Version <? text('version') ?> is archived at SourceForge.</a>
+	</p>
 <?
 				endif;
 				
@@ -85,17 +88,21 @@ if($p->format == 'html'):
 			
 		endif /* $p->detail == 'full' */;
 		
-?>
-<?
-	
 	endif /* $p->detail != 'title' */;
-	
-?>
-</div>
-<?
 	
 	// For the highest detail level, also show navigation links!
 	if($p->detail == 'full'):
+		
+?>
+	<footer>
+		<div id="share">
+			<a id="identica" href="<? url('share:identica') ?>" title="share on identi.ca"></a>
+			<a id="reddit" href="<? url('share:reddit') ?>" title="submit to reddit"></a>
+			<a id="google-plus" href="<? url('share:google-plus') ?>" title="share on Google+"></a>
+			<a id="twitter" href="<? url('share:twitter') ?>" title="share on Twitter"></a>
+			<a id="facebook" href="<? url('share:facebook') ?>" title="share on Facebook"></a>
+		</div>
+<?
 		
 		$i = 0;
 		for(; $i < count($p->items); $i++) {
@@ -106,31 +113,34 @@ if($p->format == 'html'):
 		}
 		
 		if($i < count($p->items)):
+			
 ?>
-
-<div class="navigate">
+		<div class="navigate">
 <?
 			
 			if($i + 1 < count($p->items)) :
 				$prev = $p->items[$i + 1];
 ?>
-	<div class="prev"><a href="<? url($prev->news_url) ?>">previous</a></div>
+			<div class="prev"><a href="<? url($prev->news_url) ?>">previous</a></div>
 <?
 			endif;
 			
 			if($i > 0) :
 				$next = $p->items[$i - 1];
 ?>
-	<div class="next"><a href="<? url($next->news_url) ?>">next</a></div>
+			<div class="next"><a href="<? url($next->news_url) ?>">next</a></div>
 <?
 			endif;
 ?>
-</div>
+		</div>
 <?
 		endif /* $i < count($p->items) */;
-		
+?>
+	</footer>
+<?
 	endif /* $p->detail == 'full */;
 ?>
+</article>
 
 <?
 	

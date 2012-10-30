@@ -26,8 +26,8 @@ function url($resource, $optimize = true, $protocol_relative = false) {
 	echo encode_attr($url);
 }
 
-function ref($resource) {
-	url($resource, true, true);
+function ref($resource, $optimize = true) {
+	url($resource, $optimize, true);
 }
 
 function inject($var = 'content') {

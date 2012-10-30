@@ -1,5 +1,7 @@
- 
+
 @import "images/icons.css";
+
+/* global settings */
 
 body {
 	margin: 0;
@@ -12,8 +14,18 @@ body {
 	padding-top: 20px;
 }
 
-h1 {
+/* common elements */
+
+h2 {
+	color: #777;
+	margin: 5px;
 	text-align: center;
+	margin-bottom: 0px;
+}
+
+h3 {
+	margin: 7px;
+	margin-top: 15px;
 }
 
 a {
@@ -35,21 +47,32 @@ a:focus {
 	text-decoration: underline
 }
 
-#content, #news, #footer {
-	margin-left: auto;
-	margin-right: auto;
-	width: 600px;
-	border-top: 2px solid #444;
+img {
+	vertical-align: text-bottom;
+	border: none;
 }
 
-#content {
-	padding: 5px;
-	text-shadow: #000 0px 0px 5px;
+.center {
+	text-align: center;
 }
 
-#news {
-	border-top: none;
-	margin-top: 15px;
+.hidden {
+	display: none;
+}
+
+/* header */
+
+body > header {
+	white-space: nowrap;
+	text-align: center;
+}
+
+body > header:after {
+	border-bottom: 2px solid #444;
+	margin: auto;
+	width: 610px;
+	content: '';
+	display: block;
 }
 
 #link-bar {
@@ -57,7 +80,6 @@ a:focus {
 	letter-spacing: -1px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	text-align: center;
 }
 
 #link-bar * {
@@ -72,21 +94,68 @@ a:focus {
 	border-left: 2px solid #444;
 }
 
-#content .box {
+/* footer */
+
+body > footer {
+	margin: auto;
+	width: 600px;
+	font-size: 8pt;
+	padding-top: 8px;
+	margin-top: 35px;
+	color: #555;
+	border-top: 2px solid #444;
+}
+
+body > footer a {
+	color: #543;
 	text-shadow: none;
 }
 
-img {
-	vertical-align: text-bottom;
-	border: none;
+/* main structure */
+
+body > header + section {
+	margin-top: 25px;
 }
+
+body > section {
+	margin: auto;
+	width: 600px;
+	background-color: #2c2c2a;
+	padding: 5px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding-left: 15px;
+	padding-right: 10px;
+	box-shadow: inset 0px 0px 10px 2px #181818;
+	clear: both;
+}
+
+body > article {
+	margin: auto;
+	width: 600px;
+	margin-top: 19px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+article > section {
+	display: block;
+}
+
+article > section + section {
+	padding-top: 2px;
+}
+
+/* content footer */
 
 #share {
 	padding: 0;
 	width: 32px;
-	float: right;
 	margin-left: 5px;
-	margin-top: 2px;
+	margin-top: -12px;
+	position: absolute;
+	top: 2px;
+	right: 0px;
 }
 
 #share > a, #rss {
@@ -143,86 +212,67 @@ img {
 	margin-bottom: 7px;
 }
 
-.section + .section {
-	padding-top: 2px;
-}
-
 #share > a:focus, .screenshot a:focus img {
 	box-shadow: 0px 0px 5px 1px #aaa;
 	background-color: #666;
 }
 
-h2 {
-	color: #777;
-	margin: 5px;
-	text-align: center;
-	margin-bottom: 0px;
-}
+/* news items */
 
-h3 {
+#news article > header > h1 {
 	margin: 7px;
 	margin-top: 15px;
+	font-size: 1.17em;
 }
 
-h3 a {
+#news article > header > h1 a {
 	color: #eee;
-	text-shadow: none;
 }
 
-#news h3:before {
+#news article > header > h1:before {
 	content: "\00bb\0020";
 	color: #555;
 }
 
-#news h3:after {
+#news article > header >  h1:after {
 	content: "\0020\00ab";
 	color: #555;
 }
 
-#news h3 time {
+#news article > footer > #share {
+	width: 100%;
+	text-align: center;
+	position: static;
+}
+
+#news article > footer > #share > a {
+	margin-left: 5px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+#news article > header > time {
 	float: right;
 	font-size: 10pt;
 	color: #666;
 	text-shadow: #000 1px 1px 2px;
+	font-weight: bold;
+	margin-top: -1.95em;
+	margin-right: 7px;
 }
 
-#footer {
-	font-size: 8pt;
-	padding-top: 8px;
-	margin-top: 40px;
-	color: #555;
+#news article > footer {
+	margin-top: 30px;
+	clear: both;
 }
 
-#content + #footer {
-	margin-top: 0px;
-}
-
-#news .item {
-	padding-bottom: 5px;
-}
-
-#news .item + .item {
+#news article + article {
 	border-top: 1px dotted #555;
 }
 
-#news .navigate + .item {
+#news .navigate + article {
 	margin-top: 5px;
 	border-top: 1px dotted #555;
-}
-
-#footer a {
-	color: #543;
-	text-shadow: none;
-}
-
-#news , .box {
-	background-color: #2c2c2a;
-	padding: 5px;
-	margin-bottom: 30px;
-	margin-top: 20px;
-	padding-left: 15px;
-	padding-right: 10px;
-	box-shadow: inset 0px 0px 10px 2px #181818;
 }
 
 #news .navigate {
@@ -256,36 +306,28 @@ h3 a {
 	text-align: center;
 }
 
-#news .item .more {
+#news article .more {
 	height: 1em;
 	position: relative;
 	top: -6px;
 	padding-bottom: 2px;
 }
 
-#news .item .more:before {
+#news article .more:before {
 	content: "[...]";
 	color: #666;
 }
 
-#news .item .more a:before {
+#news article .more a:before {
 	content: "(";
 	font-size: 80%;
 }
 
-#news .item .more a:after {
+#news article .more a:after {
 	content: ")";
 	font-size: 80%;
 }
 
-#news .item .more a {
+#news article .more a {
 	float: right;
-}
-
-.center {
-	text-align: center;
-}
-
-.hidden {
-	display: none;
 }

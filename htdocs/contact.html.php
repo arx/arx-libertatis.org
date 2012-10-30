@@ -1,13 +1,13 @@
 <?
 // Contact page
 
-$p->inherit('simple');
+$p->inherit('frame');
 $p->title = 'Contact';
 $p->import('icons');
 
 ?>
 
-<div class="box">
+<section>
 	
 	<h2>Contact</h2>
 	
@@ -44,9 +44,9 @@ $p->import('icons');
 		If you have found a problem in Arx Libertatis, please <a href="<? url('p:bugs') ?>">open a bug report</a>.
 	</p>
 	
-</div>
+</section>
 
-<div class="box">
+<section>
 	
 	<h2>Webmaster</h2>
 	
@@ -57,4 +57,4 @@ $p->import('icons');
 		</span>
 	</p>
 	
-</div>
+</section>

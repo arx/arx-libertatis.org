@@ -18,5 +18,5 @@ $p->import('makenews');
 ?>
 
 <p>
-	Many thanks go to <emph>barra</emph> for having hosted the wiki so far. Having a place to collaborate beyond the code and IRC channel even before we had our own infrastructure was of great help to the Arx Libertatis project.
+	Many thanks go to <em>barra</em> for having hosted the wiki so far. Having a place to collaborate beyond the code and IRC channel even before we had our own infrastructure was of great help to the Arx Libertatis project.
 </p>

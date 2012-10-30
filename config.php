@@ -70,19 +70,119 @@ PP::route('p', [
 	'openmw'       => 'http://openmw.org/',
 ]);
 
-PP::route('share', [
-	'identica' => 'https://identi.ca//index.php?action=newnotice&status_textarea=Arx+Libertatis+-+a+cross-platform+port+of+Arx+Fatalis+http%3A%2F%2Farx.vg%2F',
-	'reddit' => 'http://www.reddit.com/submit?url=http%3A%2F%2Farx-libertatis.org%2F&title=Arx+Libertatis+-+a+cross-platform+port+of+Arx+Fatalis',
-	'google-plus' => 'https://plus.google.com/share?url=http%3A%2F%2Farx-libertatis.org%2F',
-	'twitter' => 'https://twitter.com/share?url=http%3A%2F%2Farx.vg%2F&text=Arx+Libertatis+-+a+cross-platform+port+of+Arx+Fatalis',
-	'facebook' => 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Farx-libertatis.org%2F',
-]);
+function starts_with($haystack, $needle) {
+	$length = strlen($needle);
+	return (substr($haystack, 0, $length) === $needle);
+}
+
+function query_encode($string) {
+	$entities = array('%21', '%2A', '%27', '%28', '%29', '%3B', '%3A', '%40', '%26', '%3D',
+	                  '%2B', '%24', '%2C', '%2F', '%3F', '%25', '%23', '%5B', '%5D');
+	$replacements = array('!', '*', "'", "(", ")", ";", ":", "@", "&", "=", "+", "$", ",",
+	                      "/", "?", "%", "#", "[", "]");
+	return str_replace($entities, $replacements, rawurlencode($string));
+}
+
+function build_query($array) {
+	$q = '';
+	foreach($array as $key => $value) {
+		if($q != '') {
+			$q .= '&';
+		}
+		$q .= query_encode($key);
+		if($value !== null) {
+			$q .= '=' . query_encode($value);
+		}
+	}
+	return $q;
+}
+
+PP::route('share', function ($name) {
+	
+	global $p;
+	
+	$su = $u = $p->url;
+	$prefixes = [
+		'http://arx-libertatis.org/news/',
+		'http://arx-libertatis.org/releases/',
+		'http://arx-libertatis.org/',
+		'http://wiki.arx-libertatis.org/',
+		'https://bugs.arx-libertatis.org/arx/issues/',
+	];
+	foreach($prefixes as $prefix) {
+		if(starts_with($u, $prefix)) {
+			$su = 'http://arx.vg/' . substr($u, strlen($prefix));
+			break;
+		}
+	}
+	
+	$q = [ ];
+	
+	if(isset($p->title)) {
+		$project = 'Arx Libertatis';
+		$title_prefix = "$project :: ";
+		$title = $p->title;
+		if(strpos($title, $project) === false) {
+			$title = $title_prefix . $title;
+		}
+	}
+	
+	
+	switch($name) {
+		
+		case 'identica': {
+			$url = 'https://identi.ca//index.php';
+			$q['action'] = 'newnotice';
+			if(isset($title)) {
+				$q['status_textarea'] = $title . ' ' . $su;
+			} else {
+				$q['status_textarea'] = $su;
+			}
+			break;
+		}
+		
+		case 'reddit': {
+			$url = 'http://www.reddit.com/submit';
+			$q['url'] = $u;
+			if(isset($title)) {
+				$q['title'] = $title;
+			}
+			break;
+		}
+		
+		case 'google-plus': {
+			$url = 'https://plus.google.com/share';
+			$q['url'] = $u;
+			break;
+		}
+		
+		case 'twitter': {
+			$url = 'https://twitter.com/share';
+			$q['url'] = $su;
+			if(isset($title)) {
+				$q['text'] = $title;
+			}
+			break;
+		}
+		
+		case 'facebook': {
+			$url = 'https://www.facebook.com/sharer/sharer.php';
+			$q['u'] = $u;
+			break;
+		}
+		
+	}
+	
+	return $url . '?' . build_query($q);
+	
+	
+});
 
 // Constants
 PP::route('c', [
 	'irc'          => ':#arxfatalis',
-	'icon-80_size' => '80x80',
-	'icon_size'    => '128x128',
+	'icon-80_size' => ':80x80',
+	'icon_size'    => ':128x128',
 ]);
 
 PP::route('wiki', 'p:wiki');
