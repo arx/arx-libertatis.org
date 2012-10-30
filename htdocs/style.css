@@ -1,4 +1,6 @@
  
+@import "images/icons.css";
+
 body {
 	margin: 0;
 	padding: 0;
@@ -88,17 +90,13 @@ img {
 }
 
 #share > a, #rss {
-	display: block;
-	width: 32px;
-	height: 32px;
 	margin: 0;
-	background-image: url('images/icons.png');
-	background-repeat: no-repeat;
 	margin-bottom: 5px;
 	filter: url(images/filters.svg#grayscale); /* Firefox 3.5+ */
 	filter: gray;
 	opacity: 0.15;
 	filter: alpha(opacity=15); /* IE8 and earlier */
+	display: block;
 }
 
 #share > hr {
@@ -114,22 +112,8 @@ img {
 	-webkit-filter: grayscale(0);
 }
 
-#identica    { background-position:   -0px; }
-#reddit      { background-position:  -32px; }
-#google-plus { background-position:  -64px; }
-#twitter     { background-position:  -96px; }
-#facebook    { background-position: -128px; }
-#ohloh       { background-position: -160px; }
-#github      { background-position: -192px; }
-#sourceforge { background-position: -224px; }
-#moddb       { background-position: -256px; }
-#freecode    { background-position: -288px; }
-
 #rss {
 	float: right;
-	width: 24px;
-	height: 24px;
-	background-position: -320px 0px;
 	margin: 4px;
 	margin-right: 0px;
 }
@@ -240,22 +224,6 @@ h3 a {
 	padding-right: 10px;
 	box-shadow: inset 0px 0px 10px 2px #181818;
 }
-
-.os {
-	width: 16px;
-	height: 16px;
-	background-image: url('images/icons.png');
-	background-repeat: no-repeat;
-	padding: 0px;
-	margin: 0px;
-	margin-right: 3px;
-	display: inline-block;
-	vertical-align: bottom;
-}
-.os.windows { background-position:   -344px  -0px; }
-.os.linux   { background-position:   -360px  -0px; }
-.os.macosx  { background-position:   -344px -16px; }
-.os.freebsd { background-position:   -360px -16px; }
 
 #news .navigate {
 	height: 1em;

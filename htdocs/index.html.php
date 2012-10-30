@@ -90,7 +90,7 @@ foreach($news->items as $item) {
 		</p>
 		
 		<p>
-			There are <a href="<? url('p:download') ?>">packages</a> for <? echo $p->windows_icon ?><span itemprop="operatingSystems">Windows</span>, <? echo $p->linux_icon ?><span itemprop="operatingSystems">Linux</span> and <? echo $p->freebsd_icon ?><span itemprop="operatingSystems">FreeBSD</span>, but you might also get it to compile and run under <? echo $p->macosx_icon ?><span itemprop="operatingSystems">Mac OS X</span> and other operating systems.
+			There are <a href="<? url('p:download') ?>">packages</a> for <span itemprop="operatingSystems"><? echo $p->i_windows ?></span>, <span itemprop="operatingSystems"><? echo $p->i_linux ?></span> and <span itemprop="operatingSystems"><? echo $p->i_freebsd ?></span>, but you might also get it to compile and run under <span itemprop="operatingSystems"><? echo $p->i_macosx ?></span> and other operating systems.
 		</p>
 		
 	</div>

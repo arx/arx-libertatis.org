@@ -18,5 +18,5 @@ $p->import('makenews');
 ?>
 
 <p>
-	If you want to see Arx Libertatis available in the default repositories of more <? echo $p->linux_icon ?>Linux distributions, please open a package request for your favorite distro at the appropriate location - even if we already <a href="<? url('wiki:Download#Packages') ?>">provide our own packages for that distribution</a>.
+	If you want to see Arx Libertatis available in the default repositories of more <? echo $p->i_linux ?> distributions, please open a package request for your favorite distro at the appropriate location - even if we already <a href="<? url('wiki:Download#Packages') ?>">provide our own packages for that distribution</a>.
 </p>

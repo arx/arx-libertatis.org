@@ -17,7 +17,7 @@ $p->import('makenews');
 ?>
 
 <p>
-	<a href="<? url('p:download') ?>"><? echo $p->windows_icon ?>Windows and <? echo $p->linux_icon ?>Linux</a> packages are available. We still don't have <? echo $p->macosx_icon ?>Mac OS X binaries, but a user has created a <a href="<? url('p:mac_wineskin') ?>">Wine-based wrapper</a> that allows the Windows version to run on Mac for those who don't want to compile from source. We recommend switching to the OpenGL renderer when running under Wine. Arx Libertatis is also <a href="<? url('p:freebsd_port') ?>">available as a <? echo $p->freebsd_icon ?>FreeBSD port</a>.
+	<a href="<? url('p:download') ?>"><? echo $p->i_windows ?> and <? echo $p->i_linux ?></a> packages are available. We still don't have <? echo $p->i_macosx ?> binaries, but a user has created a <a href="<? url('p:mac_wineskin') ?>">Wine-based wrapper</a> that allows the Windows version to run on Mac for those who don't want to compile from source. We recommend switching to the OpenGL renderer when running under Wine. Arx Libertatis is also <a href="<? url('p:freebsd_port') ?>">available as a <? echo $p->i_freebsd ?> port</a>.
 </p>
 <p>
 	Fans of Arx Fatalis might also be interested in <a href="<? url('p:openmw') ?>">OpenMW</a>, a project to create an open source and cross-platform engine for Morrowind. While they haven't yet reached a stable release, the current progress looks promising.

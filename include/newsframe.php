@@ -18,7 +18,7 @@ endif /* $p->frame */;
 ?>
 <div id="news" itemscope itemtype="http://schema.org/Blog" itemid="<? url('p:news', false) ?>">
 	<link itemprop="url" href="<? url('p:news', false) ?>" />
-	<a id="rss" href="<? url('p:rss') ?>" title="rss feed"></a>
+	<a id="rss" class="rss icon" href="<? url('p:rss') ?>" title="rss feed"></a>
 	
 	<h2 itemprop="name"><span class="hidden">Arx Libertatis</span> Announcements</h2>
 	

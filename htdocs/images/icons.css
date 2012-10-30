@@ -1,0 +1,170 @@
+
+.icon, #share > a {
+	background-image: url("icons.png");
+	background-repeat: no-repeat;
+	padding: 0px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+/* share buttons */
+#share > a        { width: 32px; height: 32px; }
+#identica         { background-position:   -0px  -0px; }
+#reddit           { background-position:   -0px -32px; }
+#google-plus      { background-position:  -32px  -0px; }
+#twitter          { background-position:  -32px -32px; }
+#facebook         { background-position:  -64px  -0px; }
+#ohloh            { background-position:  -64px -32px; }
+#github           { background-position:  -96px  -0px; }
+#sourceforge      { background-position:  -96px -32px; }
+#moddb            { background-position: -128px  -0px; }
+#freecode         { background-position: -128px -32px; }
+
+/* big (32x32) icons */
+.icon.big         { width: 32px; height: 32px; }
+.icon.windows.big { background-position: -160px  -0px; }
+.icon.linux.big   { background-position: -160px -32px; }
+.icon.macosx.big  { background-position: -192px  -0px; }
+.icon.freebsd.big { background-position: -192px -32px; }
+.icon.github.big  { background-position: -224px  -0px; }
+
+
+/* small (16x16 and 24x24) icons */
+.icon             { width: 16px; height: 16px; }
+
+/* 24x24 icons */
+.icon.rss         { background-position: -256px  -0px;  width: 24px; height: 24px; }
+.icon.download    { background-position: -256px -24px;  width: 24px; height: 24px; }
+
+/* os icons */
+.icon.windows     { background-position: -224px -32px; }
+.icon.linux       { background-position: -224px -48px; }
+.icon.macosx      { background-position: -240px -32px; }
+.icon.freebsd     { background-position: -240px -48px; }
+/* linux distribution icons */
+.icon.arch        { background-position: -296px  -0px; }
+.icon.chakra      { background-position: -296px -16px; }
+.icon.debian      { background-position: -296px -32px; }
+.icon.fedora      { background-position: -296px -48px; }
+.icon.gentoo      { background-position: -312px  -0px; }
+.icon.mandriva    { background-position: -312px -16px; }
+.icon.openmamba   { background-position: -312px -32px; }
+.icon.opensuse    { background-position: -312px -48px; }
+.icon.rosa        { background-position: -328px  -0px; }
+.icon.ubuntu      { background-position: -328px -16px; }
+
+/* website icons */
+.icon.blogger     { background-position: -280px  -0px; }
+.icon.googlecode  { background-position: -280px -16px; }
+.icon.sourceforge { background-position: -280px -32px; }
+.icon.github      { background-position: -280px -48px; }
+.icon.reddit      { background-position: -344px -16px; }
+.icon.steam       { background-position: -344px -32px; }
+.icon.gog         { background-position: -344px -48px; }
+.icon.ebay        { background-position: -360px  -0px; }
+.icon.amazon      { background-position: -360px -16px; }
+.icon.moddb       { background-position: -360px -32px; }
+.icon.youtube     { background-position: -376px -16px; }
+.icon.wikipedia   { background-position: -376px -32px; }
+
+/* misc icons */
+.icon.arx         { background-position: -264px -48px; }
+.icon.innoextract { background-position: -376px  -0px; }
+.icon.wine        { background-position: -344px  -0px; }
+.icon.bug         { background-position: -328px -32px; }
+.icon.idea        { background-position: -328px -48px; }
+.icon.daniel      { background-position: -360px -48px; }
+
+a.external[href^="http://store.steampowered.com/"],
+a.external[href^="http://steamcommunity.com/"],
+a.external[href^="http://www.gog.com/"],
+a.external[href^="http://www.moddb.com/"],
+a.external[href^="http://www.reddit.com/"],
+a.external[href^="http://code.google.com/"],
+a.external[href^="https://github.com/"],
+a.external[href^="https://sourceforge.net/"],
+a.external[href^="http://www.youtube.com/"],
+a.extiw[href^="http://en.wikipedia.org/"],
+a.external[href^="http://arx-libertatis.org/"],
+a.external[href^="https://bugs.arx-libertatis.org/"],
+a.external[href*=".blogspot.com/"] {
+	background: none !important;
+	padding-right: 0px !important;
+}
+
+a.external[href^="http://store.steampowered.com/"]:after,
+a.external[href^="http://steamcommunity.com/"]:after,
+a.external[href^="http://www.gog.com/"]:after,
+a.external[href^="http://www.moddb.com/"]:after,
+a.external[href^="http://www.reddit.com/"]:after,
+a.external[href^="http://code.google.com/"]:after,
+a.external[href^="https://github.com/"]:after,
+a.external[href^="https://sourceforge.net/"]:after,
+a.external[href^="http://www.youtube.com/"]:after,
+a.extiw[href^="http://en.wikipedia.org/"]:after,
+a.external[href^="http://arx-libertatis.org/"]:after,
+a.external[href^="https://bugs.arx-libertatis.org/"]:after,
+a.external[href*=".blogspot.com/"]:after {
+	content: '';
+	/* import .icon */
+	background-image: url("icons.png");
+	background-repeat: no-repeat;
+	padding: 0px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 16px; height: 16px;
+	margin-left: 4px;
+}
+
+a.external[href^="http://store.steampowered.com/"]:after,
+a.external[href^="http://steamcommunity.com.com/"]:after {
+	background-position: -344px -32px;
+}
+
+a.external[href^="http://www.gog.com/"]:after {
+	background-position: -344px -48px;
+}
+
+a.external[href^="http://www.moddb.com/"]:after {
+	background-position: -360px -32px;
+}
+
+a.external[href^="http://code.google.com/"]:after {
+	background-position: -280px -16px;
+}
+
+a.external[href^="https://github.com/"]:after {
+	background-position: -280px -48px;
+}
+
+a.external[href^="https://sourceforge.net/"]:after {
+	background-position: -280px -32px;
+}
+
+a.external[href^="http://www.youtube.com/"]:after {
+	background-position: -376px -16px;
+}
+
+a.extiw[href^="http://en.wikipedia.org/"]:after {
+	background-position: -376px  -32px;
+}
+
+a.external[href^="http://www.reddit.com/"]:after {
+	background-position: -344px -16px;
+}
+
+a.external[href^="http://arx-libertatis.org/"]:after {
+	background-position: -264px -48px;
+}
+
+a.external[href^="https://bugs.arx-libertatis.org/"]:after {
+	background-position: -328px -32px;
+}
+
+.feature a.external[href^="https://bugs.arx-libertatis.org/"]:after {
+	background-position: -328px -48px;
+}
+
+a.external[href*=".blogspot.com/"]:after {
+	background-position: -280px  -0px;
+}
