@@ -10,7 +10,7 @@ $p->import('makenews');
 ?>
 
 <p>
-	Thanks to Gentoo developer <emph>hasufell</emph>, <a href="<? url('wiki:Linux_packages#Gentoo_Linux') ?>">Arx Libertatis ebuilds</a> are now available in the portage tree. This means Gentoo users no longer need the <b>arx-libertatis</b> overlay. <a href="<? url('wiki:Linux_packages#Mandriva') ?>">Mandriva</a> and <a href="<? url('wiki:Linux_packages#ROSA') ?>">ROSA</a> packages have also been available in the distribution repositories for a while now.
+	Thanks to <? echo $p->gentoo_icon ?> Gentoo developer <emph>hasufell</emph>, <a href="<? url('wiki:Linux_packages#Gentoo_Linux') ?>">Arx Libertatis ebuilds</a> are now available in the portage tree. This means Gentoo users no longer need the <b>arx-libertatis</b> overlay. <a href="<? url('wiki:Linux_packages#Mandriva') ?>"><? echo $p->i_mandriva ?></a> and <a href="<? url('wiki:Linux_packages#ROSA') ?>"><? echo $p->i_rosa ?></a> packages have also been available in the distribution repositories for a while now.
 </p>
 
 <?
