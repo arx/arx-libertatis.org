@@ -50,7 +50,7 @@ $p->import('icons');
 	
 	<h2>Webmaster</h2>
 	
-	<p>
+	<p class="center">
 		This website is hosted and administered by
 		<span itemscope itemtype="http://schema.org/Person">
 			<a href="<? url('p:constexpr') ?>" itemprop="url"><span itemprop="name"><? echo $p->i_daniel ?></span></a>.
