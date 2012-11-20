@@ -76,6 +76,7 @@
 .icon.daniel      { background-position: -360px -48px; }
 
 a.external[href^="http://store.steampowered.com/"],
+a.external[href^="http://forums.steampowered.com/"],
 a.external[href^="http://steamcommunity.com/"],
 a.external[href^="http://www.gog.com/"],
 a.external[href^="http://www.moddb.com/"],
@@ -93,6 +94,7 @@ a.external[href*=".blogspot.com/"] {
 }
 
 a.external[href^="http://store.steampowered.com/"]:after,
+a.external[href^="http://forums.steampowered.com/"]:after,
 a.external[href^="http://steamcommunity.com/"]:after,
 a.external[href^="http://www.gog.com/"]:after,
 a.external[href^="http://www.moddb.com/"]:after,
@@ -117,7 +119,8 @@ a.external[href*=".blogspot.com/"]:after {
 }
 
 a.external[href^="http://store.steampowered.com/"]:after,
-a.external[href^="http://steamcommunity.com.com/"]:after {
+a.external[href^="http://forums.steampowered.com/"]:after,
+a.external[href^="http://steamcommunity.com/"]:after {
 	background-position: -344px -32px;
 }
 
