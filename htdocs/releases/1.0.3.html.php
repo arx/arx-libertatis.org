@@ -59,7 +59,7 @@ inject_page('screenshot', [
 ?>
 
 <p>
-	There has also been <a href="<? url('bug:307') ?>">concern raised</a> over the <a href="<? url('wiki:Harm_(Spell)') ?>">Harm spell</a>: While the player is never told about this spell, the incarnation can be deduced from the <a href="<? url('wiki:Heal_(Spell)') ?>">Heal spell</a>. The problem is that the Harm spell makes most fights pointless by <a href="<? url('wiki:Spells') ?>">dealing a decent amount of damage while costing almost no mana</a> - so little that a decent magic user will regenerate the mana faster than it is used up.
+	There has also been <a href="<? url('bug:307') ?>">concern raised</a> over the <a href="<? url('wiki:Harm') ?>">Harm spell</a>: While the player is never told about this spell, the incarnation can be deduced from the <a href="<? url('wiki:Heal') ?>">Heal spell</a>. The problem is that the Harm spell makes most fights pointless by <a href="<? url('wiki:Spells') ?>">dealing a decent amount of damage while costing almost no mana</a> - so little that a decent magic user will regenerate the mana faster than it is used up.
 </p>
 
 <p>
