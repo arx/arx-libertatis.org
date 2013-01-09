@@ -149,6 +149,10 @@ article > section + section {
 
 /* content footer */
 
+#description {
+	width: 560px; /* leave some space for the sidebar! */
+}
+
 #share {
 	padding: 0;
 	width: 32px;
