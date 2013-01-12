@@ -16,7 +16,7 @@ $p->mimetype = 'text/html';
 <html>
 	
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta charset='utf-8'>
 		<link rel="shortcut icon" href="<? ref('r:favicon_ie') ?>">
 		<link rel="icon" href="<? ref('r:icon') ?>" sizes="<? ref('c:icon_size') ?>">
 		<link rel="icon" href="<? ref('r:favicon') ?>" sizes="16x16">
