@@ -19,10 +19,10 @@ if($p->format == 'html'):
 	
 ?>
 
-<article id="<?= $p->elem_id ?>" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" itemid="<? url($p->news_url, false) ?>">
+<article id="<?= $p->elem_id ?>" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" itemid="<?= url($p->news_url, false) ?>">
 	<header>
-		<link itemprop="url" href="<? url($p->news_url, false) ?>" />
-		<h1 itemprop="name"><a href="<? url($p->news_url) ?>"><? text('title') ?></a></h1>
+		<link itemprop="url" href="<?= url($p->news_url, false) ?>" />
+		<h1 itemprop="name"><a href="<?= url($p->news_url) ?>"><?= text('title') ?></a></h1>
 		<time itemprop="datePublished" datetime="<?= encode_attr(date('c', $p->time)) ?>"><?= encode_text(date('Y-m-d', $p->time)) ?></time>
 	</header>
 <?
@@ -51,7 +51,7 @@ if($p->format == 'html'):
 		if($p->detail != 'synopsis') {
 			inject('details');
 		} else if($p->details != ''): ?>
-		<div class="more"><a href="<? url($p->news_url) ?>">read more</a></div><?
+		<div class="more"><a href="<?= url($p->news_url) ?>">read more</a></div><?
 		endif;
 		
 ?>
@@ -79,7 +79,7 @@ if($p->format == 'html'):
 				if($next !== null):
 ?>
 	<p>
-		<b>Update:</b> <a href="<? url($next->news_url) ?>">Arx Libertatis <?= encode_text($next->version) ?></a> has been released. <a href="<? url('sfdl:arx-libertatis-' . $p->version . '/') ?>">Version <? text('version') ?> is archived at SourceForge.</a>
+		<b>Update:</b> <a href="<?= url($next->news_url) ?>">Arx Libertatis <?= encode_text($next->version) ?></a> has been released. <a href="<?= url('sfdl:arx-libertatis-' . $p->version . '/') ?>">Version <?= text('version') ?> is archived at SourceForge.</a>
 	</p>
 <?
 				endif;
@@ -96,11 +96,11 @@ if($p->format == 'html'):
 ?>
 	<footer>
 		<div id="share">
-			<a id="identica" href="<? url('share:identica') ?>" title="share on identi.ca"></a>
-			<a id="reddit" href="<? url('share:reddit') ?>" title="submit to reddit"></a>
-			<a id="google-plus" href="<? url('share:google-plus') ?>" title="share on Google+"></a>
-			<a id="twitter" href="<? url('share:twitter') ?>" title="share on Twitter"></a>
-			<a id="facebook" href="<? url('share:facebook') ?>" title="share on Facebook"></a>
+			<a id="identica" href="<?= url('share:identica') ?>" title="share on identi.ca"></a>
+			<a id="reddit" href="<?= url('share:reddit') ?>" title="submit to reddit"></a>
+			<a id="google-plus" href="<?= url('share:google-plus') ?>" title="share on Google+"></a>
+			<a id="twitter" href="<?= url('share:twitter') ?>" title="share on Twitter"></a>
+			<a id="facebook" href="<?= url('share:facebook') ?>" title="share on Facebook"></a>
 		</div>
 <?
 		
@@ -121,14 +121,14 @@ if($p->format == 'html'):
 			if($i + 1 < count($p->items)) :
 				$prev = $p->items[$i + 1];
 ?>
-			<div class="prev"><a href="<? url($prev->news_url) ?>">previous</a></div>
+			<div class="prev"><a href="<?= url($prev->news_url) ?>">previous</a></div>
 <?
 			endif;
 			
 			if($i > 0) :
 				$next = $p->items[$i - 1];
 ?>
-			<div class="next"><a href="<? url($next->news_url) ?>">next</a></div>
+			<div class="next"><a href="<?= url($next->news_url) ?>">next</a></div>
 <?
 			endif;
 ?>
@@ -149,10 +149,10 @@ elseif($p->format == 'rss'):
 ?>
 
 <item>
-	<title><? text('title') ?></title>
-	<link><? url($p->news_url) ?></link>
+	<title><?= text('title') ?></title>
+	<link><?= url($p->news_url) ?></link>
 	<pubDate><?= encode_text(date('r', $p->time)) ?></pubDate>
-	<guid isPermaLink="true"><? url($p->news_url) ?></guid>
+	<guid isPermaLink="true"><?= url($p->news_url) ?></guid>
 	<description>
 <?
 	

@@ -10,7 +10,7 @@ $p->import('makenews');
 
 <p>
 	Due to a text rendering bug in 1.0 that breaks the Russian version, we have decided to publish a bugfix release.
-	This version also fixes a crash on some Linux systems and uses DirectX by default for rendering and input under Windows - see the <a href="<? url($p->changelog) ?>">changelog</a>.
+	This version also fixes a crash on some Linux systems and uses DirectX by default for rendering and input under Windows - see the <a href="<?= url($p->changelog) ?>">changelog</a>.
 </p>
 
 <?
@@ -18,5 +18,5 @@ $p->import('makenews');
 ?>
 
 <p>
-	As before, <a href="<? url('p:download') ?>">packages for <?= $p->i_windows ?> and <?= $p->i_linux ?></a> are available.
+	As before, <a href="<?= url('p:download') ?>">packages for <?= $p->i_windows ?> and <?= $p->i_linux ?></a> are available.
 </p>

@@ -15,10 +15,10 @@ $max_items = 10;
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Arx Libertatis Announcements</title>
-		<link><? url('p:home') ?></link>
+		<link><?= url('p:home') ?></link>
 		<description>News of Arx Libertatis, a cross-platform port of Arx Fatalis.</description>
 		<language>en-us</language>
-		<atom:link href="<? url('p:rss') ?>" rel="self" type="application/rss+xml" />
+		<atom:link href="<?= url('p:rss') ?>" rel="self" type="application/rss+xml" />
 <?
 
 $count = 0;

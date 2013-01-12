@@ -23,19 +23,19 @@ foreach($news->items as $item) {
 
 ?>
 
-<article itemscope itemtype="http://schema.org/SoftwareApplication" itemid="<? url('p:home', false) ?>">
-	<link itemprop="url" href="<? url('p:home', false) ?>" />
+<article itemscope itemtype="http://schema.org/SoftwareApplication" itemid="<?= url('p:home', false) ?>">
+	<link itemprop="url" href="<?= url('p:home', false) ?>" />
 	<link itemprop="softwareApplicationCategory" href="http://schema.org/GameApplication" />
-	<link itemprop="downloadURL" href="<? url('p:download') ?>" />
+	<link itemprop="downloadURL" href="<?= url('p:download') ?>" />
 	<meta itemprop="softwareVersion" content="<?= encode_attr($version) ?>" />
-	<link itemprop="versionChanges" href="<? url('p:changelog') ?>" />
-	<link itemprop="image" href="<? url('r:icon-80') ?>" />
+	<link itemprop="versionChanges" href="<?= url('p:changelog') ?>" />
+	<link itemprop="image" href="<?= url('r:icon-80') ?>" />
 	
 	<p itemprop="description" id="description">
-		<b itemprop="name">Arx Libertatis</b> is a cross-platform, open source port of <a href="<? url('p:arxfatalis') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<? url('p:arkane') ?>">Arkane Studios</a>.
+		<b itemprop="name">Arx Libertatis</b> is a cross-platform, open source port of <a href="<?= url('p:arxfatalis') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<?= url('p:arkane') ?>">Arkane Studios</a>.
 	</p>
 	
-	<iframe width="560" height="315" src="<? ref('r:video') ?>" frameborder="0" allowfullscreen itemprop="videos" itemscope itemtype="http://schema.org/VideoObject"></iframe>
+	<iframe width="560" height="315" src="<?= ref('r:video') ?>" frameborder="0" allowfullscreen itemprop="videos" itemscope itemtype="http://schema.org/VideoObject"></iframe>
 	
 	<section>
 		
@@ -72,27 +72,27 @@ foreach($news->items as $item) {
 ?>
 		
 		<p>
-			Arx Libertatis is based on the publicly released <a href="<? url('p:patch') ?>">Arx Fatalis sources</a> and available under the <a href="<? url('p:gpl') ?>">GPL 3+ license</a>. This does however not include the game data, so you need to <a href="<? url('wiki:Getting_the_game_data') ?>">obtain a copy of the original Arx Fatalis</a>  or its demo to play Arx Libertatis.
+			Arx Libertatis is based on the publicly released <a href="<?= url('p:patch') ?>">Arx Fatalis sources</a> and available under the <a href="<?= url('p:gpl') ?>">GPL 3+ license</a>. This does however not include the game data, so you need to <a href="<?= url('wiki:Getting_the_game_data') ?>">obtain a copy of the original Arx Fatalis</a>  or its demo to play Arx Libertatis.
 		</p>
 		
 		<p>
-			There are <a href="<? url('p:download') ?>">packages</a> for <span itemprop="operatingSystems"><?= $p->i_windows ?></span>, <span itemprop="operatingSystems"><?= $p->i_linux ?></span> and <span itemprop="operatingSystems"><?= $p->i_freebsd ?></span>, but you might also get it to compile and run under <span itemprop="operatingSystems"><?= $p->i_macosx ?></span> and other operating systems.
+			There are <a href="<?= url('p:download') ?>">packages</a> for <span itemprop="operatingSystems"><?= $p->i_windows ?></span>, <span itemprop="operatingSystems"><?= $p->i_linux ?></span> and <span itemprop="operatingSystems"><?= $p->i_freebsd ?></span>, but you might also get it to compile and run under <span itemprop="operatingSystems"><?= $p->i_macosx ?></span> and other operating systems.
 		</p>
 		
 	</section>
 	
 	<footer id="share">
-		<a id="identica" href="<? url('share:identica') ?>" title="share on identi.ca"></a>
-		<a id="reddit" href="<? url('share:reddit') ?>" title="submit to reddit"></a>
-		<a id="google-plus" href="<? url('share:google-plus') ?>" title="share on Google+"></a>
-		<a id="twitter" href="<? url('share:twitter') ?>" title="share on Twitter"></a>
-		<a id="facebook" href="<? url('share:facebook') ?>" title="share on Facebook"></a>
+		<a id="identica" href="<?= url('share:identica') ?>" title="share on identi.ca"></a>
+		<a id="reddit" href="<?= url('share:reddit') ?>" title="submit to reddit"></a>
+		<a id="google-plus" href="<?= url('share:google-plus') ?>" title="share on Google+"></a>
+		<a id="twitter" href="<?= url('share:twitter') ?>" title="share on Twitter"></a>
+		<a id="facebook" href="<?= url('share:facebook') ?>" title="share on Facebook"></a>
 		<hr>
-		<a id="ohloh" href="<? url('p:ohloh') ?>" title="ohloh page"></a>
-		<a id="github" href="<? url('p:git') ?>" title="GitHub project"></a>
-		<a id="sourceforge" href="<? url('p:sourceforge') ?>" title="SourceForge.net project"></a>
-		<a id="moddb" href="<? url('p:moddb') ?>" title="Mod DB page"></a>
-		<a id="freecode" href="<? url('p:freecode') ?>" title="free(code) page"></a>
+		<a id="ohloh" href="<?= url('p:ohloh') ?>" title="ohloh page"></a>
+		<a id="github" href="<?= url('p:git') ?>" title="GitHub project"></a>
+		<a id="sourceforge" href="<?= url('p:sourceforge') ?>" title="SourceForge.net project"></a>
+		<a id="moddb" href="<?= url('p:moddb') ?>" title="Mod DB page"></a>
+		<a id="freecode" href="<?= url('p:freecode') ?>" title="free(code) page"></a>
 	</footer>
 	
 </article>

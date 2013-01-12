@@ -10,7 +10,7 @@ $p->import('makenews');
 ?>
 
 <p>
-	The Arx Libertatis wiki has been moved from <b>arx.parpg.net</b> to <a href="<? url('p:wiki') ?>">wiki.arx-libertatis.org</a>. User accounts and passwords from the old wiki should still work. While we have set up a redirect for now, please update all links and bookmarks pointing to the old URL.
+	The Arx Libertatis wiki has been moved from <b>arx.parpg.net</b> to <a href="<?= url('p:wiki') ?>">wiki.arx-libertatis.org</a>. User accounts and passwords from the old wiki should still work. While we have set up a redirect for now, please update all links and bookmarks pointing to the old URL.
 </p>
 
 <?

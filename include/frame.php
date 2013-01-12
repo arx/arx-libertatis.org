@@ -17,10 +17,10 @@ $p->mimetype = 'text/html';
 	
 	<head>
 		<meta charset='utf-8'>
-		<link rel="shortcut icon" href="<? ref('r:favicon_ie') ?>">
-		<link rel="icon" href="<? ref('r:icon') ?>" sizes="<? ref('c:icon_size') ?>">
-		<link rel="icon" href="<? ref('r:favicon') ?>" sizes="16x16">
-		<link rel="stylesheet" type="text/css" href="<? url('r:style') ?>" title="...">
+		<link rel="shortcut icon" href="<?= ref('r:favicon_ie') ?>">
+		<link rel="icon" href="<?= ref('r:icon') ?>" sizes="<?= ref('c:icon_size') ?>">
+		<link rel="icon" href="<?= ref('r:favicon') ?>" sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="<?= url('r:style') ?>" title="...">
 		<title><?
 			$title = $p->title;
 			if(strpos($title, $project) === false) {
@@ -39,8 +39,8 @@ $p->mimetype = 'text/html';
 		<header>
 			
 			<h1>
-				<a href="<? url('p:home') ?>">
-					<img src="<? ref('r:logo') ?>" alt="Arx Libertatis">
+				<a href="<?= url('p:home') ?>">
+					<img src="<?= ref('r:logo') ?>" alt="Arx Libertatis">
 				</a>
 			</h1>
 			
@@ -84,7 +84,7 @@ $p->mimetype = 'text/html';
 			?>
 
 			<p>
-				Arx Libertatis, this page and the Arx Libertatis Team are in no way associated with or supported by <a href="<? url('p:arkane') ?>">Arkane Studios</a> or <a href="<? url('p:zenimax') ?>">ZeniMax Media Inc.</a> Arx Fatalis, Arkane Studios, ZeniMax and their respective logos are registered trademarks of ZeniMax Media Inc. All Rights Reserved. All other trademarks are properties of their respective owners. All textures, models, designs, sounds and music reproduced in screenshots and videos are the property of ZeniMax Media Inc. unless otherwise specified.
+				Arx Libertatis, this page and the Arx Libertatis Team are in no way associated with or supported by <a href="<?= url('p:arkane') ?>">Arkane Studios</a> or <a href="<?= url('p:zenimax') ?>">ZeniMax Media Inc.</a> Arx Fatalis, Arkane Studios, ZeniMax and their respective logos are registered trademarks of ZeniMax Media Inc. All Rights Reserved. All other trademarks are properties of their respective owners. All textures, models, designs, sounds and music reproduced in screenshots and videos are the property of ZeniMax Media Inc. unless otherwise specified.
 			</p>
 		</footer>
 		

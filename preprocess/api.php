@@ -23,11 +23,11 @@ function url($resource, $optimize = true, $protocol_relative = false) {
 		$megalog .= "\n + \"" . $resource . "\" = \"" . $url . "\"";
 		$url = $p->optimize_url($url, $protocol_relative);
 	}
-	echo encode_attr($url);
+	return encode_attr($url);
 }
 
 function ref($resource, $optimize = true) {
-	url($resource, $optimize, true);
+	return url($resource, $optimize, true);
 }
 
 function inject($var = 'content') {
@@ -37,12 +37,12 @@ function inject($var = 'content') {
 
 function attr($var) {
 	global $p;
-	echo encode_attr($p->get($var));
+	return encode_attr($p->get($var));
 }
 
 function text($var) {
 	global $p;
-	echo encode_text($p->get($var));
+	return encode_text($p->get($var));
 }
 
 function encode_text($text) {

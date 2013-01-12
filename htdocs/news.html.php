@@ -41,7 +41,7 @@ foreach($p->items as $item) {
 	if($count > 0 && $skipped_items > 0):
 ?>
 <div class="navigate">
-	<div class="more"><a href="<? url('p:news') ?>">(more entries)</a></div>
+	<div class="more"><a href="<?= url('p:news') ?>">(more entries)</a></div>
 </div>
 <?
 	endif /* $count > 0 && $skipped_items > 0 */;
@@ -82,7 +82,7 @@ foreach($p->items as $item) {
 if($count > 0 && $skipped_items > 0):
 ?>
 <div class="navigate">
-	<div class="more"><a href="<? url('p:news') ?>">older entries</a></div>
+	<div class="more"><a href="<?= url('p:news') ?>">older entries</a></div>
 </div>
 <?
 endif /* $count > 0 && $skipped_items > 0 */;

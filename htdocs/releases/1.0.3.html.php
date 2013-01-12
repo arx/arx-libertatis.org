@@ -9,7 +9,7 @@ $p->import('makenews');
 ?>
 
 <p>
-	The 1.0.3 release fixes two regressions introduced in 1.0.2 for <?= $p->i_windows ?> users: Crashes on startup after selecting the OpenGL renderer and low mouse sensitivity with the DirectInput backend. There are also fixes for other crashes, rendering glitches, missing speech during cinematics in the Russian and Italian versions, missing ambient sound effects as well as bugs in how some skill values were calculated. See the <a href="<? url($p->changelog) ?>">changelog</a> for more details.
+	The 1.0.3 release fixes two regressions introduced in 1.0.2 for <?= $p->i_windows ?> users: Crashes on startup after selecting the OpenGL renderer and low mouse sensitivity with the DirectInput backend. There are also fixes for other crashes, rendering glitches, missing speech during cinematics in the Russian and Italian versions, missing ambient sound effects as well as bugs in how some skill values were calculated. See the <a href="<?= url($p->changelog) ?>">changelog</a> for more details.
 </p>
 
 <?
@@ -26,7 +26,7 @@ inject_page('screenshot', [
 ?>
 
 <p>
-	<a href="<? url('p:download') ?>"><?= $p->i_windows ?> and <?= $p->i_linux ?> packages</a> have been updated.
+	<a href="<?= url('p:download') ?>"><?= $p->i_windows ?> and <?= $p->i_linux ?> packages</a> have been updated.
 </p>
 
 <p>
@@ -42,11 +42,11 @@ inject_page('screenshot', [
 ?>
 
 <p>
-	In Arx Fatalis, the effective skills are calculated by a adding (amongst other things) the player's attribute values multiplied by <a href="<? url('wiki:Skills#Attribute-based_Skill_modifications') ?>">attribute-skill factors</a>. The original game and Arx Libertatis 1.0.2 and earlier include attribute modifiers (e.g. from items) in this calculation for all skills - except for the <b>object knowledge</b> and <b>projectile</b> skills, where only the raw attribute values are considered. We believe this is a bug and have fixed it in 1.0.3 by using the modfied attributes for all skills. See the <a href="<? url('wiki:Skills') ?>">wiki page on skills</a> for more details.
+	In Arx Fatalis, the effective skills are calculated by a adding (amongst other things) the player's attribute values multiplied by <a href="<?= url('wiki:Skills#Attribute-based_Skill_modifications') ?>">attribute-skill factors</a>. The original game and Arx Libertatis 1.0.2 and earlier include attribute modifiers (e.g. from items) in this calculation for all skills - except for the <b>object knowledge</b> and <b>projectile</b> skills, where only the raw attribute values are considered. We believe this is a bug and have fixed it in 1.0.3 by using the modfied attributes for all skills. See the <a href="<?= url('wiki:Skills') ?>">wiki page on skills</a> for more details.
 </p>
 
 <p>
-	There are similar inconsistencies for <a href="<? url('wiki:Stats') ?>">other player stats</a> such as armor class, magic and poison resistance, and the damages dealt. Those are likely to be changed as well in future versions of Arx Libertatis. There is a <a href="http://www.reddit.com/r/ArxFatalis/comments/wbz0m/attribute_skill_modifiers_and_calculated_stats/">reddit thread</a> discussing these changes.
+	There are similar inconsistencies for <a href="<?= url('wiki:Stats') ?>">other player stats</a> such as armor class, magic and poison resistance, and the damages dealt. Those are likely to be changed as well in future versions of Arx Libertatis. There is a <a href="http://www.reddit.com/r/ArxFatalis/comments/wbz0m/attribute_skill_modifiers_and_calculated_stats/">reddit thread</a> discussing these changes.
 </p>
 
 <?
@@ -59,11 +59,11 @@ inject_page('screenshot', [
 ?>
 
 <p>
-	There has also been <a href="<? url('bug:307') ?>">concern raised</a> over the <a href="<? url('wiki:Harm') ?>">Harm spell</a>: While the player is never told about this spell, the incarnation can be deduced from the <a href="<? url('wiki:Heal') ?>">Heal spell</a>. The problem is that the Harm spell makes most fights pointless by <a href="<? url('wiki:Spells') ?>">dealing a decent amount of damage while costing almost no mana</a> - so little that a decent magic user will regenerate the mana faster than it is used up.
+	There has also been <a href="<?= url('bug:307') ?>">concern raised</a> over the <a href="<?= url('wiki:Harm') ?>">Harm spell</a>: While the player is never told about this spell, the incarnation can be deduced from the <a href="<?= url('wiki:Heal') ?>">Heal spell</a>. The problem is that the Harm spell makes most fights pointless by <a href="<?= url('wiki:Spells') ?>">dealing a decent amount of damage while costing almost no mana</a> - so little that a decent magic user will regenerate the mana faster than it is used up.
 </p>
 
 <p>
-	Should we change cost of the Harm spell? If so, what is a fair value? We'd love to hear your feedback on this and anything else in the <a href="<? url('p:irc') ?>"><? url('c:irc') ?></a> <a href="<? url('wiki:IRC_channel') ?>">irc channel</a>, the <a href="<? url('p:subreddit') ?>">Arx Fatalis subreddit</a> or one of the <a href="<? url('p:forums') ?>">Arx Fatalis forums</a>.
+	Should we change cost of the Harm spell? If so, what is a fair value? We'd love to hear your feedback on this and anything else in the <a href="<?= url('p:irc') ?>"><?= url('c:irc') ?></a> <a href="<?= url('wiki:IRC_channel') ?>">irc channel</a>, the <a href="<?= url('p:subreddit') ?>">Arx Fatalis subreddit</a> or one of the <a href="<?= url('p:forums') ?>">Arx Fatalis forums</a>.
 </p>
 
 <p>
