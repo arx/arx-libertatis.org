@@ -51,9 +51,9 @@ if($p->format == 'html'):
 	
 	foreach($p->all_icons as $icon => $text) {
 		$icon_name = $icon . '_icon';
-		$p->$icon_name() ?><span class="<? echo $icon ?> icon"></span><?
+		$p->$icon_name() ?><span class="<?= $icon ?> icon"></span><?
 		$i_name = 'i_' . $icon;
-		$p->$i_name() ?><span class="<? echo $icon ?> icon"></span> <? echo $text ?><?
+		$p->$i_name() ?><span class="<?= $icon ?> icon"></span> <?= $text ?><?
 	}
 	
 else /* $p->format != 'html' */:

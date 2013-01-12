@@ -19,11 +19,11 @@ if($p->format == 'html'):
 	
 ?>
 
-<article id="<? echo $p->elem_id ?>" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" itemid="<? url($p->news_url, false) ?>">
+<article id="<?= $p->elem_id ?>" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" itemid="<? url($p->news_url, false) ?>">
 	<header>
 		<link itemprop="url" href="<? url($p->news_url, false) ?>" />
 		<h1 itemprop="name"><a href="<? url($p->news_url) ?>"><? text('title') ?></a></h1>
-		<time itemprop="datePublished" datetime="<? echo encode_attr(date('c', $p->time)) ?>"><? echo encode_text(date('Y-m-d', $p->time)) ?></time>
+		<time itemprop="datePublished" datetime="<?= encode_attr(date('c', $p->time)) ?>"><?= encode_text(date('Y-m-d', $p->time)) ?></time>
 	</header>
 <?
 	
@@ -79,7 +79,7 @@ if($p->format == 'html'):
 				if($next !== null):
 ?>
 	<p>
-		<b>Update:</b> <a href="<? url($next->news_url) ?>">Arx Libertatis <? echo encode_text($next->version) ?></a> has been released. <a href="<? url('sfdl:arx-libertatis-' . $p->version . '/') ?>">Version <? text('version') ?> is archived at SourceForge.</a>
+		<b>Update:</b> <a href="<? url($next->news_url) ?>">Arx Libertatis <?= encode_text($next->version) ?></a> has been released. <a href="<? url('sfdl:arx-libertatis-' . $p->version . '/') ?>">Version <? text('version') ?> is archived at SourceForge.</a>
 	</p>
 <?
 				endif;
@@ -151,7 +151,7 @@ elseif($p->format == 'rss'):
 <item>
 	<title><? text('title') ?></title>
 	<link><? url($p->news_url) ?></link>
-	<pubDate><? echo encode_text(date('r', $p->time)) ?></pubDate>
+	<pubDate><?= encode_text(date('r', $p->time)) ?></pubDate>
 	<guid isPermaLink="true"><? url($p->news_url) ?></guid>
 	<description>
 <?

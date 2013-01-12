@@ -63,12 +63,12 @@ $p->mimetype = 'text/html';
 						if(isset($p->url) && $url == $p->url):
 							?>
 
-				<span title="<? echo $title ?>"><? echo $text ?></span><?
+				<span title="<?= $title ?>"><?= $text ?></span><?
 						else:
 							$url = encode_attr($p->optimize_url($url));
 							?>
 
-				<a href="<? echo $url ?>" title="<? echo $title ?>"><? echo $text ?></a><?
+				<a href="<?= $url ?>" title="<?= $title ?>"><?= $text ?></a><?
 						endif;
 					endforeach;
 				?>

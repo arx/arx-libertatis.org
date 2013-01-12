@@ -18,5 +18,5 @@ $p->import('makenews');
 ?>
 
 <p>
-	As before, <a href="<? url('p:download') ?>">packages for <? echo $p->i_windows ?> and <? echo $p->i_linux ?></a> are available.
+	As before, <a href="<? url('p:download') ?>">packages for <?= $p->i_windows ?> and <?= $p->i_linux ?></a> are available.
 </p>

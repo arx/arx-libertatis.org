@@ -12,7 +12,7 @@ $p->import('makenews');
 <p>
 	After over a year of work we are proud to announce the first release of Arx Libertatis.
 	While some minor graphical glitches remain, the game is fully playable on both Windows and Linux as well as other platforms.
-	There are <a href="<? url('p:download') ?>">packages available for <? echo $p->i_windows ?> and <? echo $p->i_linux ?></a>. On other systems you may still be able to run the game by compiling the <a href="<? url('wiki:Download#Source_Code') ?>">source code</a> yourself.
+	There are <a href="<? url('p:download') ?>">packages available for <?= $p->i_windows ?> and <?= $p->i_linux ?></a>. On other systems you may still be able to run the game by compiling the <a href="<? url('wiki:Download#Source_Code') ?>">source code</a> yourself.
 </p>
 
 <?

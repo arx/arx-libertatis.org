@@ -9,7 +9,7 @@ $p->import('makenews');
 ?>
 
 <p>
-	The 1.0.3 release fixes two regressions introduced in 1.0.2 for <? echo $p->i_windows ?> users: Crashes on startup after selecting the OpenGL renderer and low mouse sensitivity with the DirectInput backend. There are also fixes for other crashes, rendering glitches, missing speech during cinematics in the Russian and Italian versions, missing ambient sound effects as well as bugs in how some skill values were calculated. See the <a href="<? url($p->changelog) ?>">changelog</a> for more details.
+	The 1.0.3 release fixes two regressions introduced in 1.0.2 for <?= $p->i_windows ?> users: Crashes on startup after selecting the OpenGL renderer and low mouse sensitivity with the DirectInput backend. There are also fixes for other crashes, rendering glitches, missing speech during cinematics in the Russian and Italian versions, missing ambient sound effects as well as bugs in how some skill values were calculated. See the <a href="<? url($p->changelog) ?>">changelog</a> for more details.
 </p>
 
 <?
@@ -26,7 +26,7 @@ inject_page('screenshot', [
 ?>
 
 <p>
-	<a href="<? url('p:download') ?>"><? echo $p->i_windows ?> and <? echo $p->i_linux ?> packages</a> have been updated.
+	<a href="<? url('p:download') ?>"><?= $p->i_windows ?> and <?= $p->i_linux ?> packages</a> have been updated.
 </p>
 
 <p>

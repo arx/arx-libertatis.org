@@ -27,7 +27,7 @@ foreach($news->items as $item) {
 	<link itemprop="url" href="<? url('p:home', false) ?>" />
 	<link itemprop="softwareApplicationCategory" href="http://schema.org/GameApplication" />
 	<link itemprop="downloadURL" href="<? url('p:download') ?>" />
-	<meta itemprop="softwareVersion" content="<? echo encode_attr($version) ?>" />
+	<meta itemprop="softwareVersion" content="<?= encode_attr($version) ?>" />
 	<link itemprop="versionChanges" href="<? url('p:changelog') ?>" />
 	<link itemprop="image" href="<? url('r:icon-80') ?>" />
 	
@@ -54,7 +54,7 @@ foreach($news->items as $item) {
 		</p>
 		
 		<p>
-			Arx Libertatis <b><? echo encode_text($version) ?></b> updates and improves Arx Fatalis by supporting modern systems, porting the game to new systems as well as eliminating bugs and limitations. In the future we plan to improve and modernize the engine as well as enable customizations and mods by the community.
+			Arx Libertatis <b><?= encode_text($version) ?></b> updates and improves Arx Fatalis by supporting modern systems, porting the game to new systems as well as eliminating bugs and limitations. In the future we plan to improve and modernize the engine as well as enable customizations and mods by the community.
 		</p>
 		
 	</section>
@@ -76,7 +76,7 @@ foreach($news->items as $item) {
 		</p>
 		
 		<p>
-			There are <a href="<? url('p:download') ?>">packages</a> for <span itemprop="operatingSystems"><? echo $p->i_windows ?></span>, <span itemprop="operatingSystems"><? echo $p->i_linux ?></span> and <span itemprop="operatingSystems"><? echo $p->i_freebsd ?></span>, but you might also get it to compile and run under <span itemprop="operatingSystems"><? echo $p->i_macosx ?></span> and other operating systems.
+			There are <a href="<? url('p:download') ?>">packages</a> for <span itemprop="operatingSystems"><?= $p->i_windows ?></span>, <span itemprop="operatingSystems"><?= $p->i_linux ?></span> and <span itemprop="operatingSystems"><?= $p->i_freebsd ?></span>, but you might also get it to compile and run under <span itemprop="operatingSystems"><?= $p->i_macosx ?></span> and other operating systems.
 		</p>
 		
 	</section>

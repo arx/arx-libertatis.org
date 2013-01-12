@@ -17,7 +17,7 @@ if(!isset($p->link)) {
 if($p->format == 'html'):
 ?>
 
-<div class="<? echo $p->float ?> screenshot"<? if($p->microcode): ?> itemprop="screenshots" itemscope itemtype="http://schema.org/ImageObject"<? endif; ?>>
+<div class="<?= $p->float ?> screenshot"<? if($p->microcode): ?> itemprop="screenshots" itemscope itemtype="http://schema.org/ImageObject"<? endif; ?>>
 	<a<? if($p->microcode): ?> itemprop="url"<? endif; ?> href="<? url($p->link) ?>">
 		<img<? if($p->microcode): ?> itemprop="thumbnail"<? endif; ?> src="<? ref($p->image) ?>" width="<? attr('width') ?>" height="<? attr('height') ?>" alt="Screenshot: <? attr('caption') ?>">
 	</a>
@@ -28,7 +28,7 @@ if($p->format == 'html'):
 elseif($p->format == 'rss'):
 ?>
 
-<div style="float: <? echo $p->float ?>; clear: <? echo $p->float ?>; margin: 15px; margin-top: 0px; text-align: center; width: <? attr('width') ?>px;">
+<div style="float: <?= $p->float ?>; clear: <?= $p->float ?>; margin: 15px; margin-top: 0px; text-align: center; width: <? attr('width') ?>px;">
 	<a href="<? url($p->link) ?>">
 		<img src="<? ref($p->image) ?>" width="<? attr('width') ?>" height="<? attr('height') ?>" alt="Screenshot: <? attr('caption') ?>" style="border: none">
 	</a><br>
