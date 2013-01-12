@@ -68,6 +68,18 @@ PP::route('p', [
 	'constexpr'    => 'http://constexpr.org/',
 	'gpl'          => 'http://www.gnu.org/licenses/gpl.html',
 	'openmw'       => 'http://openmw.org/',
+	'wp_arx'       => 'http://en.wikipedia.org/wiki/Arx_Fatalis',
+	'pcgw_arx'     => 'http://pcgamingwiki.com/wiki/Arx_Fatalis',
+	'gog_arx'      => 'http://www.gog.com/gamecard/arx_fatalis',
+	'steam_arx'    => 'http://store.steampowered.com/app/1700/',
+	'arxendofsun'  => 'http://arxendofsun.solarsplace.com/',
+	'arxcatalyst'  => 'http://arxcatalyst.weebly.com/',
+	'forum_arx'    => 'http://forums.bethsoft.com/forum/149-arx-fatalis-general-discussion/',
+	'forum_ttlg'   => 'http://www.ttlg.com/forums/forumdisplay.php?f=76',
+	'forum_gog'    => 'http://www.gog.com/forum/arx_fatalis',
+	'forum_steam'  => 'http://forums.steampowered.com/forums/forumdisplay.php?f=170',
+	'comm_steam'   => 'http://steamcommunity.com/app/1700/',
+	'group_steam'  => 'http://steamcommunity.com/groups/Arx_Fatalis',
 ]);
 
 function starts_with($haystack, $needle) {
@@ -150,6 +162,11 @@ PP::route('share', function ($name) {
 			break;
 		}
 		
+		case 'reddit-comments': {
+			$url = get_url('p:subreddit') . $u;
+			break;
+		}
+		
 		case 'google-plus': {
 			$url = 'https://plus.google.com/share';
 			$q['url'] = $u;
@@ -173,7 +190,11 @@ PP::route('share', function ($name) {
 		
 	}
 	
-	return $url . '?' . build_query($q);
+	if(empty($q)) {
+		return $url;
+	} else {
+		return $url . '?' . build_query($q);
+	}
 	
 	
 });

@@ -46,15 +46,15 @@ $p->mimetype = 'text/html';
 			
 			<div id="link-bar"><?
 					$link_bar = [
-						[ 'p:home',     'home',     "Arx Libertatis Homepage" ],
-						[ 'p:download', 'download', 'Downloads for Windows, Linux and more' ],
-						[ 'p:news',     'news',     'Arx Libertatis Announcements' ],
-						[ 'p:faq',      'faq',      'Frequently Asked Questions' ],
-						[ 'p:gallery',  'gallery',  'Screenshots' ],
-						[ 'p:wiki',     'wiki',     'Arx Libertatis Wiki' ],
-						[ 'p:git',      'code',     'Source Code on GitHub' ],
-						[ 'p:bugs',     'bugs',     'Bug Tracker' ],
-						[ 'p:contact',  'contact',  'Contact Information' ],
+						[ 'p:home',     'Home',     "Arx Libertatis Homepage" ],
+						[ 'p:download', 'Download', 'Downloads for Windows, Linux and more' ],
+						[ 'p:news',     'News',     'Arx Libertatis Announcements' ],
+						[ 'p:faq',      'FAQ',      'Frequently Asked Questions' ],
+						[ 'p:gallery',  'Gallery',  'Screenshots' ],
+						[ 'p:wiki',     'Wiki',     'Arx Libertatis Wiki' ],
+						[ 'p:git',      'Code',     'Source Code on GitHub' ],
+						[ 'p:bugs',     'Bugs',     'Bug Tracker' ],
+						[ 'p:contact',  'Contact',  'Contact Information' ],
 					];
 					foreach($link_bar as $link):
 						$url = get_url($link[0]);

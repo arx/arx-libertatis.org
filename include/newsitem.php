@@ -95,13 +95,6 @@ if($p->format == 'html'):
 		
 ?>
 	<footer>
-		<div id="share">
-			<a id="identica" href="<?= url('share:identica') ?>" title="share on identi.ca"></a>
-			<a id="reddit" href="<?= url('share:reddit') ?>" title="submit to reddit"></a>
-			<a id="google-plus" href="<?= url('share:google-plus') ?>" title="share on Google+"></a>
-			<a id="twitter" href="<?= url('share:twitter') ?>" title="share on Twitter"></a>
-			<a id="facebook" href="<?= url('share:facebook') ?>" title="share on Facebook"></a>
-		</div>
 <?
 		
 		$i = 0;
@@ -131,6 +124,18 @@ if($p->format == 'html'):
 			<div class="next"><a href="<?= url($next->news_url) ?>">next</a></div>
 <?
 			endif;
+			
+?>
+			<div class="options">
+				<a href="<?= url('share:reddit-comments') ?>" id="comment">comment on <?= $p->i_reddit ?></a>
+				<div id="share">
+					<a id="identica" href="<?= url('share:identica') ?>" title="share on identi.ca"></a>
+					<a id="reddit" href="<?= url('share:reddit') ?>" title="submit to reddit"></a>
+					<a id="google-plus" href="<?= url('share:google-plus') ?>" title="share on Google+"></a>
+					<a id="twitter" href="<?= url('share:twitter') ?>" title="share on Twitter"></a>
+				</div>
+			</div>
+<?
 ?>
 		</div>
 <?

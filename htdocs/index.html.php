@@ -81,18 +81,50 @@ foreach($news->items as $item) {
 		
 	</section>
 	
-	<footer id="share">
-		<a id="identica" href="<?= url('share:identica') ?>" title="share on identi.ca"></a>
-		<a id="reddit" href="<?= url('share:reddit') ?>" title="submit to reddit"></a>
-		<a id="google-plus" href="<?= url('share:google-plus') ?>" title="share on Google+"></a>
-		<a id="twitter" href="<?= url('share:twitter') ?>" title="share on Twitter"></a>
-		<a id="facebook" href="<?= url('share:facebook') ?>" title="share on Facebook"></a>
-		<hr>
-		<a id="ohloh" href="<?= url('p:ohloh') ?>" title="ohloh page"></a>
-		<a id="github" href="<?= url('p:git') ?>" title="GitHub project"></a>
-		<a id="sourceforge" href="<?= url('p:sourceforge') ?>" title="SourceForge.net project"></a>
-		<a id="moddb" href="<?= url('p:moddb') ?>" title="Mod DB page"></a>
-		<a id="freecode" href="<?= url('p:freecode') ?>" title="free(code) page"></a>
+	<footer id="sidebar">
+		Share:
+		<div id="share">
+			<a id="identica"    href="<?= url('share:identica')    ?>" title="share on identi.ca"></a>
+			<a id="reddit"      href="<?= url('share:reddit')      ?>" title="submit to reddit"></a>
+			<a id="google-plus" href="<?= url('share:google-plus') ?>" title="share on Google+"></a>
+			<a id="twitter"     href="<?= url('share:twitter')     ?>" title="share on Twitter"></a>
+		</div>
+		<a href="<?= url('p:download') ?>" class="download button"><?= $p->i_download ?></a>
+		Arx Fatalis:
+		<ul>
+			<li><a href="<?= url('p:arxfatalis')  ?>"><?= $p->arkane_icon ?>Official Website</a></li>
+			<li><a href="<?= url('p:wp_arx')      ?>"><?= $p->i_wikipedia ?></a></li>
+			<li><a href="<?= url('p:pcgw_arx')    ?>"><?= $p->i_pcgamingwiki ?></a></li>
+			<li><a href="<?= url('p:gog_arx')     ?>"><?= $p->i_gog ?></a></li>
+			<li><a href="<?= url('p:steam_arx')   ?>"><?= $p->i_steam ?></a></li>
+		</ul>
+		<?= $p->i_arx ?>:
+		<ul>
+			<li><a href="<?= url('p:moddb')       ?>"><?= $p->i_moddb ?></a></li>
+			<li><a href="<?= url('p:git')         ?>"><?= $p->i_github ?></a></li>
+			<li><a href="<?= url('p:sourceforge') ?>"><?= $p->i_sourceforge ?></a></li>
+			<li><a href="<?= url('p:ohloh')       ?>"><?= $p->i_ohloh ?></a></li>
+			<li><a href="<?= url('p:freecode')    ?>"><?= $p->i_freecode ?></a></li>
+		</ul>
+		Other Arx Projects:
+		<ul>
+			<li><a href="<?= url('p:arxendofsun') ?>">Arx – End Of Sun</a></a>
+			<li><a href="<?= url('p:arxcatalyst') ?>">Arx Catalyst</a></a>
+		</ul>
+		Arx Community:
+		<ul>
+			<li><a href="<?= url('p:forum_arx')   ?>"><?= $p->bethesda_icon ?> Official Forum</a></li>
+			<li><a href="<?= url('p:forum_ttlg')  ?>"><?= $p->ttlg_icon ?> TTLG Forum</a></li>
+			<li><a href="<?= url('p:subreddit')   ?>"><?= $p->i_reddit ?></a></li>
+			<li><a href="<?= url('p:forum_gog')   ?>"><?= $p->gog_icon ?> GOG.com Forum</a></li>
+			<li><a href="<?= url('p:forum_steam') ?>"><?= $p->steam_icon ?> Steam Users Forum</a></li>
+			<li><a href="<?= url('p:comm_steam')  ?>"><?= $p->steam_icon ?> Steam Community</a></li>
+			<li><a href="<?= url('p:group_steam') ?>"><?= $p->steam_icon ?> Steam Group</a></li>
+		</ul>
+		Friends:
+		<ul>
+			<li><a href="<?= url('p:openmw')      ?>"><?= $p->i_openmw ?></a></li>
+		</ul>
 	</footer>
 	
 </article>

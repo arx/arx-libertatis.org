@@ -70,7 +70,7 @@ body > header {
 body > header:after {
 	border-bottom: 2px solid #444;
 	margin: auto;
-	width: 610px;
+	width: 710px;
 	content: '';
 	display: block;
 }
@@ -80,6 +80,8 @@ body > header:after {
 	letter-spacing: -1px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	text-transform: lowercase;
+	font-variant: small-caps;
 }
 
 #link-bar * {
@@ -98,7 +100,7 @@ body > header:after {
 
 body > footer {
 	margin: auto;
-	width: 600px;
+	width: 700px;
 	font-size: 8pt;
 	padding-top: 8px;
 	margin-top: 35px;
@@ -119,7 +121,7 @@ body > header + section {
 
 body > section {
 	margin: auto;
-	width: 600px;
+	width: 700px;
 	background-color: #2c2c2a;
 	padding: 5px;
 	margin-bottom: 30px;
@@ -132,11 +134,15 @@ body > section {
 
 body > article {
 	margin: auto;
-	width: 600px;
+	width: 700px;
 	margin-top: 19px;
 	margin-bottom: 40px;
 	position: relative;
 	text-shadow: #000 0px 0px 5px;
+}
+
+body > article > section {
+	width: 560px;
 }
 
 article > section {
@@ -153,43 +159,114 @@ article > section + section {
 	width: 560px; /* leave some space for the sidebar! */
 }
 
-#share {
+#sidebar {
 	padding: 0;
-	width: 32px;
-	margin-left: 5px;
-	margin-top: -12px;
+	width: 160px;
+	margin-left: 0px;
+	margin-top: -5px;
 	position: absolute;
 	top: 2px;
-	right: 0px;
+	right: -35px;
+	height: 375px;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #666;
 }
 
-#share > a, #rss {
-	margin: 0;
-	margin-bottom: 5px;
+#sidebar a.download.button {
+	color: #ccc;
+	border-radius: 10px;
+	background-color: #353;
+	border: 1px solid #585;
+	display: inline-block;
+	padding-left: 3px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	padding-right: 9px;
+	font-size: 11pt;
+	font-weight: bold;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+#sidebar a.download.button:hover {
+	color: #eef;
+	background-color: #483;
+	border-color: #7a7;
+}
+
+#sidebar > ul {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 7px;
+	margin-bottom: 22px;
+}
+
+#sidebar > ul > li {
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-top: 2pt;
+	padding-bottom: 1pt;
+	letter-spacing: 0px;
+	display: block;
+	font-weight: normal;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+#sidebar #share {
+	padding: 0;
+	left: 0px;
+	width: 100%;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+#sidebar a:not(:hover), #comment:not(:hover) {
+	text-shadow: #543 0px 0px 1px;
+	color: #6B6355;
+}
+
+#share > a, #rss, #sidebar ul a > .icon, #comment > .icon {
 	filter: url(images/filters.svg#grayscale); /* Firefox 3.5+ */
 	filter: gray;
 	opacity: 0.15;
 	filter: alpha(opacity=15); /* IE8 and earlier */
+}
+
+#sidebar a > .icon {
 	display: block;
+	float: left;
+	margin-right: 5px;
+	position: relative;
+	top: -2px;
 }
 
-#share > hr {
-	margin: 5px;
-	border: 1px solid #2a2a2a;
-	margin-left: 2px;
-	margin-right: 2px;
+#sidebar #share > a {
+	margin-bottom: 5px;
 }
 
-#share > a:hover, #share > a:focus, #rss:hover, #rss:focus {
+#share > a:hover, #share > a:focus, #sidebar a:hover, #sidebar a:focus, #rss:hover, #rss:focus, #sidebar ul a:hover > .icon, #comment:hover > .icon {
 	opacity: 1;
 	filter: none;
 	-webkit-filter: grayscale(0);
+}
+
+.icon {
+	opacity: 0.7;
+}
+
+#sidebar ul a:hover > .icon {
+	box-shadow: 0px 0px 2px 2px #333;
+	background-color: #333;
+	border-radius: 2px;
 }
 
 #rss {
 	float: right;
 	margin: 4px;
 	margin-right: 0px;
+	display: inline-block;
 }
 
 .screenshot {
@@ -246,18 +323,6 @@ article > section + section {
 	color: #555;
 }
 
-#news article > footer > #share {
-	width: 100%;
-	text-align: center;
-	position: static;
-}
-
-#news article > footer > #share > a {
-	margin-left: 5px;
-	margin-right: 5px;
-	display: inline-block;
-}
-
 #news article > header > time {
 	float: right;
 	font-size: 10pt;
@@ -269,7 +334,7 @@ article > section + section {
 }
 
 #news article > footer {
-	margin-top: 30px;
+	margin-top: 20px;
 	clear: both;
 }
 
@@ -307,6 +372,46 @@ article > section + section {
 
 #news .navigate .prev {
 	float: left;
+}
+
+#news .navigate .options {
+	text-align: center;
+	clear: none;
+	padding-left: 5px;
+}
+
+#news .navigate .options > * {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#news .navigate .options > #comment {
+	border-left: 1px dotted #3a3a3a;
+	padding-left: 15px;
+}
+
+#news .navigate .options > #share:before {
+	border-left: 1px dotted #3a3a3a;
+	padding-left: 16px;
+	content: 'share: ';
+	padding-right: 2px;
+	color: #777;
+}
+
+#news .navigate .options > #share {
+	padding-right: 10px;
+	border-right: 1px dotted #3a3a3a;
+}
+
+#news .navigate .options > #share > a:hover {
+	box-shadow: 0px 0px 5px 0px #111;
+	background-color: #222;
+}
+
+#news .navigate .options > #share > * {
+	margin-left: 3px;
+	margin-right: 3px;
 }
 
 #news .navigate .more {
