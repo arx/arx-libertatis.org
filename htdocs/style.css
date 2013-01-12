@@ -215,6 +215,7 @@ article > section + section {
 	display: block;
 	box-shadow: 0px 0px 3px 1px #654;
 	margin-bottom: 7px;
+	border-radius: 5px;
 }
 
 #share > a:focus, .screenshot a:focus img {
