@@ -19,11 +19,11 @@ $p->import('icons');
 	</p>
 	
 	<p>
-		<?= url('c:irc') ?> is <a href="<?= url('p:irclogs') ?>">logged</a> for better communication across timezones. The logging bot has been kindly set up and is hosted by <a href="<?= url('p:opengameart') ?>">OpenGameArt.org</a>. 
+		An easy way to chat in <?= url('c:irc') ?> is to use the <b><a href="<?= url('p:chat') ?>">web-based client</a></b>.
 	</p>
 	
 	<p>
-		An easy way to chat in <?= url('c:irc') ?> is to use the <a href="<?= url('p:chat') ?>">web-based client</a>
+		<?= url('c:irc') ?> is <a href="<?= url('p:irclogs') ?>">logged</a> for better communication across timezones. The logging bot has been kindly set up and is hosted by <a href="<?= url('p:opengameart') ?>">OpenGameArt.org</a>. 
 	</p>
 	
 	<h3><?= $p->i_reddit ?></h3>

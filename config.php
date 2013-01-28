@@ -48,7 +48,7 @@ PP::route('p', [
 	// external pages
 	'git'          => 'https://github.com/arx/ArxLibertatis',
 	'sfdl'         => 'https://sourceforge.net/projects/arx/files/',
-	'irc'          => 'irc://freenode/arxfatalis',
+	'irc'          => 'irc://irc.freenode.net/arxfatalis',
 	'chat'         => 'http://webchat.freenode.net/?channels=arxfatalis',
 	'subreddit'    => 'http://www.reddit.com/r/ArxFatalis/',
 	'ohloh'        => 'https://www.ohloh.net/p/arx',
