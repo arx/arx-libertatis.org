@@ -90,6 +90,7 @@ foreach($news->items as $item) {
 			<a id="twitter"     href="<?= url('share:twitter')     ?>" title="share on Twitter"></a>
 		</div>
 		<a href="<?= url('p:download') ?>" class="download button"><?= $p->i_download ?></a>
+		<br>
 		Arx Fatalis:
 		<ul>
 			<li><a href="<?= url('p:arxfatalis')  ?>"><?= $p->arkane_icon ?>Official Website</a></li>
