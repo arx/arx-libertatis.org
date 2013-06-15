@@ -127,7 +127,7 @@ if($p->format == 'html'):
 			
 ?>
 			<div class="options">
-				<a href="<?= url('share:reddit-comments') ?>" id="comment">comment on <?= $p->i_reddit ?></a>
+				<a href="<?= url('share:reddit-comments') ?>" id="comment">comments on <?= $p->i_reddit ?></a>
 				<div id="share">
 					<a id="identica" href="<?= url('share:identica') ?>" title="share on identi.ca"></a>
 					<a id="reddit" href="<?= url('share:reddit') ?>" title="submit to reddit"></a>
