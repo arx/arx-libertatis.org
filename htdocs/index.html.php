@@ -93,9 +93,9 @@ foreach($news->items as $item) {
 			<a href="<?= url('p:download') ?>" class="button"><?= $p->i_download ?></a>
 			<div class="os-icons">
 				<!--
-				--><a href="<?= url('p:download_windows') ?>"><?= $p->big_windows_icon ?></a><!--
-				--><a href="<?= url('p:download_linux')   ?>"><?= $p->big_linux_icon   ?></a><!--
-				--><a href="<?= url('p:download_freebsd') ?>"><?= $p->big_freebsd_icon ?></a><!--
+				--><a href="<?= url('p:download_windows') ?>" title="Windows download"><?= $p->big_windows_icon ?></a><!--
+				--><a href="<?= url('p:download_linux')   ?>" title="Linux download"><?= $p->big_linux_icon   ?></a><!--
+				--><a href="<?= url('p:download_freebsd') ?>" title="FreeBSD download"><?= $p->big_freebsd_icon ?></a><!--
 				-->
 			</div>
 		</div>
