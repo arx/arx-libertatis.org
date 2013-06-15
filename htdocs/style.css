@@ -3,6 +3,11 @@
 
 /* global settings */
 
+/* HTML 5 compatability for older browsers */
+header, nav, section, article, aside, footer, hgroup {
+	display: block;
+}
+
 body {
 	margin: 0;
 	padding: 0;

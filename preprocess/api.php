@@ -13,7 +13,7 @@ function get_url($resource) {
 }
 
 /*!
- * Resolve a virtual URL, minimize it, encode it and echo it.
+ * Resolve a virtual URL, minimize it and encode it.
  */
 function url($resource, $optimize = true, $protocol_relative = false) {
 	global $p;
