@@ -178,7 +178,7 @@ article > section + section {
 	color: #666;
 }
 
-#sidebar a.download.button {
+#sidebar #download .button {
 	color: #ccc;
 	border-radius: 10px;
 	background-color: #353;
@@ -191,20 +191,37 @@ article > section + section {
 	font-size: 11pt;
 	font-weight: bold;
 	margin: 10px;
-	margin-bottom: 20px;
+	margin-top: 5px;
 }
 
-#sidebar a.download.button:hover {
+#sidebar #download .button:hover {
 	color: #eef;
 	background-color: #483;
 	border-color: #7a7;
 }
 
+#sidebar #download .os-icons > * {
+	margin-left: 3px;
+	margin-right: 2px;
+	display: inline-block;
+}
+
+#sidebar #download .os-icons > *:hover .icon {
+	box-shadow: 0px 0px 16px 1px #555;
+	background-color: #333;
+	border-radius: 8px;
+}
+
+#sidebar #download .os-icons {
+	margin-left: 10px;
+	margin-bottom: 7px;
+}
+
 #sidebar > ul {
 	padding: 0px;
 	margin: 0px;
-	margin-top: 7px;
-	margin-bottom: 22px;
+	margin-top: 6px;
+	margin-bottom: 16px;
 }
 
 #sidebar > ul > li {

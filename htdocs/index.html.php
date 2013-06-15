@@ -89,8 +89,16 @@ foreach($news->items as $item) {
 			<a id="google-plus" href="<?= url('share:google-plus') ?>" title="share on Google+"></a>
 			<a id="twitter"     href="<?= url('share:twitter')     ?>" title="share on Twitter"></a>
 		</div>
-		<a href="<?= url('p:download') ?>" class="download button"><?= $p->i_download ?></a>
-		<br>
+		<div id="download">
+			<a href="<?= url('p:download') ?>" class="button"><?= $p->i_download ?></a>
+			<div class="os-icons">
+				<!--
+				--><a href="<?= url('p:download_windows') ?>"><?= $p->big_windows_icon ?></a><!--
+				--><a href="<?= url('p:download_linux')   ?>"><?= $p->big_linux_icon   ?></a><!--
+				--><a href="<?= url('p:download_freebsd') ?>"><?= $p->big_freebsd_icon ?></a><!--
+				-->
+			</div>
+		</div>
 		Arx Fatalis:
 		<ul>
 			<li><a href="<?= url('p:arxfatalis')  ?>"><?= $p->arkane_icon ?>Official Website</a></li>

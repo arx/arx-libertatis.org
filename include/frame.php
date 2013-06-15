@@ -33,10 +33,8 @@ $p->mimetype = 'text/html';
 		?>
 		<!--[if lt IE 9]>
 			<script>
-				var e = [ 'header', 'nav', 'section', 'article', 'aside', 'footer', 'hgroup' ];
-				for(var i = 0; i < e.length; i++) {
-					document.createElement(e[i]);
-				}
+var e = [ 'header', 'nav', 'section', 'article', 'aside', 'footer', 'hgroup' ];
+for(var i = 0; i < e.length; i++) { document.createElement(e[i]); }
 			</script>
 		<![endif]-->
 	</head>

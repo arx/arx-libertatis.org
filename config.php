@@ -43,6 +43,9 @@ PP::route('p', [
 	'gallery'      => 'wiki:Gallery',
 	'faq'          => 'wiki:FAQ',
 	'download'     => 'wiki:Download',
+	'download_windows' => 'wiki:Download#Windows',
+	'download_linux'   => 'wiki:Download#Linux',
+	'download_freebsd' => 'wiki:Download#FreeBSD',
 	'changelog'    => 'wiki:Changelog',
 	'forums'       => 'wiki:FAQ#Are_there_any_Arx_Libertatis_discussion_forums.3F',
 	// external pages

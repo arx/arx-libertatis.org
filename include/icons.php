@@ -64,6 +64,8 @@ if($p->format == 'html'):
 	foreach($p->all_icons as $icon => $text) {
 		$icon_name = $icon . '_icon';
 		$p->$icon_name() ?><span class="<?= $icon ?> icon"></span><?
+		$big_icon_name = 'big_' . $icon . '_icon';
+		$p->$big_icon_name() ?><span class="big <?= $icon ?> icon"></span><?
 		$i_name = 'i_' . $icon;
 		$p->$i_name() ?><span class="<?= $icon ?> icon"></span> <?= $text ?><?
 	}
@@ -73,6 +75,8 @@ else /* $p->format != 'html' */:
 	foreach($p->all_icons as $icon => $text) {
 		$icon_name = $icon . '_icon';
 		$p->$icon_name = '';
+		$big_icon_name = 'big_' . $icon . '_icon';
+		$p->$big_icon_name = '';
 		$i_name = 'i_' . $icon;
 		$p->$i_name = $text;
 	}
