@@ -19,6 +19,10 @@ body {
 	padding-top: 20px;
 }
 
+iframe {
+	border: none;
+}
+
 /* common elements */
 
 h2 {
