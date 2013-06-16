@@ -157,6 +157,7 @@ echo $news->content;
 ?>
 
 <p>
-	This page uses <a href="http://icondock.com/free/vector-social-media-icons">Vector Social Media Icons</a> by IconDock.com &amp; <a href="http://www.doublejdesign.co.uk">Double-J Design</a>.
+	This page uses <a href="http://icondock.com/free/vector-social-media-icons">Vector Social Media Icons</a> by IconDock.com &amp; <a href="http://www.doublejdesign.co.uk">Double-J Design</a>.<br>
+	<a href="http://www.twolofbees.com/artwork.php?iid=870"><?= $p->linux_icon ?>Stycil Tux</a> by Cheeseness - CC0 1.0 Universal.
 </p>
 <? if(isset($news->footer)) { echo $news->footer; } ?>
