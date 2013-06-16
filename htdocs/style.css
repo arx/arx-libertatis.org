@@ -210,7 +210,7 @@ article > section + section {
 	display: inline-block;
 }
 
-#sidebar #download .os-icons > *:hover .icon {
+#sidebar #download .os-icons > *:hover .icon, #sidebar #download .os-icons > *:focus .icon {
 	box-shadow: 0px 0px 16px 1px #555;
 	background-color: #333;
 	border-radius: 8px;
@@ -254,11 +254,50 @@ article > section + section {
 	color: #766D5E;
 }
 
+/* Fade out icons in some links */
 #share > a, #rss, #sidebar ul a > .icon, #comment > .icon {
-	filter: url(images/filters.svg#grayscale); /* Firefox 3.5+ */
-	filter: gray;
+	
+	/* Nice sepia + colorize filter - works in Firefox 3.5+ but nowhere else */
+	/* Inlined to reduce number of  HTTP requests - original file is filters.svg */
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.4 0.2 0.2  0.3 0     0.2 0.4 0.2  0.1 0     0.2 0.2 0.4  -.1 0     0   0   0    1   0\'/></filter></svg>#grayscale");
+	
+	/* Browser-specific aliases of the standard CSS sepia filter */
+	-webkit-filter: sepia(0.9); /* Chrome 18+, Safari */
+	-webkit-filter: sepia(90%);
+	-moz-filter: sepia(90%); /* unimplemented */
+	-ms-filter: sepia(90%); /* unimplemented? */
+	-o-filter: sepia(90%); /* unimplemented */
+	
+	filter:
+		
+		/* IE-specific fallback for IE 9 and older */
+		gray
+		
+		/* Standard CSS sepia filter (Filter Effects 1.0) */
+		sepia(90%)
+		
+		/* Transparency for IE8 and earlier - will this break other browsers? */
+		alpha(opacity=15)
+	;
+	
+	/* Standard transparency */
 	opacity: 0.15;
-	filter: alpha(opacity=15); /* IE8 and earlier */
+	
+}
+
+/* Reset filters from above if item/link has mouse/kerboard focus */
+#share > a:hover, #share > a:focus,
+#sidebar a:hover, #sidebar a:focus,
+#rss:hover, #rss:focus,
+#sidebar ul a:hover > .icon, #sidebar ul a:focus > .icon,
+#comment:hover > .icon, #comment:focus > .icon {
+	filter: none;
+	-webkit-filter: sepia(0);
+	-moz-filter: sepia(0);
+	-ms-filter: sepia(0);
+	-o-filter: sepia(0);
+	filter: sepia(0);
+	opacity: 1;
 }
 
 #sidebar a > .icon {
@@ -271,12 +310,6 @@ article > section + section {
 
 #sidebar #share > a {
 	margin-bottom: 5px;
-}
-
-#share > a:hover, #share > a:focus, #sidebar a:hover, #sidebar a:focus, #rss:hover, #rss:focus, #sidebar ul a:hover > .icon, #comment:hover > .icon {
-	opacity: 1;
-	filter: none;
-	-webkit-filter: grayscale(0);
 }
 
 .icon {
