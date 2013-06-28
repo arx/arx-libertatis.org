@@ -170,16 +170,17 @@ article > section + section {
 
 #sidebar {
 	padding: 0;
-	width: 160px;
+	width: 170px;
 	margin-left: 0px;
 	margin-top: -5px;
 	position: absolute;
 	top: 2px;
-	right: -35px;
+	right: -45px;
 	height: 375px;
 	font-size: 8pt;
 	font-weight: bold;
 	color: #666;
+	white-space: nowrap;
 }
 
 #sidebar #download .button {

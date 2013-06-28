@@ -126,7 +126,7 @@ foreach($news->items as $item) {
 			<li><a href="<?= url('p:forum_ttlg')  ?>"><?= $p->ttlg_icon ?> TTLG Forum</a></li>
 			<li><a href="<?= url('p:subreddit')   ?>"><?= $p->i_reddit ?></a></li>
 			<li><a href="<?= url('p:forum_gog')   ?>"><?= $p->gog_icon ?> GOG.com Forum</a></li>
-			<li><a href="<?= url('p:forum_steam') ?>"><?= $p->steam_icon ?> Steam Users Forum</a></li>
+			<li><a href="<?= url('p:forum_steam') ?>"><?= $p->steam_icon ?> Steam Users' Forum</a></li>
 			<li><a href="<?= url('p:comm_steam')  ?>"><?= $p->steam_icon ?> Steam Community</a></li>
 			<li><a href="<?= url('p:group_steam') ?>"><?= $p->steam_icon ?> Steam Group</a></li>
 		</ul>
