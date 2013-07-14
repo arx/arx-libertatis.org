@@ -7,6 +7,10 @@ $p->import('icons');
 $p->news_url = to_url($p->page);
 $p->news_id = preg_replace('/^.*?\/((news|releases)\/[^\/]+$)/', '$1', $p->news_url);
 
+if(!isset($p->format)) {
+	$p->format = 'html';
+}
+
 if(substr($p->news_id, 0, 5) === 'news/') {
 	
 	$p->type = 'news';
@@ -30,12 +34,7 @@ if(substr($p->news_id, 0, 5) === 'news/') {
 	}
 	
 	if(!isset($p->changelog)) {
-		if(isset($p->codename)) {
-			$c = str_replace('%', '.', rawurlencode(str_replace(' ', '_', $p->codename)));
-			$p->changelog = get_url('changelog:Arx_Libertatis_' . $p->version . '_.22' . $c . '.22');
-		} else {
-			$p->changelog = get_url('changelog:Patch_' . $p->version);
-		}
+		$p->changelog = get_url('changelog:' . $p->version);
 	}
 	
 	

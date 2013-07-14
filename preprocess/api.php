@@ -98,6 +98,9 @@ function compile($file, $options = [ ]) {
 	if(!isset($options['url']) && isset($p->url)) {
 		$options['url'] = $p->url;
 	}
+	if(!isset($options['format']) && isset($p->format)) {
+		$options['format'] = $p->format;
+	}
 	return PP::compile(PP::find_file($file), $options);
 }
 

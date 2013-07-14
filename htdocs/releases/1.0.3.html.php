@@ -16,12 +16,10 @@ $p->import('makenews');
  $p->details()
 ?>
 
-
 <?
 inject_page('screenshot', [
 	'image' => $p->imgdir . 'spellcast',
 	'caption' => 'glitch while casting',
-	'format' => (isset($p->format) ? $p->format : 'html')
 ])
 ?>
 
@@ -37,7 +35,6 @@ inject_page('screenshot', [
 inject_page('screenshot', [
 	'image' => $p->imgdir . 'halo-offset',
 	'caption' => 'bad halo offset',
-	'format' => (isset($p->format) ? $p->format : 'html')
 ])
 ?>
 
@@ -54,7 +51,6 @@ inject_page('screenshot', [
 	'float' => 'left',
 	'image' => $p->imgdir . 'delete-save',
 	'caption' => 'delete save button',
-	'format' => (isset($p->format) ? $p->format : 'html')
 ])
 ?>
 
