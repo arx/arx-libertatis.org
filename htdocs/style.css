@@ -363,6 +363,10 @@ article > section + section {
 
 /* news items */
 
+#news article {
+	clear: both;
+}
+
 #news article > header > h1 {
 	margin: 7px;
 	margin-top: 15px;
@@ -392,6 +396,17 @@ article > section + section {
 	font-weight: bold;
 	margin-top: -1.95em;
 	margin-right: 7px;
+}
+
+#news article h2 {
+	color: #ccc;
+	font-size: 10pt;
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+#news article h2 + p {
+	margin-top: 5px;
 }
 
 #news article > footer {

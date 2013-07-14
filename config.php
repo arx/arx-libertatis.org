@@ -38,7 +38,8 @@ PP::route('p', [
 	'irclogs'      => 'irclogs/',
 	'rss'          => 'feed.rss',
 	'bugs'         => 'https://bugs.arx-libertatis.org/',
-	// Wiki
+	'wishlist'     => 'https://bugs.arx-libertatis.org/arx/issues/find/saved_search/2/search/1',
+	// wiki
 	'wiki'         => 'http://wiki.arx-libertatis.org/',
 	'gallery'      => 'wiki:Gallery',
 	'faq'          => 'wiki:FAQ',
@@ -50,6 +51,8 @@ PP::route('p', [
 	'forums'       => 'wiki:FAQ#Are_there_any_Arx_Libertatis_discussion_forums.3F',
 	// external pages
 	'git'          => 'https://github.com/arx/ArxLibertatis',
+	'README'       => 'https://github.com/arx/ArxLibertatis/blob/master/README.md',
+	'OPTIONS'      => 'https://github.com/arx/ArxLibertatis/blob/master/OPTIONS.md',
 	'sfdl'         => 'https://sourceforge.net/projects/arx/files/',
 	'irc'          => 'irc://irc.freenode.net/arxfatalis',
 	'chat'         => 'http://webchat.freenode.net/?channels=arxfatalis',
@@ -83,6 +86,10 @@ PP::route('p', [
 	'forum_steam'  => 'http://forums.steampowered.com/forums/forumdisplay.php?f=170',
 	'comm_steam'   => 'http://steamcommunity.com/app/1700/',
 	'group_steam'  => 'http://steamcommunity.com/groups/Arx_Fatalis',
+	// mods
+	'mod_polish'   => 'http://www.portal24h.pl/pobierz/start-pobierania/spolszczenie-do-gry-a-c/655-arx-fatalis-plprojekt.html',
+	'mod_turkish'  => 'http://pinkert10.blogspot.com/2012/07/arx-fatalis-turkce-yama.html',
+	'mod_korean'   => 'http://nsm53p.tistory.com/500',
 ]);
 
 function starts_with($haystack, $needle) {
@@ -217,5 +224,5 @@ PP::route('sfdl', 'p:sfdl');
 
 PP::route('bug', 'https://bugs.arx-libertatis.org/arx/issues/');
 
-PP::optimize_urls(PP::URL_RELATIVE);
+PP::optimize_urls(PP::URL_RELATIVE); // use URL_RELATIVE_ONLY for local testing
 PP::minify(true);
