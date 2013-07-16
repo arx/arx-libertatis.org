@@ -104,3 +104,13 @@ inject_page('screenshot', [
 <p>
 	As always, we'd like to <a href="<?= url('p:contact') ?>">hear what you think</a> about the changes so far and which future improvements we should focus on. Our bug tracker has a <a href="<?= url('p:wishlist') ?>">wishlist</a> for new features or enhancements that can be voted on.
 </p>
+
+<?
+ $p->updates()
+?>
+
+<h2>Update:</h2>
+
+<p>
+	We have found regression in the 1.1 release that prevents map marker labels from being saved correctly. Save files created by 1.1 will be missing labels for map markers. We expect to have a hotfix for this soon along with the ability to restore missing map marker labels, but <b>users may want to hold off upgrading to 1.1 for now</b>. <a href="http://wiki.arx-libertatis.org/index.php?title=Download&oldid=2739">Downloads for 1.0.3 are listed here.</a>
+</p>
