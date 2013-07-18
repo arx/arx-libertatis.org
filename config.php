@@ -90,6 +90,7 @@ PP::route('p', [
 	'mod_polish'   => 'http://www.portal24h.pl/pobierz/start-pobierania/spolszczenie-do-gry-a-c/655-arx-fatalis-plprojekt.html',
 	'mod_turkish'  => 'http://pinkert10.blogspot.com/2012/07/arx-fatalis-turkce-yama.html',
 	'mod_korean'   => 'http://nsm53p.tistory.com/500',
+	'guide_spawn'  => 'http://forums.steampowered.com/forums/showpost.php?p=32434076&postcount=3'
 ]);
 
 function starts_with($haystack, $needle) {
@@ -224,5 +225,6 @@ PP::route('sfdl', 'p:sfdl');
 
 PP::route('bug', 'https://bugs.arx-libertatis.org/arx/issues/');
 
-PP::optimize_urls(PP::URL_RELATIVE); // use URL_RELATIVE_ONLY for local testing
+// PP::optimize_urls(PP::URL_RELATIVE_ONLY); // for local testing
+PP::optimize_urls(PP::URL_RELATIVE); // for deployment
 PP::minify(true);
