@@ -50,66 +50,73 @@ foreach(file IN LISTS all_files)
 	set(outfile "${file}")
 	set(stagein "${source}/${file}")
 	
-	get_filename_component(dir "${file}" PATH)
-	
-	get_ext("${file}" ext)
-	is_in_set("${ext}" "${processed_files}" process)
-	if(process)
+	if("${file}" MATCHES "^files/")
+		# Don't process static files, they are published directly from the source dir
 		
-		if("${ext}" STREQUAL ".php")
-			string(LENGTH "${outfile}" outfile_len)
-			math(EXPR outfile_end "${outfile_len} - 4")
-			string(SUBSTRING "${outfile}" 0 ${outfile_end} outfile)
+	else()
+		
+		get_filename_component(dir "${file}" PATH)
+		
+		get_ext("${file}" ext)
+		is_in_set("${ext}" "${processed_files}" process)
+		if(process)
+			
+			if("${ext}" STREQUAL ".php")
+				string(LENGTH "${outfile}" outfile_len)
+				math(EXPR outfile_end "${outfile_len} - 4")
+				string(SUBSTRING "${outfile}" 0 ${outfile_end} outfile)
+			endif()
+			set(stagein "${stage}/${outfile}")
+			
+			add_custom_command(TARGET process PRE_BUILD
+				COMMAND cmake -E make_directory "${stage}/${dir}"
+				COMMAND "${php}" -c "${php_ini}" "${php_cmd}" ${php_cfg}
+					"${source}/${file}" "${stage}/${outfile}" quiet
+				COMMENT "Generating ${outfile}"
+				VERBATIM
+			)
+			
+		elseif("${ext}" STREQUAL ".png")
+			
+			set(stagein "${stage}/${outfile}")
+			
+			add_custom_command(OUTPUT "${stage}/${outfile}"
+				COMMAND cmake -E make_directory "${stage}/${dir}"
+				COMMAND "${pngcrush}" -q "${source}/${file}" "${stage}/${outfile}"
+				COMMAND "${optipng}" --silent "${stage}/${outfile}"
+				MAIN_DEPENDENCY "${source}/${file}"
+				DEPENDS "${pngcrush}" "${optipng}"
+				COMMENT "Optimizing ${outfile}"
+				VERBATIM
+			)
+			
+			list(APPEND optimized "${stage}/${outfile}")
+			
+		elseif("${ext}" STREQUAL ".jpg" OR "${ext}" STREQUAL ".jpeg")
+			
+			set(stagein "${stage}/${outfile}")
+			
+			add_custom_command(OUTPUT "${stage}/${outfile}"
+				COMMAND cmake -E make_directory "${stage}/${dir}"
+				COMMAND cmake -E copy "${source}/${file}" "${stage}/${outfile}"
+				COMMAND "${jpegoptim}" --quiet "${stage}/${outfile}"
+				MAIN_DEPENDENCY "${source}/${file}"
+				DEPENDS "${jpegoptim}"
+				COMMENT "Optimizing ${outfile}"
+				VERBATIM
+			)
+			
+			list(APPEND optimized "${stage}/${outfile}")
+			
 		endif()
-		set(stagein "${stage}/${outfile}")
 		
-		add_custom_command(TARGET process PRE_BUILD
-			COMMAND cmake -E make_directory "${stage}/${dir}"
-			COMMAND "${php}" -c "${php_ini}" "${php_cmd}" ${php_cfg}
-				"${source}/${file}" "${stage}/${outfile}" quiet
-			COMMENT "Generating ${outfile}"
+		add_custom_command(TARGET copy PRE_BUILD
+			COMMAND cmake -E make_directory "${output}/${dir}"
+			COMMAND cmake -E copy_if_different "${stagein}" "${output}/${outfile}"
 			VERBATIM
 		)
-		
-	elseif("${ext}" STREQUAL ".png")
-		
-		set(stagein "${stage}/${outfile}")
-		
-		add_custom_command(OUTPUT "${stage}/${outfile}"
-			COMMAND cmake -E make_directory "${stage}/${dir}"
-			COMMAND "${pngcrush}" -q "${source}/${file}" "${stage}/${outfile}"
-			COMMAND "${optipng}" --silent "${stage}/${outfile}"
-			MAIN_DEPENDENCY "${source}/${file}"
-			DEPENDS "${pngcrush}" "${optipng}"
-			COMMENT "Optimizing ${outfile}"
-			VERBATIM
-		)
-		
-		list(APPEND optimized "${stage}/${outfile}")
-		
-	elseif("${ext}" STREQUAL ".jpg" OR "${ext}" STREQUAL ".jpeg")
-		
-		set(stagein "${stage}/${outfile}")
-		
-		add_custom_command(OUTPUT "${stage}/${outfile}"
-			COMMAND cmake -E make_directory "${stage}/${dir}"
-			COMMAND cmake -E copy "${source}/${file}" "${stage}/${outfile}"
-			COMMAND "${jpegoptim}" --quiet "${stage}/${outfile}"
-			MAIN_DEPENDENCY "${source}/${file}"
-			DEPENDS "${jpegoptim}"
-			COMMENT "Optimizing ${outfile}"
-			VERBATIM
-		)
-		
-		list(APPEND optimized "${stage}/${outfile}")
 		
 	endif()
-	
-	add_custom_command(TARGET copy PRE_BUILD
-		COMMAND cmake -E make_directory "${output}/${dir}"
-		COMMAND cmake -E copy_if_different "${stagein}" "${output}/${outfile}"
-		VERBATIM
-	)
 	
 endforeach()
 
