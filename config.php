@@ -87,8 +87,8 @@ PP::route('p', [
 	'comm_steam'   => 'http://steamcommunity.com/app/1700/',
 	'group_steam'  => 'http://steamcommunity.com/groups/Arx_Fatalis',
 	// mods
-	'mod_polish'   => 'http://www.portal24h.pl/pobierz/start-pobierania/spolszczenie-do-gry-a-c/655-arx-fatalis-plprojekt.html',
-	'mod_turkish'  => 'http://pinkert10.blogspot.com/2012/07/arx-fatalis-turkce-yama.html',
+	'mod_polish'   => 'http://www.portal24h.pl/gry/spolszczenia-gier/ac/arx-fatalis-plprojekt-655/',
+	'mod_turkish'  => 'http://pinkertonoyun.blogspot.com/2012/07/arx-fatalis-turkce-yama.html',
 	'mod_korean'   => 'http://nsm53p.tistory.com/500',
 	'guide_spawn'  => 'http://forums.steampowered.com/forums/showpost.php?p=32434076&postcount=3'
 ]);
