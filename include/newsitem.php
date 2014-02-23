@@ -79,7 +79,7 @@ if($p->format == 'html'):
 				if($next !== null):
 ?>
 	<p>
-		<b>Update:</b> <a href="<?= url($next->news_url) ?>">Arx Libertatis <?= encode_text($next->version) ?></a> has been released. <a href="<?= url('sfdl:arx-libertatis-' . $p->version . '/') ?>">Version <?= text('version') ?> is archived at SourceForge.</a>
+		<b>Update:</b> <a href="<?= url($next->news_url) ?>">Arx Libertatis <?= encode_text($next->version) ?></a> has been released. <a href="<?= url('files:arx-libertatis-' . $p->version . '/') ?>">Version <?= text('version') ?> is archived here.</a>
 	</p>
 <?
 				endif;

@@ -36,6 +36,7 @@ PP::route('p', [
 	'contact'      => 'contact',
 	'news'         => 'news',
 	'irclogs'      => 'irclogs/',
+	'files'         => 'files/',
 	'rss'          => 'feed.rss',
 	'bugs'         => 'https://bugs.arx-libertatis.org/',
 	'wishlist'     => 'https://bugs.arx-libertatis.org/arx/issues/find/saved_search/2/search/1',
@@ -53,7 +54,6 @@ PP::route('p', [
 	'git'          => 'https://github.com/arx/ArxLibertatis',
 	'README'       => 'https://github.com/arx/ArxLibertatis/blob/master/README.md',
 	'OPTIONS'      => 'https://github.com/arx/ArxLibertatis/blob/master/OPTIONS.md',
-	'sfdl'         => 'https://sourceforge.net/projects/arx/files/',
 	'irc'          => 'irc://irc.freenode.net/arxfatalis',
 	'chat'         => 'http://webchat.freenode.net/?channels=arxfatalis',
 	'subreddit'    => 'http://www.reddit.com/r/ArxFatalis/',
@@ -221,7 +221,7 @@ PP::route('wiki', 'p:wiki');
 PP::route('changelog', 'wiki:Changelog#');
 PP::route('news', 'news/');
 PP::route('release', 'releases/');
-PP::route('sfdl', 'p:sfdl');
+PP::route('files', 'p:files');
 
 PP::route('bug', 'https://bugs.arx-libertatis.org/arx/issues/');
 
