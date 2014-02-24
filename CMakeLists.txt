@@ -30,7 +30,7 @@ find(pngcrush)
 
 set(source "${CMAKE_SOURCE_DIR}/htdocs")
 set(stage "${CMAKE_BINARY_DIR}/stage")
-set(output "${CMAKE_SOURCE_DIR}/output")
+set(output "${CMAKE_BINARY_DIR}/htdocs")
 
 set(php_ini "${CMAKE_SOURCE_DIR}/preprocess/php.ini")
 set(php_cmd "${CMAKE_SOURCE_DIR}/preprocess/process.php")
