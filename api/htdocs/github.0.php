@@ -174,8 +174,6 @@ function handle_push($data) {
 		$commit_title = trim($commit->message);
 		if(($pos = strpos($commit_title, "\n")) !== false) {
 			$commit_title = trim(substr($commit_title, 0, $pos)) . ' …';
-		} else {
-			
 		}
 		
 		$msg = $commit_sha . ' ';
