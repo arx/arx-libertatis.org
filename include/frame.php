@@ -21,6 +21,9 @@ $p->mimetype = 'text/html';
 		<link rel="icon" href="<?= ref('r:icon') ?>" sizes="<?= ref('c:icon_size') ?>">
 		<link rel="icon" href="<?= ref('r:favicon') ?>" sizes="16x16">
 		<link rel="stylesheet" type="text/css" href="<?= url('r:style') ?>" title="...">
+		<? if(isset($p->url)): ?>
+		<link rel="canonical" href="<?= encode_attr($p->url) ?>">
+		<? endif; ?>
 		<title><?
 			$title = $p->title;
 			if(strpos($title, $project) === false) {
