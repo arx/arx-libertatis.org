@@ -46,10 +46,12 @@
 .icon.debian       { background-position: -200px -32px; }
 .icon.fedora       { background-position: -200px -48px; }
 .icon.gentoo       { background-position: -216px  -0px; }
+.icon.mageia       { background-position: -328px -32px; }
 .icon.mandriva     { background-position: -216px -16px; }
 .icon.openmandriva { background-position: -216px -32px; }
 .icon.opensuse     { background-position: -216px -48px; }
 .icon.rosa         { background-position: -232px  -0px; }
+.icon.slackware    { background-position: -328px -16px; }
 .icon.ubuntu       { background-position: -232px -16px; }
 
 /* website icons */
