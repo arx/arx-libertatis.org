@@ -14,7 +14,7 @@ $p->import('icons');
 	<h3>IRC Channel</h3>
 	
 	<p>
-		We mainly hang out in the <b><a href="<?= url('p:irc') ?>"><?= url('c:irc') ?></a></b> channel on the <a href="<?= url('p:freenode') ?>">Freenode</a> network.<br>
+		We mainly hang out in the <b><a href="<?= url('p:irc') ?>"><?= url('c:irc') ?></a></b> channel on the <a href="<?= url('p:freenode') ?>">freenode</a> network.<br>
 		If you are new to IRC, please see the <a href="<?= url('wiki:IRC_channel') ?>">wiki page</a>!<br>
 	</p>
 	

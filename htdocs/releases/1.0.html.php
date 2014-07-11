@@ -26,5 +26,5 @@ $p->import('makenews');
 	But that does not mean that the work on Arx Libertatis is done.
 	There is still much code to clean and features to add.
 	Contributions, small or large, are welcome:
-	Feel free to fork the <a href="<?= url('p:git') ?>">project on github</a> or join us in <b><?= url('c:irc') ?></b> on the Freenode IRC network.
+	Feel free to fork the <a href="<?= url('p:git') ?>">project on github</a> or join us in <b><?= url('c:irc') ?></b> on the freenode IRC network.
 </p>
