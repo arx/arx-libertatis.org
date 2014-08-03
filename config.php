@@ -57,7 +57,7 @@ PP::route('p', [
 	'irc'          => 'irc://irc.freenode.net/arxfatalis',
 	'chat'         => 'http://webchat.freenode.net/?channels=arxfatalis',
 	'subreddit'    => 'http://www.reddit.com/r/ArxFatalis/',
-	'ohloh'        => 'https://www.ohloh.net/p/arx',
+	'openhub'      => 'https://www.openhub.net/p/arx',
 	'sourceforge'  => 'https://sourceforge.net/projects/arx/',
 	'moddb'        => 'http://www.moddb.com/mods/arx-libertatis',
 	'freecode'     => 'http://freecode.com/projects/arx-libertatis',
