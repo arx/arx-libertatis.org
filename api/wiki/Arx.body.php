@@ -35,7 +35,7 @@ class Arx {
 			
 			$username = $user->isAnon() ? 'An anonymous user' : $user->getName();
 			$action = ($flags & EDIT_UPDATE) ? 'edited' : $wiki_namespaces[$namespace];
-			$page = $title->getBaseText();
+			$page = $title->getPrefixedText();
 			
 			$message = $username . ' ' . $action . ' ' . $page;
 			$summary = trim($summary);
@@ -46,7 +46,7 @@ class Arx {
 				$message .= ' (' . $summary . ')';
 			}
 			
-			$url = $wiki_prefix . $title->getLocalURL() . '?diff=' . $revision->getId();
+			$url = $wiki_prefix . '?diff=' . $revision->getId();
 			
 			irc_message($wiki_channel, $message, ': ' . $url);
 			
