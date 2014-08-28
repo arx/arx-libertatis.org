@@ -14,7 +14,7 @@ class Arx {
 	                                               $isMinor, $isWatch, $section, $flags,
 	                                               $revision, $status, $baseRevId) {
 		
-		global $wiki_channel, $wiki_prefix, $wiki_namespaces, $wiki_ignore_minor;
+		global $wiki_channel, $wiki_prefix, $wiki_namespaces, $wiki_ignore_minor, $wiki_users;
 		
 		try {
 			
@@ -34,6 +34,9 @@ class Arx {
 			}
 			
 			$username = $user->isAnon() ? 'An anonymous user' : $user->getName();
+			if(isset($wiki_users[$username])) {
+				$username = $wiki_users[$username];
+			}
 			$action = ($flags & EDIT_UPDATE) ? 'edited' : $wiki_namespaces[$namespace];
 			$page = $title->getPrefixedText();
 			

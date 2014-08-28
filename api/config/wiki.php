@@ -17,4 +17,7 @@ $GLOBALS['wiki_namespaces'] = array(
 // Ignore minor edits?
 $GLOBALS['wiki_ignore_minor'] = true;
 
+// Remap user names
+$GLOBALS['wiki_users'] = array( );
+
 include __DIR__ . '/private/wiki.php';
