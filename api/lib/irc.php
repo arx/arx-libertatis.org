@@ -1,6 +1,6 @@
 <?php
 
-require_once '../config/irc.php';
+require_once __DIR__ . '/../config/irc.php';
 
 $irc_handle = null;
 

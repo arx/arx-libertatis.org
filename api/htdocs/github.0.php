@@ -4,8 +4,8 @@
  * GitHub webhook -> IRC gateway
  */
 
-include_once '../config/github.php';
-require_once '../lib/irc.php';
+include_once __DIR__ . '/../config/github.php';
+require_once __DIR__ . '/../lib/irc.php';
 
 // Indicate a fatal errot to the API user
 function error($message, $code = 503) {
