@@ -46,7 +46,7 @@ class Arx {
 				$message .= ' (' . $summary . ')';
 			}
 			
-			$url = $wiki_prefix . '?diff=' . $revision->getId();
+			$url = $wiki_prefix . $revision->getId();
 			
 			irc_message($wiki_channel, $message, ': ' . $url);
 			

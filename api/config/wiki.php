@@ -4,7 +4,7 @@
 $GLOBALS['wiki_channel'] = '#arxfatalis';
 
 // Prefix for Wiki URLs
-$GLOBALS['wiki_prefix'] = 'http://arx.vg/wiki';
+$GLOBALS['wiki_prefix'] = 'http://arx.vg/wiki/';
 
 // Wiki namespaces to watch
 $GLOBALS['wiki_namespaces'] = array(
