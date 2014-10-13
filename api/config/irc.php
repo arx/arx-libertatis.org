@@ -7,3 +7,11 @@ $GLOBALS['irc_pipe'] = '';
 $GLOBALS['irc_max_line_length'] = 390;
 
 include __DIR__ . '/private/irc.php';
+
+if(!isset($GLOBALS['irc_socket'])) {
+	$GLOBALS['irc_socket'] = 'unix://' . $GLOBALS['irc_pipe'] . '/socket';
+}
+
+if(!isset($GLOBALS['irc_buffer'])) {
+	$GLOBALS['irc_buffer'] = $GLOBALS['irc_pipe'] . '/buffer';
+}
