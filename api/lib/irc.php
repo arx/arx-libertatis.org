@@ -45,18 +45,21 @@ function irc_message($recipient, $message, $ending = null) {
 	
 	// Cut off long messages that are supposed to fit on one line
 	if($ending !== null) {
-		if(strlen($message) > $irc_max_line_length) {
-			if(substr($message, -6) == ' …') {
+		if(strlen($message) + strlen($ending) > $irc_max_line_length) {
+			$ellipsis = ' …';
+			$len = $irc_max_line_length - strlen($ellipsis) - strlen($ending);
+			$message = mb_strcut($message, 0, $len, 'UTF-8');
+			if(substr($message, -strlen($ellipsis)) == $ellipsis) {
 				// Prevent duplicated ellipsis
-				$message = substr($message, 0, -6);
+				$message = substr($message, 0, -strlen($ellipsis));
 			}
-			$message = substr($message, 0, $irc_max_line_length - 6 - strlen($ending)) . ' …';
+			$message = rtrim($message) . $ellipsis;
 		}
 		$message .= $ending;
 	}
 	
 	// Remove newlines
-	$message = str_replace("\n", '', str_replace("\r", '', $message));
+	$message = str_replace(array("\n", "\r"), '', $message);
 	
 	irc_send($recipient . ' ' . $message . "\n");
 }
