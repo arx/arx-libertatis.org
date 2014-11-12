@@ -28,7 +28,7 @@ function irc_send($message) {
 	if($result === false && $irc_fallback === false) {
 		$irc_fallback = true;
 		$irc_handle = fopen($irc_buffer, 'a');
-		chmod($irc_buffer, 0666);
+		chmod($irc_buffer, 0666); // \m/
 		if($irc_handle !== false) {
 			$result = fwrite($irc_handle, $message);
 		}
