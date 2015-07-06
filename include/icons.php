@@ -29,7 +29,6 @@ $p->all_icons = [
 	/* website icons */
 	'blogger'      => 'Blogger',
 	'googlecode'   => 'Google Code',
-	'sourceforge'  => 'SourceForge.net',
 	'github'       => 'GitHub',
 	'reddit'       => 'reddit',
 	'steam'        => 'Steam',
