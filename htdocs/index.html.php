@@ -112,7 +112,7 @@ foreach($news->items as $item) {
 			<li><a href="<?= url('p:moddb')       ?>"><?= $p->i_moddb ?></a></li>
 			<li><a href="<?= url('p:git')         ?>"><?= $p->i_github ?></a></li>
 			<li><a href="<?= url('p:openhub')     ?>"><?= $p->i_openhub ?></a></li>
-			<li><a href="<?= url('p:freecode')    ?>"><?= $p->i_freecode ?></a></li>
+			<li><a href="<?= url('p:freshcode')   ?>"><?= $p->i_freshcode ?></a></li>
 		</ul>
 		Other Arx Projects:
 		<ul>

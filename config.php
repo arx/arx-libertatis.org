@@ -59,7 +59,7 @@ PP::route('p', [
 	'subreddit'    => 'http://www.reddit.com/r/ArxFatalis/',
 	'openhub'      => 'https://www.openhub.net/p/arx',
 	'moddb'        => 'http://www.moddb.com/mods/arx-libertatis',
-	'freecode'     => 'http://freecode.com/projects/arx-libertatis',
+	'freshcode'    => 'http://freshcode.club/projects/arx',
 	// community pages
 	'freebsd_port' => 'http://www.freebsd.org/cgi/cvsweb.cgi/ports/games/arx-libertatis/',
 	'mac_wineskin' => 'http://portingteam.com/files/file/7385-arx-libertatis-wine/',
