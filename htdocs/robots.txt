@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /irclogs/
 Disallow: /buildlogs/arx/commits/
-Disallow: /files/
