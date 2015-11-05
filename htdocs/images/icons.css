@@ -77,6 +77,7 @@
 .icon.identica     { background-position: -312px -32px; }
 .icon.twitter      { background-position: -312px -48px; }
 .icon.google_plus  { background-position: -328px  -0px; }
+.icon.nexus        { background-position: -328px -48px; }
 
 /* misc icons */
 .icon.arx          { background-position: -168px -48px; }
@@ -91,6 +92,7 @@ a.external[href^="http://forums.steampowered.com/"],
 a.external[href^="http://steamcommunity.com/"],
 a.external[href^="http://www.gog.com/"],
 a.external[href^="http://www.moddb.com/"],
+a.external[href^="http://www.nexusmods.com/"],
 a.external[href^="http://www.reddit.com/"],
 a.external[href^="http://code.google.com/"],
 a.external[href^="https://github.com/"],
@@ -110,6 +112,7 @@ a.external[href^="http://forums.steampowered.com/"]:after,
 a.external[href^="http://steamcommunity.com/"]:after,
 a.external[href^="http://www.gog.com/"]:after,
 a.external[href^="http://www.moddb.com/"]:after,
+a.external[href^="http://www.nexusmods.com/"]:after,
 a.external[href^="http://www.reddit.com/"]:after,
 a.external[href^="http://code.google.com/"]:after,
 a.external[href^="https://github.com/"]:after,
@@ -143,6 +146,10 @@ a.external[href^="http://www.gog.com/"]:after {
 
 a.external[href^="http://www.moddb.com/"]:after {
 	background-position: -264px -32px;
+}
+
+a.external[href^="http://www.nexusmods.com/"]:after {
+	background-position: -328px -48px;
 }
 
 a.external[href^="http://code.google.com/"]:after {
