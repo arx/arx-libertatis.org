@@ -7,7 +7,7 @@ $GLOBALS['github_passkey'] = '';
 $GLOBALS['github_channel'] = '#arxfatalis';
 
 # How many digits of the commit SHA to show in commit messages
-$GLOBALS['github_sha_size'] = 6;
+$GLOBALS['github_sha_size'] = 7;
 
 # Maximum number of commit messages to show for each push
 $GLOBALS['github_max_commits'] = 4;
@@ -20,8 +20,8 @@ $GLOBALS['github_rewrites'] = array(
 	# Generic rewrites for arx repos
 	'arx/([^/]*)/pull/(.*)' => 'http://arx.vg/g/\1/pull/\2',
 	'arx/([^/]*)/commits/(.*)' => 'http://arx.vg/g/\1/ref/\2',
-	'arx/([^/]*)/commit/([0-9a-f]{5,6})[0-9a-f]*' => 'http://arx.vg/g/\1/\2',
-	'arx/([^/]*)/compare/([0-9a-f]{5,6})[0-9a-f]*\^?\.\.\.([0-9a-f]{5,6})[0-9a-f]*'
+	'arx/([^/]*)/commit/([0-9a-f]{5,7})[0-9a-f]*' => 'http://arx.vg/g/\1/\2',
+	'arx/([^/]*)/compare/([0-9a-f]{5,7})[0-9a-f]*\^?\.\.\.([0-9a-f]{5,7})[0-9a-f]*'
 		=> 'http://arx.vg/g/\1/\2..\3',
 	# Special additional shortening for main and website repos
 	'/^http:\/\/arx\.vg\/g\/arx\-libertatis\.org\//' => 'http://arx.vg/web/',
