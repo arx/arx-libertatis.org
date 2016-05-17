@@ -8,15 +8,18 @@ header, nav, section, article, aside, footer, hgroup {
 	display: block;
 }
 
+body > header > h1 {
+	margin: 0px;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	padding-top: 8px;
 	background-color: #1a1a1a;
 	color: #ccc;
 	font-family: "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Arial, sans-serif;
 	font-size: 10pt;
-	padding-top: 20px;
+	padding-top: 19px;
 }
 
 iframe {
@@ -87,7 +90,7 @@ body > header:after {
 #link-bar {
 	font-size: 0;
 	letter-spacing: -1px;
-	padding-top: 10px;
+	padding-top: 9px;
 	padding-bottom: 10px;
 	text-transform: lowercase;
 	font-variant: small-caps;
