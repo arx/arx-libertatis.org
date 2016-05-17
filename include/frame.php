@@ -18,7 +18,15 @@ $p->mimetype = 'text/html';
 	<head>
 		<meta charset='utf-8'>
 		<link rel="shortcut icon" href="<?= ref('r:favicon_ie') ?>">
-		<link rel="icon" href="<?= ref('r:icon') ?>" sizes="<?= ref('c:icon_size') ?>">
+		<link rel="icon" href="<?= ref('r:icon-512') ?>" sizes="512x512">
+		<link rel="icon" href="<?= ref('r:icon-256') ?>" sizes="256x256">
+		<link rel="icon" href="<?= ref('r:icon-192') ?>" sizes="192x192">
+		<link rel="icon" href="<?= ref('r:icon-128') ?>" sizes="128x128">
+		<link rel="icon" href="<?= ref('r:icon-96') ?>" sizes="96x96">
+		<link rel="icon" href="<?= ref('r:icon-64') ?>" sizes="64x64">
+		<link rel="icon" href="<?= ref('r:icon-48') ?>" sizes="48x48">
+		<link rel="icon" href="<?= ref('r:icon-32') ?>" sizes="32x32">
+		<link rel="icon" href="<?= ref('r:icon-24') ?>" sizes="24x24">
 		<link rel="icon" href="<?= ref('r:favicon') ?>" sizes="16x16">
 		<link rel="stylesheet" type="text/css" href="<?= url('r:style') ?>" title="...">
 		<? if(isset($p->url)): ?>
