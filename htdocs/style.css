@@ -300,7 +300,6 @@ article > section + section {
 	-moz-filter: sepia(0);
 	-ms-filter: sepia(0);
 	-o-filter: sepia(0);
-	filter: sepia(0);
 	opacity: 1;
 }
 
