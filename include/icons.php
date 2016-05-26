@@ -51,6 +51,7 @@ $p->all_icons = [
 	
 	/* misc icons */
 	'arx'          => 'Arx Libertatis',
+	'arxendofsun'  => 'Arx – End Of Sun',
 	'wine'         => 'Wine',
 	'bug'          => 'Bug',
 	'idea'         => 'Idea',
