@@ -112,5 +112,5 @@ inject_page('screenshot', [
 <h2>Update:</h2>
 
 <p>
-	We have found regression in the 1.1 release that prevents map marker labels from being saved correctly. Save files created by 1.1 will be missing labels for map markers. <b>Users should upgrade to version 1.1.1 as soon as possible.</b>
+	We have found a regression in the 1.1 release that prevents map marker labels from being saved correctly. Save files created by 1.1 will be missing labels for map markers. <b>Users should upgrade to version 1.1.1 as soon as possible.</b>
 </p>
