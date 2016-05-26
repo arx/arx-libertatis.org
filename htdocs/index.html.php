@@ -117,7 +117,7 @@ foreach($news->items as $item) {
 		Other Arx Projects:
 		<ul>
 			<li><a href="<?= url('p:arxendofsun') ?>"><?= $p->i_arxendofsun ?></a></li>
-			<li><a href="<?= url('p:arxcatalyst') ?>">Arx Catalyst</a></li>
+			<li><a href="<?= url('p:arxcatalyst') ?>"><?= $p->i_arxcatalyst ?></a></li>
 		</ul>
 		Arx Community:
 		<ul>
