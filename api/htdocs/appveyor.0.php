@@ -47,12 +47,11 @@ function handle_build($data) {
 	$baseurl = 'https://github.com/' . $event->repositoryName . '/';
 	$sha = substr($event->commitId, 0, $appveyor_sha_size);
 	
-	$msg = 'Windows build ' . ($event->passed ? 'passed' : 'failed');
-	$msg .= ' for ' . url($baseurl . 'commit/' . $sha);
+	$msg = 'Windows build ' . ($event->passed ? 'passed' : 'failed') . ' for ';
 	if($event->isPullRequest) {
-		$msg .= ' from ' . url($baseurl . 'pull/' . $event->pullRequestId);
+		$msg .= url($baseurl . 'pull/' . $event->pullRequestId);
 	} else {
-		$msg .= ' on ' . $event->branch;
+		$msg .= url($baseurl . 'commit/' . $sha) . ' on ' . $event->branch;
 	}
 	
 	msg($msg, ': ' . url($event->buildUrl));
