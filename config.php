@@ -91,14 +91,13 @@ PP::route('p', [
 	'forum_arx'    => 'http://forums.bethsoft.com/forum/149-arx-fatalis-general-discussion/',
 	'forum_ttlg'   => 'http://www.ttlg.com/forums/forumdisplay.php?f=76',
 	'forum_gog'    => 'http://www.gog.com/forum/arx_fatalis',
-	'forum_steam'  => 'http://forums.steampowered.com/forums/forumdisplay.php?f=170',
 	'comm_steam'   => 'http://steamcommunity.com/app/1700/',
 	'group_steam'  => 'http://steamcommunity.com/groups/Arx_Fatalis',
 	// mods
 	'mod_polish'   => 'http://www.portal24h.pl/gry/spolszczenia-gier/ac/arx-fatalis-plprojekt-655/',
 	'mod_turkish'  => 'http://pinkertonoyun.blogspot.com/2012/07/arx-fatalis-turkce-yama.html',
 	'mod_korean'   => 'http://nsm53p.tistory.com/500',
-	'guide_spawn'  => 'http://forums.steampowered.com/forums/showpost.php?p=32434076&postcount=3'
+	'guide_spawn'  => 'https://web.archive.org/web/20161022113416/http://forums.steampowered.com/forums/showpost.php?p=32434076&postcount=3'
 ]);
 
 function starts_with($haystack, $needle) {
