@@ -23,7 +23,7 @@
 .icon.big         { width: 32px; height: 32px; }
 .icon.windows.big { background-position:  -64px  -0px; }
 .icon.linux.big   { background-position:  -64px -32px; }
-.icon.macosx.big  { background-position:  -96px  -0px; }
+.icon.macos.big   { background-position:  -96px  -0px; }
 .icon.freebsd.big { background-position:  -96px -32px; }
 .icon.github.big  { background-position: -128px  -0px; }
 
@@ -38,7 +38,7 @@
 /* os icons */
 .icon.windows      { background-position: -128px -32px; }
 .icon.linux        { background-position: -128px -48px; }
-.icon.macosx       { background-position: -144px -32px; }
+.icon.macos        { background-position: -144px -32px; }
 .icon.freebsd      { background-position: -144px -48px; }
 /* linux distribution icons */
 .icon.arch         { background-position: -200px  -0px; }

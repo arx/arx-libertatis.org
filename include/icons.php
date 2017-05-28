@@ -12,7 +12,7 @@ $p->all_icons = [
 	/* os icons */
 	'windows'      => 'Windows',
 	'linux'        => 'Linux',
-	'macosx'       => 'Mac OS X',
+	'macos'        => 'macOS',
 	'freebsd'      => 'FreeBSD',
 	/* linux distribution icons*/
 	'arch'         => 'Arch Linux',
