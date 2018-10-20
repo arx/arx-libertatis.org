@@ -102,6 +102,7 @@ foreach($news->items as $item) {
 		Arx Fatalis:
 		<ul>
 			<li><a href="<?= url('p:arxfatalis')  ?>"><?= $p->arkane_icon ?>Official Website</a></li>
+			<li><a href="<?= url('p:arxjapanese') ?>"><?= $p->arkane_icon ?>Japanese Website</a></li>
 			<li><a href="<?= url('p:wp_arx')      ?>"><?= $p->i_wikipedia ?></a></li>
 			<li><a href="<?= url('p:pcgw_arx')    ?>"><?= $p->i_pcgamingwiki ?></a></li>
 			<li><a href="<?= url('p:gog_arx')     ?>"><?= $p->i_gog ?></a></li>

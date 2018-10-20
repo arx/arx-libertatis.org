@@ -76,6 +76,7 @@ PP::route('p', [
 	'arkane'       => 'http://www.arkane-studios.com/',
 	'arxfatalis'   => 'http://web.archive.org/web/20180201053030/https://www.arkane-studios.com/uk/arx.php',
 	'patch'        => 'http://web.archive.org/web/20180105233341/https://www.arkane-studios.com/uk/arx_downloads.php',
+	'arxjapanese'  => 'http://web.archive.org/web/20090421121337/http://www.capcom.co.jp/pc/arx/',
 	'zenimax'      => 'http://www.zenimax.com/',
 	'freenode'     => 'http://freenode.net/',
 	'opengameart'  => 'http://opengameart.org/',
