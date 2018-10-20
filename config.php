@@ -65,7 +65,7 @@ PP::route('p', [
 	'OPTIONS'      => 'https://github.com/arx/ArxLibertatis/blob/master/OPTIONS.md',
 	'irc'          => 'irc://irc.freenode.net/arxfatalis',
 	'chat'         => 'http://webchat.freenode.net/?channels=arxfatalis',
-	'subreddit'    => 'http://www.reddit.com/r/ArxFatalis/',
+	'subreddit'    => 'http://old.reddit.com/r/ArxFatalis/',
 	'openhub'      => 'https://www.openhub.net/p/arx',
 	'moddb'        => 'http://www.moddb.com/mods/arx-libertatis',
 	'freshcode'    => 'http://freshcode.club/projects/arx',
@@ -172,7 +172,7 @@ PP::route('share', function ($name) {
 		}
 		
 		case 'reddit': {
-			$url = 'http://www.reddit.com/submit';
+			$url = 'http://old.reddit.com/submit';
 			$q['url'] = $u;
 			if(isset($title)) {
 				$q['title'] = $title;

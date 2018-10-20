@@ -43,7 +43,7 @@ inject_page('screenshot', [
 </p>
 
 <p>
-	There are similar inconsistencies for <a href="<?= url('wiki:Stats') ?>">other player stats</a> such as armor class, magic and poison resistance, and the damages dealt. Those are likely to be changed as well in future versions of Arx Libertatis. There is a <a href="http://www.reddit.com/r/ArxFatalis/comments/wbz0m/attribute_skill_modifiers_and_calculated_stats/">reddit thread</a> discussing these changes.
+	There are similar inconsistencies for <a href="<?= url('wiki:Stats') ?>">other player stats</a> such as armor class, magic and poison resistance, and the damages dealt. Those are likely to be changed as well in future versions of Arx Libertatis. There is a <a href="http://old.reddit.com/r/ArxFatalis/comments/wbz0m/attribute_skill_modifiers_and_calculated_stats/">reddit thread</a> discussing these changes.
 </p>
 
 <?
