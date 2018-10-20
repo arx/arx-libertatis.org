@@ -74,8 +74,8 @@ PP::route('p', [
 	'mac_wineskin' => 'http://portingteam.com/files/file/7385-arx-libertatis-wine/',
 	// other websites
 	'arkane'       => 'http://www.arkane-studios.com/',
-	'arxfatalis'   => 'http://www.arkane-studios.com/uk/arx.php',
-	'patch'        => 'http://www.arkane-studios.com/uk/arx_downloads.php',
+	'arxfatalis'   => 'http://web.archive.org/web/20180201053030/https://www.arkane-studios.com/uk/arx.php',
+	'patch'        => 'http://web.archive.org/web/20180105233341/https://www.arkane-studios.com/uk/arx_downloads.php',
 	'zenimax'      => 'http://www.zenimax.com/',
 	'freenode'     => 'http://freenode.net/',
 	'opengameart'  => 'http://opengameart.org/',
