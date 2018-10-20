@@ -86,7 +86,7 @@ PP::route('p', [
 	'pcgw_arx'     => 'http://pcgamingwiki.com/wiki/Arx_Fatalis',
 	'gog_arx'      => 'http://www.gog.com/gamecard/arx_fatalis',
 	'steam_arx'    => 'http://store.steampowered.com/app/1700/',
-	'arxendofsun'  => 'http://arxendofsun.solarsplace.com/',
+	'arxendofsun'  => 'https://web.archive.org/web/20170709140048/http://arxendofsun.solarsplace.com/',
 	'arxcatalyst'  => 'http://arxcatalyst.weebly.com/',
 	'forum_arx'    => 'http://forums.bethsoft.com/forum/149-arx-fatalis-general-discussion/',
 	'forum_ttlg'   => 'http://www.ttlg.com/forums/forumdisplay.php?f=76',
