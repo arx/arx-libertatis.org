@@ -19,7 +19,7 @@ if($p->format == 'html'):
 	
 ?>
 
-<article id="<?= $p->elem_id ?>" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting" itemid="<?= url($p->news_url, false) ?>">
+<article id="<?= $p->elem_id ?>" itemprop="blogPosts" itemscope itemtype="https://schema.org/BlogPosting" itemid="<?= url($p->news_url, false) ?>">
 	<header>
 		<link itemprop="url" href="<?= url($p->news_url, false) ?>" />
 		<h1 itemprop="name"><a href="<?= url($p->news_url) ?>"><?= text('title') ?></a></h1>

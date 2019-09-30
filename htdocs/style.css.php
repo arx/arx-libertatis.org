@@ -1,5 +1,5 @@
 
-@import "images/icons.css";
+<? require('images/icons.css.php') ?>
 
 /* global settings */
 
@@ -263,7 +263,7 @@ article > section + section {
 	
 	/* Nice sepia + colorize filter - works in Firefox 3.5+ but nowhere else */
 	/* Inlined to reduce number of  HTTP requests - original file is filters.svg */
-	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.4 0.2 0.2  0.3 0     0.2 0.4 0.2  0.1 0     0.2 0.2 0.4  -.1 0     0   0   0    1   0\'/></filter></svg>#grayscale");
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.4 0.2 0.2  0.3 0     0.2 0.4 0.2  0.1 0     0.2 0.2 0.4  -.1 0     0   0   0    1   0\'/></filter></svg>#grayscale");
 	
 	/* Browser-specific aliases of the standard CSS sepia filter */
 	-webkit-filter: sepia(0.9); /* Chrome 18+, Safari */

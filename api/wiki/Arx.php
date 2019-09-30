@@ -9,8 +9,8 @@ if(!defined('MEDIAWIKI')) {
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Arx',
-	'author' => 'Arx Libertatis Team', 
-	'url' => 'http://arx-libertatis.org/', 
+	'author' => 'Arx Libertatis Team',
+	'url' => 'https://arx-libertatis.org/',
 	'description' => 'Arx stuff',
 	'version'  => 1.0,
 );

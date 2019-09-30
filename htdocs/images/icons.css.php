@@ -1,11 +1,13 @@
 
 .icon, #share > a {
-	background-image: url("icons.png");
+	background-image: url("<?= url('r:icons') ?>");
 	background-repeat: no-repeat;
 	padding: 0px;
 	display: inline-block;
 	vertical-align: text-bottom;
 }
+
+<? if($p->url == 'https://arx-libertatis.org/style.css'): ?>
 
 /* share buttons */
 #sidebar  #share > a            { width: 32px; height: 32px; }
@@ -19,6 +21,8 @@
 .navigate #share > #google-plus { background-position: -328px  -0px; }
 .navigate #share > #twitter     { background-position: -312px -48px; }
 
+<? endif ?>
+
 /* big (32x32) icons */
 .icon.big         { width: 32px; height: 32px; }
 .icon.windows.big { background-position:  -64px  -0px; }
@@ -26,7 +30,6 @@
 .icon.macos.big   { background-position:  -96px  -0px; }
 .icon.freebsd.big { background-position:  -96px -32px; }
 .icon.github.big  { background-position: -128px  -0px; }
-
 
 /* small (16x16 and 24x24) icons */
 .icon              { width: 16px; height: 16px; }
@@ -89,45 +92,43 @@
 .icon.arxendofsun  { background-position: -344px  -0px; }
 .icon.arxcatalyst  { background-position: -344px -16px; }
 
-a.external[href^="http://store.steampowered.com/"],
-a.external[href^="http://forums.steampowered.com/"],
-a.external[href^="http://steamcommunity.com/"],
-a.external[href^="http://www.gog.com/"],
+<? if($p->url == 'https://arx-libertatis.org/images/icons.css'): ?>
+
+a.external[href^="https://store.steampowered.com/"],
+a.external[href^="https://steamcommunity.com/"],
+a.external[href^="https://www.gog.com/"],
 a.external[href^="https://www.moddb.com/"],
-a.external[href^="http://www.nexusmods.com/"],
-a.external[href^="http://www.reddit.com/"],
-a.external[href^="http://code.google.com/"],
+a.external[href^="https://www.nexusmods.com/"],
+a.external[href^="https://old.reddit.com/"],
+a.external[href^="https://code.google.com/"],
 a.external[href^="https://github.com/"],
 a.external[href^="https://sourceforge.net/"],
-a.external[href^="http://downloads.sourceforge.net/"],
-a.external[href^="http://www.youtube.com/"],
-a.extiw[href^="http://en.wikipedia.org/"],
-a.external[href^="http://arx-libertatis.org/"],
+a.external[href^="https://www.youtube.com/"],
+a.extiw[href^="https://en.wikipedia.org/"],
+a.external[href^="https://arx-libertatis.org/"],
 a.external[href^="https://bugs.arx-libertatis.org/"],
 a.external[href*=".blogspot.com/"] {
 	background: none !important;
 	padding-right: 0px !important;
 }
 
-a.external[href^="http://store.steampowered.com/"]:after,
-a.external[href^="http://forums.steampowered.com/"]:after,
-a.external[href^="http://steamcommunity.com/"]:after,
-a.external[href^="http://www.gog.com/"]:after,
+a.external[href^="https://store.steampowered.com/"]:after,
+a.external[href^="https://steamcommunity.com/"]:after,
+a.external[href^="https://www.gog.com/"]:after,
 a.external[href^="https://www.moddb.com/"]:after,
-a.external[href^="http://www.nexusmods.com/"]:after,
-a.external[href^="http://www.reddit.com/"]:after,
-a.external[href^="http://code.google.com/"]:after,
+a.external[href^="https://www.nexusmods.com/"]:after,
+a.external[href^="https://old.reddit.com/"]:after,
+a.external[href^="https://code.google.com/"]:after,
 a.external[href^="https://github.com/"]:after,
 a.external[href^="https://sourceforge.net/"]:after,
-a.external[href^="http://downloads.sourceforge.net/"]:after,
-a.external[href^="http://www.youtube.com/"]:after,
-a.extiw[href^="http://en.wikipedia.org/"]:after,
-a.external[href^="http://arx-libertatis.org/"]:after,
+a.external[href^="https://www.youtube.com/"]:after,
+a.extiw[href^="https://en.wikipedia.org/"]:after,
+a.external[href^="https://arx-libertatis.org/"]:after,
 a.external[href^="https://bugs.arx-libertatis.org/"]:after,
 a.external[href*=".blogspot.com/"]:after {
 	content: '';
 	/* import .icon */
-	background-image: url("icons.png");
+	background-image: url("<?= url('r:icons') ?>");
 	background-repeat: no-repeat;
 	padding: 0px;
 	display: inline-block;
@@ -136,13 +137,12 @@ a.external[href*=".blogspot.com/"]:after {
 	margin-left: 4px;
 }
 
-a.external[href^="http://store.steampowered.com/"]:after,
-a.external[href^="http://forums.steampowered.com/"]:after,
-a.external[href^="http://steamcommunity.com/"]:after {
+a.external[href^="https://store.steampowered.com/"]:after,
+a.external[href^="https://steamcommunity.com/"]:after {
 	background-position: -248px -32px;
 }
 
-a.external[href^="http://www.gog.com/"]:after {
+a.external[href^="https://www.gog.com/"]:after {
 	background-position: -248px -48px;
 }
 
@@ -150,11 +150,11 @@ a.external[href^="https://www.moddb.com/"]:after {
 	background-position: -264px -32px;
 }
 
-a.external[href^="http://www.nexusmods.com/"]:after {
+a.external[href^="https://www.nexusmods.com/"]:after {
 	background-position: -328px -48px;
 }
 
-a.external[href^="http://code.google.com/"]:after {
+a.external[href^="https://code.google.com/"]:after {
 	background-position: -184px -16px;
 }
 
@@ -162,24 +162,23 @@ a.external[href^="https://github.com/"]:after {
 	background-position: -184px -48px;
 }
 
-a.external[href^="https://sourceforge.net/"]:after,
-a.external[href^="http://downloads.sourceforge.net/"]:after {
+a.external[href^="https://sourceforge.net/"]:after {
 	background-position: -184px -32px;
 }
 
-a.external[href^="http://www.youtube.com/"]:after {
+a.external[href^="https://www.youtube.com/"]:after {
 	background-position: -280px -16px;
 }
 
-a.extiw[href^="http://en.wikipedia.org/"]:after {
+a.extiw[href^="https://en.wikipedia.org/"]:after {
 	background-position: -280px  -32px;
 }
 
-a.external[href^="http://www.reddit.com/"]:after {
+a.external[href^="https://old.reddit.com/"]:after {
 	background-position: -248px -16px;
 }
 
-a.external[href^="http://arx-libertatis.org/"]:after {
+a.external[href^="https://arx-libertatis.org/"]:after {
 	background-position: -168px -48px;
 }
 
@@ -194,3 +193,5 @@ a.external[href^="https://bugs.arx-libertatis.org/"]:after {
 a.external[href*=".blogspot.com/"]:after {
 	background-position: -184px  -0px;
 }
+
+<? endif ?>

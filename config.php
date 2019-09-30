@@ -6,7 +6,7 @@ PP::source_dir("$here/htdocs", [
 	'/(?:^|\/)index\.html$/' => '',
 	'/\.html$/' => '',
 ]);
-PP::route('main', 'http://arx-libertatis.org/');
+PP::route('main', 'https://arx-libertatis.org/');
 
 PP::inlude_dir("$here/include");
 
@@ -22,6 +22,7 @@ PP::route('r', [
 	'favicon'       => 'favicon.png',
 	'favicon_ie'    => 'favicon.ico',
 	'logo'          => 'images/logo.png',
+	'icons'         => 'images/icons.png',
 	'icon'          => 'images/arx-libertatis-128.png',
 	'icon-24'       => 'images/arx-libertatis-24.png',
 	'icon-32'       => 'images/arx-libertatis-32.png',
@@ -35,7 +36,7 @@ PP::route('r', [
 	'icon-512'      => 'images/arx-libertatis-512.png',
 	'spellcasting'  => 'images/spellcasting.jpg',
 	'castle-of-arx' => 'images/castle-of-arx.jpg',
-	'video'         => 'http://www.youtube.com/embed/mIribIqKee8?rel=0',
+	'video'         => 'https://www.youtube.com/embed/mIribIqKee8?rel=0',
 ]);
 
 // Pages
@@ -50,7 +51,7 @@ PP::route('p', [
 	'bugs'         => 'https://bugs.arx-libertatis.org/',
 	'wishlist'     => 'https://bugs.arx-libertatis.org/arx/issues/find/saved_search/2/search/1',
 	// wiki
-	'wiki'         => 'http://wiki.arx-libertatis.org/',
+	'wiki'         => 'https://wiki.arx-libertatis.org/',
 	'gallery'      => 'wiki:Gallery',
 	'faq'          => 'wiki:FAQ',
 	'download'     => 'wiki:Download',
@@ -64,40 +65,40 @@ PP::route('p', [
 	'README'       => 'https://github.com/arx/ArxLibertatis/blob/master/README.md',
 	'OPTIONS'      => 'https://github.com/arx/ArxLibertatis/blob/master/OPTIONS.md',
 	'irc'          => 'irc://irc.freenode.net/arxfatalis',
-	'chat'         => 'http://webchat.freenode.net/?channels=arxfatalis',
-	'subreddit'    => 'http://old.reddit.com/r/ArxFatalis/',
+	'chat'         => 'https://webchat.freenode.net/#arxfatalis',
+	'subreddit'    => 'https://old.reddit.com/r/ArxFatalis/',
 	'openhub'      => 'https://www.openhub.net/p/arx',
 	'moddb'        => 'https://www.moddb.com/mods/arx-libertatis',
-	'freshcode'    => 'http://freshcode.club/projects/arx',
+	'freshcode'    => 'https://freshcode.club/projects/arx',
 	// community pages
-	'freebsd_port' => 'http://www.freebsd.org/cgi/cvsweb.cgi/ports/games/arx-libertatis/',
-	'mac_wineskin' => 'http://portingteam.com/files/file/7385-arx-libertatis-wine/',
+	'freebsd_port' => 'https://www.freshports.org/games/arx-libertatis/',
+	'mac_wineskin' => 'https://portingteam.com/files/file/7385-arx-libertatis-native/',
 	// other websites
-	'arkane'       => 'http://www.arkane-studios.com/',
-	'arxfatalis'   => 'http://web.archive.org/web/20180201053030/https://www.arkane-studios.com/uk/arx.php',
-	'patch'        => 'http://web.archive.org/web/20180105233341/https://www.arkane-studios.com/uk/arx_downloads.php',
-	'arxjapanese'  => 'http://web.archive.org/web/20090421121337/http://www.capcom.co.jp/pc/arx/',
-	'zenimax'      => 'http://www.zenimax.com/',
-	'freenode'     => 'http://freenode.net/',
-	'opengameart'  => 'http://opengameart.org/',
-	'constexpr'    => 'http://constexpr.org/',
-	'gpl'          => 'http://www.gnu.org/licenses/gpl.html',
-	'openmw'       => 'http://openmw.org/',
-	'wp_arx'       => 'http://en.wikipedia.org/wiki/Arx_Fatalis',
-	'pcgw_arx'     => 'http://pcgamingwiki.com/wiki/Arx_Fatalis',
-	'gog_arx'      => 'http://www.gog.com/gamecard/arx_fatalis',
-	'steam_arx'    => 'http://store.steampowered.com/app/1700/',
+	'arkane'       => 'https://www.arkane-studios.com/',
+	'arxfatalis'   => 'https://web.archive.org/web/20180201053030/https://www.arkane-studios.com/uk/arx.php',
+	'patch'        => 'https://web.archive.org/web/20180105233341/https://www.arkane-studios.com/uk/arx_downloads.php',
+	'arxjapanese'  => 'https://web.archive.org/web/20090421121337/http://www.capcom.co.jp/pc/arx/',
+	'zenimax'      => 'https://www.zenimax.com/',
+	'freenode'     => 'https://freenode.net/',
+	'opengameart'  => 'https://opengameart.org/',
+	'constexpr'    => 'https://constexpr.org/',
+	'gpl'          => 'https://www.gnu.org/licenses/gpl.html',
+	'openmw'       => 'https://openmw.org/',
+	'wp_arx'       => 'https://en.wikipedia.org/wiki/Arx_Fatalis',
+	'pcgw_arx'     => 'https://pcgamingwiki.com/wiki/Arx_Fatalis',
+	'gog_arx'      => 'https://www.gog.com/game/arx_fatalis',
+	'steam_arx'    => 'https://store.steampowered.com/app/1700/Arx_Fatalis/',
 	'arxendofsun'  => 'https://web.archive.org/web/20170709140048/http://arxendofsun.solarsplace.com/',
 	'arxcatalyst'  => 'http://arxcatalyst.weebly.com/',
-	'forum_arx'    => 'http://forums.bethsoft.com/forum/149-arx-fatalis-general-discussion/',
-	'forum_ttlg'   => 'http://www.ttlg.com/forums/forumdisplay.php?f=76',
-	'forum_gog'    => 'http://www.gog.com/forum/arx_fatalis',
-	'comm_steam'   => 'http://steamcommunity.com/app/1700/',
-	'group_steam'  => 'http://steamcommunity.com/groups/Arx_Fatalis',
+	'forum_arx'    => 'https://forums.bethsoft.com/forum/149-arx-fatalis-general-discussion/',
+	'forum_ttlg'   => 'https://www.ttlg.com/forums/forumdisplay.php?f=76',
+	'forum_gog'    => 'https://www.gog.com/forum/arx_fatalis',
+	'comm_steam'   => 'https://steamcommunity.com/app/1700/',
+	'group_steam'  => 'https://steamcommunity.com/groups/Arx_Fatalis',
 	// mods
-	'mod_polish'   => 'http://www.portal24h.pl/gry/spolszczenia-gier/ac/arx-fatalis-plprojekt-655/',
-	'mod_turkish'  => 'http://pinkertonoyun.blogspot.com/2012/07/arx-fatalis-turkce-yama.html',
-	'mod_korean'   => 'http://nsm53p.tistory.com/500',
+	'mod_polish'   => 'https://web.archive.org/web/20190503065440/http://www.portal24h.pl/gry/spolszczenia-gier/ac/arx-fatalis-plprojekt-655/',
+	'mod_turkish'  => 'https://pinkertonoyun.blogspot.com/2012/07/arx-fatalis-turkce-yama.html',
+	'mod_korean'   => 'https://nsm53p.tistory.com/500',
 	'guide_spawn'  => 'https://web.archive.org/web/20161022113416/http://forums.steampowered.com/forums/showpost.php?p=32434076&postcount=3'
 ]);
 
@@ -134,15 +135,15 @@ PP::route('share', function ($name) {
 	
 	$su = $u = $p->url;
 	$prefixes = [
-		'http://arx-libertatis.org/news/',
-		'http://arx-libertatis.org/releases/',
-		'http://arx-libertatis.org/',
-		'http://wiki.arx-libertatis.org/',
+		'https://arx-libertatis.org/news/',
+		'https://arx-libertatis.org/releases/',
+		'https://arx-libertatis.org/',
+		'https://wiki.arx-libertatis.org/',
 		'https://bugs.arx-libertatis.org/arx/issues/',
 	];
 	foreach($prefixes as $prefix) {
 		if(starts_with($u, $prefix)) {
-			$su = 'http://arx.vg/' . substr($u, strlen($prefix));
+			$su = 'https://arx.vg/' . substr($u, strlen($prefix));
 			break;
 		}
 	}
@@ -173,7 +174,7 @@ PP::route('share', function ($name) {
 		}
 		
 		case 'reddit': {
-			$url = 'http://old.reddit.com/submit';
+			$url = 'https://old.reddit.com/submit';
 			$q['url'] = $u;
 			if(isset($title)) {
 				$q['title'] = $title;

@@ -1,4 +1,4 @@
-This repository contains the website for [Arx Libertatis](http://arx-libertatis.org/), a cross-platform port of Arx Fatalis.
+This repository contains the website for [Arx Libertatis](https://arx-libertatis.org/), a cross-platform port of Arx Fatalis.
 
 Pages are locally compiled to static and can then be uploaded to the webserver.
 

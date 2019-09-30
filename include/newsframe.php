@@ -8,7 +8,7 @@ if($p->frame) {
 }
 
 ?>
-<section id="news" itemscope itemtype="http://schema.org/Blog" itemid="<?= url('p:news', false) ?>">
+<section id="news" itemscope itemtype="https://schema.org/Blog" itemid="<?= url('p:news', false) ?>">
 	<link itemprop="url" href="<?= url('p:news', false) ?>" />
 	<a id="rss" class="rss icon" href="<?= url('p:rss') ?>" title="rss feed"></a>
 	

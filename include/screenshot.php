@@ -17,7 +17,7 @@ if(!isset($p->link)) {
 if($p->format == 'html'):
 ?>
 
-<div class="<?= $p->float ?> screenshot"<? if($p->microcode): ?> itemprop="screenshots" itemscope itemtype="http://schema.org/ImageObject"<? endif; ?>>
+<div class="<?= $p->float ?> screenshot"<? if($p->microcode): ?> itemprop="screenshots" itemscope itemtype="https://schema.org/ImageObject"<? endif; ?>>
 	<a<? if($p->microcode): ?> itemprop="url"<? endif; ?> href="<?= url($p->link) ?>">
 		<img<? if($p->microcode): ?> itemprop="thumbnail"<? endif; ?> src="<?= ref($p->image) ?>" width="<?= attr('width') ?>" height="<?= attr('height') ?>" alt="Screenshot: <?= attr('caption') ?>">
 	</a>

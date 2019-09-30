@@ -23,9 +23,9 @@ foreach($news->items as $item) {
 
 ?>
 
-<article itemscope itemtype="http://schema.org/SoftwareApplication" itemid="<?= url('p:home', false) ?>">
+<article itemscope itemtype="https://schema.org/SoftwareApplication" itemid="<?= url('p:home', false) ?>">
 	<link itemprop="url" href="<?= url('p:home', false) ?>" />
-	<link itemprop="softwareApplicationCategory" href="http://schema.org/GameApplication" />
+	<link itemprop="softwareApplicationCategory" href="https://schema.org/GameApplication" />
 	<link itemprop="downloadURL" href="<?= url('p:download') ?>" />
 	<meta itemprop="softwareVersion" content="<?= encode_attr($version) ?>" />
 	<link itemprop="versionChanges" href="<?= url('p:changelog') ?>" />
@@ -35,7 +35,7 @@ foreach($news->items as $item) {
 		<b itemprop="name">Arx Libertatis</b> is a cross-platform, open source port of <a href="<?= url('p:arxfatalis') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<?= url('p:arkane') ?>">Arkane Studios</a>.
 	</p>
 	
-	<iframe width="560" height="315" src="<?= ref('r:video') ?>" frameborder="0" allowfullscreen itemprop="videos" itemscope itemtype="http://schema.org/VideoObject"></iframe>
+	<iframe width="560" height="315" src="<?= ref('r:video') ?>" frameborder="0" allowfullscreen itemprop="videos" itemscope itemtype="https://schema.org/VideoObject"></iframe>
 	
 	<section>
 		
@@ -156,7 +156,7 @@ echo $news->content;
 ?>
 
 <p>
-	This page uses <a href="http://icondock.com/free/vector-social-media-icons">Vector Social Media Icons</a> by IconDock.com &amp; <a href="http://www.doublejdesign.co.uk">Double-J Design</a>.<br>
-	<a href="http://www.twolofbees.com/artwork.php?iid=870"><?= $p->linux_icon ?>Stycil Tux</a> by Cheeseness - CC0 1.0 Universal.
+	This page uses <a href="http://icondock.com/free/vector-social-media-icons">Vector Social Media Icons</a> by IconDock.com &amp; <a href="https://www.doublejdesign.co.uk/">Double-J Design</a>.<br>
+	<a href="https://www.twolofbees.com/artwork.php?iid=870"><?= $p->linux_icon ?>Stycil Tux</a> by Cheeseness - CC0 1.0 Universal.
 </p>
 <? if(isset($news->footer)) { echo $news->footer; } ?>

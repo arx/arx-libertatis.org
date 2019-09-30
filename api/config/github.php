@@ -18,14 +18,14 @@ $GLOBALS['github_refault_repo'] = 'ArxLibertatis';
 // Rewrites to apply to github URLs
 $GLOBALS['github_rewrites'] = array(
 	# Generic rewrites for arx repos
-	'arx/([^/]*)/pull/(.*)' => 'http://arx.vg/g/\1/pull/\2',
-	'arx/([^/]*)/commits/(.*)' => 'http://arx.vg/g/\1/ref/\2',
-	'arx/([^/]*)/commit/([0-9a-f]{5,7})[0-9a-f]*' => 'http://arx.vg/g/\1/\2',
+	'arx/([^/]*)/pull/(.*)' => 'https://arx.vg/g/\1/pull/\2',
+	'arx/([^/]*)/commits/(.*)' => 'https://arx.vg/g/\1/ref/\2',
+	'arx/([^/]*)/commit/([0-9a-f]{5,7})[0-9a-f]*' => 'https://arx.vg/g/\1/\2',
 	'arx/([^/]*)/compare/([0-9a-f]{5,7})[0-9a-f]*\^?\.\.\.([0-9a-f]{5,7})[0-9a-f]*'
-		=> 'http://arx.vg/g/\1/\2..\3',
+		=> 'https://arx.vg/g/\1/\2..\3',
 	# Special additional shortening for main and website repos
-	'/^http:\/\/arx\.vg\/g\/arx\-libertatis\.org\//' => 'http://arx.vg/web/',
-	'/^http:\/\/arx\.vg\/g\/ArxLibertatis\//' => 'http://arx.vg/',
+	'/^https:\/\/arx\.vg\/g\/arx\-libertatis\.org\//' => 'https://arx.vg/web/',
+	'/^https:\/\/arx\.vg\/g\/ArxLibertatis\//' => 'https://arx.vg/',
 );
 
 include __DIR__ . '/private/github.php';
