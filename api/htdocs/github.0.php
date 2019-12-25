@@ -246,10 +246,10 @@ if(!isset($_SERVER['HTTP_X_GITHUB_EVENT'])) {
 $event = $_SERVER['HTTP_X_GITHUB_EVENT'];
 
 // Decode the event data
-if(!isset($HTTP_RAW_POST_DATA)) {
+$payload = file_get_contents("php://input");
+if($payload === FALSE) {
 	error('missing payload', 400);
 }
-$payload = $HTTP_RAW_POST_DATA;
 $data = json_decode($payload);
 if($data === null) {
 	error('invalid payload', 400);

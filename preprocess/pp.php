@@ -155,7 +155,7 @@ class PP {
 		
 		$dlen = strlen($dir);
 		
-		if($dlen < 1 || $dir{$dlen - 1} != '/') {
+		if($dlen < 1 || $dir[$dlen - 1] != '/') {
 			error('bad source directory', $dir);
 		}
 		

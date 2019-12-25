@@ -54,7 +54,7 @@ class Page {
 		}
 		
 		// Clean the first newline
-		if($text{0} == "\n") {
+		if($text[0] == "\n") {
 			$text = substr($text, 1);
 		}
 		
