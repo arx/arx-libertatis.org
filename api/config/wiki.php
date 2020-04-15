@@ -12,6 +12,8 @@ $GLOBALS['wiki_namespaces'] = array(
 	NS_FILE => 'uploaded',
 	NS_HELP => 'created',
 	NS_CATEGORY => 'created',
+	430 => 'created', // Script
+	440 => 'created', // Action
 );
 
 // Ignore minor edits?
