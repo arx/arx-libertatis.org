@@ -42,6 +42,11 @@ class Arx {
 			
 			$message = $username . ' ' . $action . ' ' . $page;
 			$summary = trim($summary);
+			$prefix = 'Created page with "';
+			if($action == 'created' && substr($summary, 0, strlen($prefix)) == $prefix) {
+				// Ignore automatically generated summary for new pages
+				$summary = '';
+			}
 			if($summary != '') {
 				if(substr($summary, 0, 2) == '/*' && substr($summary, -2) == '*/') {
 					$summary = '→' . trim(substr($summary, 2, -2));
