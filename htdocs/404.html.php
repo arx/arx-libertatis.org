@@ -4,6 +4,7 @@
 PP::optimize_urls(PP::URL_ROOT_RELATIVE);
 $p->inherit('frame');
 $p->title = 'This page does not exist';
+$p->nocanonical = true;
 ?>
 
 <section>

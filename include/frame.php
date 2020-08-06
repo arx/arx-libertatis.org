@@ -29,7 +29,7 @@ $p->mimetype = 'text/html';
 		<link rel="icon" href="<?= ref('r:icon-24') ?>" sizes="24x24">
 		<link rel="icon" href="<?= ref('r:favicon') ?>" sizes="16x16">
 		<link rel="stylesheet" type="text/css" href="<?= url('r:style') ?>" title="...">
-		<? if(isset($p->url)): ?>
+		<? if(isset($p->url) && !isset($p->nocanonical)): ?>
 		<link rel="canonical" href="<?= encode_attr($p->url) ?>">
 		<? endif; ?>
 		<title><?

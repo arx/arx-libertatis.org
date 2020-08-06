@@ -129,10 +129,6 @@ foreach($news->items as $item) {
 			<li><a href="<?= url('p:comm_steam')  ?>"><?= $p->steam_icon ?> Steam Community</a></li>
 			<li><a href="<?= url('p:group_steam') ?>"><?= $p->steam_icon ?> Steam Group</a></li>
 		</ul>
-		Friends:
-		<ul>
-			<li><a href="<?= url('p:openmw')      ?>"><?= $p->i_openmw ?></a></li>
-		</ul>
 	</footer>
 	
 </article>
