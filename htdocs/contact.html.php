@@ -26,10 +26,10 @@ $p->import('icons');
 		<?= url('c:irc') ?> is <a href="<?= url('p:irclogs') ?>">logged</a> for better communication across timezones. The logging bot has been kindly set up and is hosted by <a href="<?= url('p:opengameart') ?>">OpenGameArt.org</a>. 
 	</p>
 	
-	<h3><?= $p->i_reddit ?></h3>
+	<h3>Bug Tracker</h3>
 	
 	<p>
-		If your are more comfortable with message boards, feel free to post to <b><a href="<?= url('p:subreddit') ?>">/r/ArxFatalis</a></b>.
+		If you have found a problem with Arx Libertatis, please <b><a href="<?= url('p:bugs') ?>"><?= $p->bug_icon ?> open a bug report</a></b>.
 	</p>
 	
 	<h3>Forums</h3>
@@ -38,18 +38,12 @@ $p->import('icons');
 		We don't have our own forum, but occasionally visit some of the existing <a href="<?= url('wiki:FAQ#Are_there_any_Arx_Libertatis_discussion_forums.3F') ?>">Arx Fatalis communities</a>:
 	</p>
 	<ul>
-		<li><a href="<?= url('p:forum_arx')   ?>"><?= $p->bethesda_icon ?> Official Forum</a></li>
 		<li><a href="<?= url('p:forum_ttlg')  ?>"><?= $p->ttlg_icon ?> TTLG Forum</a></li>
+		<li><a href="<?= url('p:subreddit')  ?>"><?= $p->reddit_icon ?> Arx Fatalis Subreddit</a></li>
 		<li><a href="<?= url('p:forum_gog')   ?>"><?= $p->gog_icon ?> GOG.com Forum</a></li>
 		<li><a href="<?= url('p:comm_steam')  ?>"><?= $p->steam_icon ?> Steam Community</a></li>
 		<li><a href="<?= url('p:group_steam') ?>"><?= $p->steam_icon ?> Steam Group</a></li>
 	</ul>
-	
-	<h3><?= $p->bug_icon ?> Bug Tracker</h3>
-	
-	<p>
-		If you have found a problem in Arx Libertatis, please <b><a href="<?= url('p:bugs') ?>">open a bug report</a></b>.
-	</p>
 	
 </section>
 

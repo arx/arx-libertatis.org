@@ -54,7 +54,7 @@ foreach($news->items as $item) {
 		</p>
 		
 		<p>
-			Arx Libertatis <b><?= encode_text($version) ?></b> updates and improves Arx Fatalis by supporting modern systems, porting the game to new systems as well as eliminating bugs and limitations. In the future we plan to improve and modernize the engine as well as enable customizations and mods by the community.
+			Arx Libertatis <b><?= encode_text($version) ?></b> updates and improves Arx Fatalis by supporting modern systems, porting the game to new systems, as well as eliminating bugs and limitations. In the future we plan to improve and modernize the engine as well as enable customizations and mods by the community.
 		</p>
 		
 	</section>
@@ -117,12 +117,12 @@ foreach($news->items as $item) {
 		</ul>
 		Other Arx Projects:
 		<ul>
-			<li><a href="<?= url('p:arxendofsun') ?>"><?= $p->i_arxendofsun ?></a></li>
+			<li><a href="<?= url('p:arxinsanity') ?>"><?= $p->i_arxinsanity ?></a></li>
+			<li><a href="<?= url('p:arxue4') ?>"><?= $p->i_arxue4 ?></a></li>
 			<li><a href="<?= url('p:arxcatalyst') ?>"><?= $p->i_arxcatalyst ?></a></li>
 		</ul>
 		Arx Community:
 		<ul>
-			<li><a href="<?= url('p:forum_arx')   ?>"><?= $p->bethesda_icon ?> Official Forum</a></li>
 			<li><a href="<?= url('p:forum_ttlg')  ?>"><?= $p->ttlg_icon ?> TTLG Forum</a></li>
 			<li><a href="<?= url('p:subreddit')   ?>"><?= $p->i_reddit ?></a></li>
 			<li><a href="<?= url('p:forum_gog')   ?>"><?= $p->gog_icon ?> GOG.com Forum</a></li>

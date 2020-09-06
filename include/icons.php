@@ -52,6 +52,8 @@ $p->all_icons = [
 	/* misc icons */
 	'arx'          => 'Arx Libertatis',
 	'arxendofsun'  => 'Arx – End Of Sun',
+	'arxinsanity'  => 'Arx Insanity Mode',
+	'arxue4'       => 'Arx Fatalis UE4 Remastered',
 	'arxcatalyst'  => 'Arx Catalyst',
 	'wine'         => 'Wine',
 	'bug'          => 'Bug',
