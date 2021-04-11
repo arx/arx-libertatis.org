@@ -23,7 +23,7 @@ $p->import('icons');
 	</p>
 	
 	<p>
-		<?= url('c:irc') ?> is <a href="<?= url('p:irclogs') ?>">logged</a> for better communication across timezones. The logging bot has been kindly set up and is hosted by <a href="<?= url('p:opengameart') ?>">OpenGameArt.org</a>. 
+		<?= url('c:irc') ?> is <a href="<?= url('p:irclogs') ?>">logged</a> for better communication across timezones.
 	</p>
 	
 	<h3>Bug Tracker</h3>
