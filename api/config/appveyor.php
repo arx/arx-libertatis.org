@@ -4,7 +4,7 @@
 $GLOBALS['appveyor_passkey'] = '';
 
 # IRC channel to send messages to
-$GLOBALS['appveyor_channel'] = '#arxfatalis';
+$GLOBALS['appveyor_channel'] = '#arx';
 
 # How many digits of the commit SHA to show in commit messages
 $GLOBALS['appveyor_sha_size'] = 7;

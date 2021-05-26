@@ -1,7 +1,7 @@
 <?php
 
 # IRC channel to send messages to
-$GLOBALS['wiki_channel'] = '#arxfatalis';
+$GLOBALS['wiki_channel'] = '#arx';
 
 // Prefix for Wiki URLs
 $GLOBALS['wiki_prefix'] = 'https://arx.vg/wiki/';

@@ -4,7 +4,7 @@
 $GLOBALS['github_passkey'] = '';
 
 # IRC channel to send messages to
-$GLOBALS['github_channel'] = '#arxfatalis';
+$GLOBALS['github_channel'] = '#arx';
 
 # How many digits of the commit SHA to show in commit messages
 $GLOBALS['github_sha_size'] = 7;

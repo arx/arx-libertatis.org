@@ -8,7 +8,7 @@ $p->mimetype = 'application/rss+xml';
 
 $p->import('newslist');
 
-$max_items = 10;
+$max_items = 4;
 
 ?>
 <?= '<?xml version="1.0" encoding="UTF-8" ?>' ?>

@@ -64,8 +64,8 @@ PP::route('p', [
 	'git'          => 'https://github.com/arx/ArxLibertatis',
 	'README'       => 'https://github.com/arx/ArxLibertatis/blob/master/README.md',
 	'OPTIONS'      => 'https://github.com/arx/ArxLibertatis/blob/master/OPTIONS.md',
-	'irc'          => 'irc://irc.freenode.net/arxfatalis',
-	'chat'         => 'https://webchat.freenode.net/#arxfatalis',
+	'irc'          => 'irc://irc.libera.chat:+6697/arx',
+	'chat'         => 'https://kiwiirc.com/nextclient/#irc://irc.libera.chat:+6697/arx',
 	'subreddit'    => 'https://old.reddit.com/r/ArxFatalis/',
 	'openhub'      => 'https://www.openhub.net/p/arx',
 	'moddb'        => 'https://www.moddb.com/mods/arx-libertatis',
@@ -79,7 +79,7 @@ PP::route('p', [
 	'patch'        => 'https://web.archive.org/web/20180105233341/https://www.arkane-studios.com/uk/arx_downloads.php',
 	'arxjapanese'  => 'https://web.archive.org/web/20090421121337/http://www.capcom.co.jp/pc/arx/',
 	'zenimax'      => 'https://www.zenimax.com/',
-	'freenode'     => 'https://freenode.net/',
+	'libera'       => 'https://libera.chat/',
 	'opengameart'  => 'https://opengameart.org/',
 	'constexpr'    => 'https://constexpr.org/',
 	'gpl'          => 'https://www.gnu.org/licenses/gpl.html',
@@ -222,7 +222,7 @@ PP::route('share', function ($name) {
 
 // Constants
 PP::route('c', [
-	'irc'          => ':#arxfatalis',
+	'irc'          => ':#arx',
 	'icon-80_size' => ':80x80',
 	'icon_size'    => ':128x128',
 ]);
