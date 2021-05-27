@@ -15,6 +15,7 @@ PP::route('http', ':http:');
 PP::route('https', ':https:');
 PP::route('mailto', ':mailto:');
 PP::route('irc', ':irc:');
+PP::route('ircs', ':ircs:');
 
 // Resources
 PP::route('r', [
@@ -64,8 +65,8 @@ PP::route('p', [
 	'git'          => 'https://github.com/arx/ArxLibertatis',
 	'README'       => 'https://github.com/arx/ArxLibertatis/blob/master/README.md',
 	'OPTIONS'      => 'https://github.com/arx/ArxLibertatis/blob/master/OPTIONS.md',
-	'irc'          => 'irc://irc.libera.chat:+6697/arx',
-	'chat'         => 'https://kiwiirc.com/nextclient/#irc://irc.libera.chat:+6697/arx',
+	'irc'          => 'ircs://irc.libera.chat:6697/arx',
+	'chat'         => 'https://web.libera.chat/#arx',
 	'subreddit'    => 'https://old.reddit.com/r/ArxFatalis/',
 	'openhub'      => 'https://www.openhub.net/p/arx',
 	'moddb'        => 'https://www.moddb.com/mods/arx-libertatis',
@@ -80,6 +81,7 @@ PP::route('p', [
 	'arxjapanese'  => 'https://web.archive.org/web/20090421121337/http://www.capcom.co.jp/pc/arx/',
 	'zenimax'      => 'https://www.zenimax.com/',
 	'libera'       => 'https://libera.chat/',
+	'libera_rules' => 'https://libera.chat/policies',
 	'opengameart'  => 'https://opengameart.org/',
 	'constexpr'    => 'https://constexpr.org/',
 	'gpl'          => 'https://www.gnu.org/licenses/gpl.html',

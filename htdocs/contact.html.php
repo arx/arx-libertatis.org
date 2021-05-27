@@ -11,11 +11,11 @@ $p->import('icons');
 	
 	<h2>Contact</h2>
 	
-	<h3>IRC Channel</h3>
+	<h3>Chat</h3>
 	
 	<p>
-		We mainly hang out in the <b><a href="<?= url('p:irc') ?>"><?= url('c:irc') ?></a></b> channel on the <a href="<?= url('p:libera') ?>">Libera.Chat</a> network.<br>
-		If you are new to IRC, please see the <a href="<?= url('wiki:IRC_channel') ?>">wiki page</a>!<br>
+		We mainly hang out in the <b><a href="<?= url('p:irc') ?>"><?= url('c:irc') ?></a></b> channel on the <a href="<?= url('p:libera') ?>">Libera.Chat</a> IRC network.<br>
+		Please follow the <a href="<?= url('p:libera_rules') ?>">network policies</a>, and if you are new to IRC, please see the <a href="<?= url('wiki:IRC_channel') ?>">wiki page</a>!<br>
 	</p>
 	
 	<p>
