@@ -66,6 +66,7 @@ PP::route('p', [
 	'README'       => 'https://github.com/arx/ArxLibertatis/blob/master/README.md',
 	'OPTIONS'      => 'https://github.com/arx/ArxLibertatis/blob/master/OPTIONS.md',
 	'irc'          => 'ircs://irc.libera.chat:6697/arx',
+	'matrix_room'  => 'https://matrix.to/#arx:libera.chat',
 	'chat'         => 'https://web.libera.chat/#arx',
 	'subreddit'    => 'https://old.reddit.com/r/ArxFatalis/',
 	'openhub'      => 'https://www.openhub.net/p/arx',
@@ -82,6 +83,7 @@ PP::route('p', [
 	'zenimax'      => 'https://www.zenimax.com/',
 	'libera'       => 'https://libera.chat/',
 	'libera_rules' => 'https://libera.chat/policies',
+	'matrix'       => 'https://matrix.org/',
 	'opengameart'  => 'https://opengameart.org/',
 	'constexpr'    => 'https://constexpr.org/',
 	'gpl'          => 'https://www.gnu.org/licenses/gpl.html',
@@ -225,6 +227,7 @@ PP::route('share', function ($name) {
 // Constants
 PP::route('c', [
 	'irc'          => ':#arx',
+	'matrix'       => ':#arx:libera.chat',
 	'icon-80_size' => ':80x80',
 	'icon_size'    => ':128x128',
 ]);
