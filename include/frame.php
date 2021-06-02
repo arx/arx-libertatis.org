@@ -56,7 +56,7 @@ for(var i = 0; i < e.length; i++) { document.createElement(e[i]); }
 			
 			<h1>
 				<a href="<?= url('p:home') ?>">
-					<img src="<?= ref('r:logo') ?>" alt="Arx Libertatis">
+					<img src="<?= ref('r:logo') ?>" alt="Arx Libertatis" width="578" height="96">
 				</a>
 			</h1>
 			
