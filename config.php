@@ -61,6 +61,7 @@ PP::route('p', [
 	'download_freebsd' => 'wiki:Download#FreeBSD',
 	'changelog'    => 'wiki:Changelog',
 	'forums'       => 'wiki:FAQ#Are_there_any_Arx_Libertatis_discussion_forums.3F',
+	'snapshots'    => 'wiki:Development_snapshots',
 	// external pages
 	'git'          => 'https://github.com/arx/ArxLibertatis',
 	'README'       => 'https://github.com/arx/ArxLibertatis/blob/master/README.md',
