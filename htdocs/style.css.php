@@ -417,6 +417,8 @@ article > section + section {
 	margin: 4px;
 	margin-right: 0px;
 	display: inline-block;
+	position: relative;
+	z-index: 1;
 }
 
 .screenshot {
