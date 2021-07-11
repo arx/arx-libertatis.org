@@ -493,6 +493,8 @@ article > section + section {
 	margin-top: 15px;
 	font-size: 140%;
 	padding-right: 120px;
+	position: relative;
+	padding-left: 8px;
 }
 
 #news article > header > h1 a {
@@ -501,13 +503,20 @@ article > section + section {
 }
 
 #news article > header > h1:before {
-	content: "\00bb\0020";
+	content: "\00bb";
 	color: #555;
+	position: absolute;
+	left: -0.5em;
 }
 
-#news article > header >  h1:after {
-	content: "\0020\00ab";
+#news article > header > h1:after {
+	content: "\00ab";
 	color: #555;
+	white-space: nowrap;
+	width: 8px;
+	margin-right: -8px;
+	position: relative;
+	left: 0.4em;
 }
 
 #news article > header > time {
