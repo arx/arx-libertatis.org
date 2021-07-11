@@ -35,7 +35,19 @@ foreach($news->items as $item) {
 		<b itemprop="name">Arx Libertatis</b> is a cross-platform, open source port of <a href="<?= url('p:arxfatalis') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<?= url('p:arkane') ?>">Arkane Studios</a>.
 	</p>
 	
-	<iframe width="560" height="315" src="<?= ref('r:video') ?>" frameborder="0" allowfullscreen itemprop="videos" itemscope itemtype="https://schema.org/VideoObject"></iframe>
+	<div id="download">
+		<a href="<?= url('p:download') ?>" class="button"><?= $p->i_download ?></a>
+		<div class="os-icons">
+			<!--
+			--><a href="<?= url('p:download_windows') ?>" title="Windows download"><?= $p->big_windows_icon ?></a><!--
+			--><a href="<?= url('p:download_linux')   ?>" title="Linux download"><?= $p->big_linux_icon   ?></a><!--
+			-->
+		</div>
+	</div>
+	
+	<div id="video">
+		<iframe src="<?= ref('r:video') ?>" frameborder="0" allowfullscreen itemprop="videos" itemscope itemtype="https://schema.org/VideoObject"></iframe>
+	</div>
 	
 	<section>
 		
@@ -43,7 +55,7 @@ foreach($news->items as $item) {
 		inject_page('screenshot', [
 			'float' => 'left',
 			'link' => 'p:gallery',
-			'image' => 'r:spellcasting',
+			'image' => 'images/spellcasting.jpg',
 			'caption' => 'Spellcasting in Arx Fatalis',
 			'microcode' => true
 		])
@@ -65,7 +77,7 @@ foreach($news->items as $item) {
 		inject_page('screenshot', [
 			'float' => 'right',
 			'link' => 'p:gallery',
-			'image' => 'r:castle-of-arx',
+			'image' => 'images/castle-of-arx.jpg',
 			'caption' => 'Castle of Arx',
 			'microcode' => true
 		])
@@ -82,53 +94,44 @@ foreach($news->items as $item) {
 	</section>
 	
 	<footer id="sidebar">
-		Share:
-		<div id="share">
-			<a id="identica"    href="<?= url('share:identica')    ?>" title="share on identi.ca"></a>
-			<a id="reddit"      href="<?= url('share:reddit')      ?>" title="submit to reddit"></a>
-			<a id="google-plus" href="<?= url('share:google-plus') ?>" title="share on Google+"></a>
-			<a id="twitter"     href="<?= url('share:twitter')     ?>" title="share on Twitter"></a>
+		<div>
+			Arx Fatalis:
+			<ul>
+				<li><a href="<?= url('p:arxfatalis')  ?>"><?= $p->arkane_icon ?>Official Website</a></li>
+				<li><a href="<?= url('p:arxjapanese') ?>"><?= $p->arkane_icon ?>Japanese Website</a></li>
+				<li><a href="<?= url('p:wp_arx')      ?>"><?= $p->i_wikipedia ?></a></li>
+				<li><a href="<?= url('p:pcgw_arx')    ?>"><?= $p->i_pcgamingwiki ?></a></li>
+				<li><a href="<?= url('p:gog_arx')     ?>"><?= $p->i_gog ?></a></li>
+				<li><a href="<?= url('p:steam_arx')   ?>"><?= $p->i_steam ?></a></li>
+			</ul>
 		</div>
-		<div id="download">
-			<a href="<?= url('p:download') ?>" class="button"><?= $p->i_download ?></a>
-			<div class="os-icons">
-				<!--
-				--><a href="<?= url('p:download_windows') ?>" title="Windows download"><?= $p->big_windows_icon ?></a><!--
-				--><a href="<?= url('p:download_linux')   ?>" title="Linux download"><?= $p->big_linux_icon   ?></a><!--
-				--><a href="<?= url('p:download_freebsd') ?>" title="FreeBSD download"><?= $p->big_freebsd_icon ?></a><!--
-				-->
-			</div>
+		<div>
+			Arx Libertatis:
+			<ul>
+				<li><a href="<?= url('p:moddb')       ?>"><?= $p->i_moddb ?></a></li>
+				<li><a href="<?= url('p:git')         ?>"><?= $p->i_github ?></a></li>
+				<li><a href="<?= url('p:openhub')     ?>"><?= $p->i_openhub ?></a></li>
+				<li><a href="<?= url('p:freshcode')   ?>"><?= $p->i_freshcode ?></a></li>
+			</ul>
 		</div>
-		Arx Fatalis:
-		<ul>
-			<li><a href="<?= url('p:arxfatalis')  ?>"><?= $p->arkane_icon ?>Official Website</a></li>
-			<li><a href="<?= url('p:arxjapanese') ?>"><?= $p->arkane_icon ?>Japanese Website</a></li>
-			<li><a href="<?= url('p:wp_arx')      ?>"><?= $p->i_wikipedia ?></a></li>
-			<li><a href="<?= url('p:pcgw_arx')    ?>"><?= $p->i_pcgamingwiki ?></a></li>
-			<li><a href="<?= url('p:gog_arx')     ?>"><?= $p->i_gog ?></a></li>
-			<li><a href="<?= url('p:steam_arx')   ?>"><?= $p->i_steam ?></a></li>
-		</ul>
-		<?= $p->i_arx ?>:
-		<ul>
-			<li><a href="<?= url('p:moddb')       ?>"><?= $p->i_moddb ?></a></li>
-			<li><a href="<?= url('p:git')         ?>"><?= $p->i_github ?></a></li>
-			<li><a href="<?= url('p:openhub')     ?>"><?= $p->i_openhub ?></a></li>
-			<li><a href="<?= url('p:freshcode')   ?>"><?= $p->i_freshcode ?></a></li>
-		</ul>
-		Other Arx Projects:
-		<ul>
-			<li><a href="<?= url('p:arxinsanity') ?>"><?= $p->i_arxinsanity ?></a></li>
-			<li><a href="<?= url('p:arxue4') ?>"><?= $p->i_arxue4 ?></a></li>
-			<li><a href="<?= url('p:arxcatalyst') ?>"><?= $p->i_arxcatalyst ?></a></li>
-		</ul>
-		Arx Community:
-		<ul>
-			<li><a href="<?= url('p:forum_ttlg')  ?>"><?= $p->ttlg_icon ?> TTLG Forum</a></li>
-			<li><a href="<?= url('p:subreddit')   ?>"><?= $p->i_reddit ?></a></li>
-			<li><a href="<?= url('p:forum_gog')   ?>"><?= $p->gog_icon ?> GOG.com Forum</a></li>
-			<li><a href="<?= url('p:comm_steam')  ?>"><?= $p->steam_icon ?> Steam Community</a></li>
-			<li><a href="<?= url('p:group_steam') ?>"><?= $p->steam_icon ?> Steam Group</a></li>
-		</ul>
+		<div>
+			Other Arx Projects:
+			<ul>
+				<li><a href="<?= url('p:arxinsanity') ?>"><?= $p->i_arxinsanity ?></a></li>
+				<li><a href="<?= url('p:arxue4') ?>"><?= $p->i_arxue4 ?></a></li>
+				<li><a href="<?= url('p:arxcatalyst') ?>"><?= $p->i_arxcatalyst ?></a></li>
+			</ul>
+		</div>
+		<div>
+			Arx Community:
+			<ul>
+				<li><a href="<?= url('p:forum_ttlg')  ?>"><?= $p->ttlg_icon ?> TTLG Forum</a></li>
+				<li><a href="<?= url('p:subreddit')   ?>"><?= $p->i_reddit ?></a></li>
+				<li><a href="<?= url('p:forum_gog')   ?>"><?= $p->gog_icon ?> GOG.com Forum</a></li>
+				<li><a href="<?= url('p:comm_steam')  ?>"><?= $p->steam_icon ?> Steam Community</a></li>
+				<li><a href="<?= url('p:group_steam') ?>"><?= $p->steam_icon ?> Steam Group</a></li>
+			</ul>
+		</div>
 	</footer>
 	
 </article>
@@ -152,7 +155,6 @@ echo $news->content;
 ?>
 
 <p>
-	This page uses <a href="http://icondock.com/free/vector-social-media-icons">Vector Social Media Icons</a> by IconDock.com &amp; <a href="https://www.doublejdesign.co.uk/">Double-J Design</a>.<br>
 	<a href="https://www.twolofbees.com/artwork.php?iid=870"><?= $p->linux_icon ?>Stycil Tux</a> by Cheeseness - CC0 1.0 Universal.
 </p>
 <? if(isset($news->footer)) { echo $news->footer; } ?>

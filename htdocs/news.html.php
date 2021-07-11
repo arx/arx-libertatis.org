@@ -12,6 +12,10 @@ $p->inherit('newsframe');
 $p->title = 'News';
 $p->import('newslist');
 
+?>
+	<h2 itemprop="name"><span class="hidden">Arx Libertatis</span> Announcements</h2>
+<?
+
 $count = 0;
 $typed_counts = [ ];
 

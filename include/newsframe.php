@@ -12,8 +12,6 @@ if($p->frame) {
 	<link itemprop="url" href="<?= url('p:news', false) ?>" />
 	<a id="rss" class="rss icon" href="<?= url('p:rss') ?>" title="rss feed"></a>
 	
-	<h2 itemprop="name"><span class="hidden">Arx Libertatis</span> Announcements</h2>
-	
 <? inject() ?>
 	
 </section>

@@ -10,16 +10,27 @@ header, nav, section, article, aside, footer, hgroup {
 
 body > header > h1 {
 	margin: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+body > header > h1 img {
+	max-width: 100%;
+	height: auto;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #1a1a1a;
+	background: url('images/background.png') #0c0c0c;
+	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"><defs><filter id="bg"><feTurbulence type="fractalNoise" baseFrequency="0.6" stitchTiles="stitch"/><feColorMatrix values="0.005 0 0 0 0 0 0.005 0 0 0 0 0 0.005 0 0 0 0 0 0 1"/></filter></defs><rect width="100%" height="100%" filter="url(%23bg)"/></svg>'), linear-gradient(transparent, transparent) #0c0c0c;
 	color: #ccc;
-	font-family: "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Arial, sans-serif;
-	font-size: 10pt;
-	padding-top: 19px;
+	font-family: "DejaVu Sans", "Verdana", "Bitstream Vera Sans", "Liberation Sans", sans-serif;
+	font-size: 13px;
+	font-size-adjust: 0.55;
+	line-height: 140%;
+	text-rendering: optimizeLegibility;
+	padding-top: 15px;
 }
 
 iframe {
@@ -30,14 +41,13 @@ iframe {
 
 h2 {
 	color: #777;
-	margin: 5px;
+	margin-top: 5px;
 	text-align: center;
-	margin-bottom: 0px;
 }
 
 h3 {
-	margin: 7px;
-	margin-top: 15px;
+	margin-top: 20px;
+	margin-bottom: 7px;
 }
 
 a {
@@ -75,14 +85,13 @@ img {
 /* header */
 
 body > header {
-	white-space: nowrap;
 	text-align: center;
 }
 
-body > header:after {
-	border-bottom: 2px solid #444;
+body > header + article:before {
+	width: 100%;
+	border-top: 2px solid #444;
 	margin: auto;
-	width: 710px;
 	content: '';
 	display: block;
 }
@@ -90,34 +99,39 @@ body > header:after {
 #link-bar {
 	font-size: 0;
 	letter-spacing: -1px;
-	padding-top: 9px;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-transform: lowercase;
 	font-variant: small-caps;
+	padding-top: -5px;
 }
 
 #link-bar * {
-	padding-right: 8px;
-	padding-left: 8px;
 	font-weight: bold;
-	font-size: 12pt;
+	font-size: 17px;
 	letter-spacing: 0px;
 }
 
-#link-bar * + * {
+#link-bar * + *:before {
+	content: ' ';
 	border-left: 2px solid #444;
+	font-size: 70%;
+	margin-right: 8px;
+	margin-left: 8px;
 }
 
 /* footer */
 
 body > footer {
 	margin: auto;
-	width: 700px;
-	font-size: 8pt;
-	padding-top: 8px;
+	max-width: 900px;
+	font-size: 85%;
 	margin-top: 35px;
 	color: #555;
-	border-top: 2px solid #444;
+	border-top: 1px solid #444;
+	line-height: 120%;
+	padding-left: 10px;
+	padding-right: 5px;
 }
 
 body > footer a {
@@ -128,33 +142,33 @@ body > footer a {
 /* main structure */
 
 body > header + section {
-	margin-top: 25px;
+	margin-top: 5px;
 }
 
 body > section {
 	margin: auto;
-	width: 700px;
-	background-color: #2c2c2a;
+	max-width: 900px;
+	background: url('images/section.png') #1b1b1a;
+	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"><defs><filter id="bg"><feTurbulence type="fractalNoise" baseFrequency="0.6" stitchTiles="stitch"/><feColorMatrix values="0.015 0 0 0 0.004 0 0.015 0 0 0.004 0 0 0.015 0 0.0035 0 0 0 0 1"/></filter></defs><rect width="100%" height="100%" filter="url(%23bg)"/></svg>'), linear-gradient(transparent, transparent) #1b1b1a;
 	padding: 5px;
 	margin-bottom: 30px;
 	margin-top: 20px;
 	padding-left: 15px;
 	padding-right: 10px;
-	box-shadow: inset 0px 0px 10px 2px #181818;
+	box-shadow: inset 0px 0px 10px 2px #111;
 	clear: both;
 }
 
 body > article {
 	margin: auto;
-	width: 700px;
-	margin-top: 19px;
+	max-width: 900px;
 	margin-bottom: 40px;
 	position: relative;
 	text-shadow: #000 0px 0px 5px;
 }
 
 body > article > section {
-	width: 560px;
+	max-width: 760px;
 }
 
 article > section {
@@ -168,25 +182,20 @@ article > section + section {
 /* content footer */
 
 #description {
-	width: 560px; /* leave some space for the sidebar! */
+	max-width: 760px; /* leave some space for the sidebar! */
 }
 
-#sidebar {
+#download {
 	padding: 0;
-	width: 170px;
 	margin-left: 0px;
-	margin-top: -5px;
+	margin-top: 10px;
 	position: absolute;
 	top: 2px;
-	right: -45px;
-	height: 375px;
-	font-size: 8pt;
-	font-weight: bold;
-	color: #666;
-	white-space: nowrap;
+	right: -5px;
+	margin-bottom: 7px;
 }
 
-#sidebar #download .button {
+#download .button {
 	color: #ccc;
 	border-radius: 10px;
 	background-color: #353;
@@ -202,38 +211,71 @@ article > section + section {
 	margin-top: 5px;
 }
 
-#sidebar #download .button:hover {
+#download .button:hover {
 	color: #eef;
 	background-color: #483;
 	border-color: #7a7;
 }
 
-#sidebar #download .os-icons > * {
+#download .os-icons > * {
 	margin-left: 3px;
 	margin-right: 2px;
 	display: inline-block;
 }
 
-#sidebar #download .os-icons > *:hover .icon, #sidebar #download .os-icons > *:focus .icon {
+#download .os-icons > *:hover .icon, #download .os-icons > *:focus .icon {
 	box-shadow: 0px 0px 16px 1px #555;
 	background-color: #333;
 	border-radius: 8px;
 	opacity: 1;
 }
 
-#sidebar #download .os-icons {
-	margin-left: 10px;
-	margin-bottom: 7px;
+#download .os-icons {
+	text-align: center;
+	width: 100%;
 }
 
-#sidebar > ul {
+#video {
+	position: relative;
+	overflow: hidden;
+	width: 752px;
+	height: 423px;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+#video > * {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#sidebar {
+	padding: 0;
+	width: 170px;
+	margin-left: 0px;
+	margin-top: 10px;
+	position: absolute;
+	top: 100px;
+	right: -35px;
+	height: 375px;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #666;
+	line-height: 130%;
+}
+
+#sidebar ul {
 	padding: 0px;
 	margin: 0px;
 	margin-top: 6px;
 	margin-bottom: 16px;
 }
 
-#sidebar > ul > li {
+#sidebar ul > li {
 	padding-right: 8px;
 	padding-left: 8px;
 	padding-top: 2pt;
@@ -245,12 +287,62 @@ article > section + section {
 	margin-bottom: 3px;
 }
 
-#sidebar #share {
-	padding: 0;
-	left: 0px;
-	width: 100%;
-	margin-top: 7px;
-	margin-bottom: 7px;
+@media (max-width: 910px) {
+	
+	body > article > * {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	#description, body > article > section {
+		max-width: 100%;
+	}
+	
+	#download {
+		position: relative;
+		width: 100%;
+		right: 0px;
+		text-align: center;
+		margin: 0px;
+	}
+	
+	#download .button {
+		position: relative;
+		bottom: 13px;
+	}
+	
+	#download .os-icons {
+		display: inline-block;
+		width: auto;
+	}
+	
+	#video {
+		width: 100%;
+		height: auto;
+		padding-top: 56.25%;
+		margin: 0px;
+	}
+	
+	#sidebar {
+		position: relative;
+		width: 100%;
+		right: 0px;
+		top: 0px;
+		margin-top: 20px;
+		height: auto;
+		clear: both;
+	}
+	
+	#sidebar > * {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5px;
+	}
+	
+	#sidebar > * + * {
+		margin-left: 15px;
+	}
+	
 }
 
 #sidebar a:not(:hover), #comment:not(:hover) {
@@ -259,7 +351,7 @@ article > section + section {
 }
 
 /* Fade out icons in some links */
-#share > a, #rss, #sidebar ul a > .icon, #comment > .icon {
+#rss, #sidebar ul a > .icon, #comment > .icon {
 	
 	/* Nice sepia + colorize filter - works in Firefox 3.5+ but nowhere else */
 	/* Inlined to reduce number of  HTTP requests - original file is filters.svg */
@@ -290,8 +382,7 @@ article > section + section {
 }
 
 /* Reset filters from above if item/link has mouse/kerboard focus */
-#share > a:hover, #share > a:focus,
-#sidebar a:hover, #sidebar a:focus,
+#download a:hover, #download a:focus, #sidebar a:hover, #sidebar a:focus,
 #rss:hover, #rss:focus,
 #sidebar ul a:hover > .icon, #sidebar ul a:focus > .icon,
 #comment:hover > .icon, #comment:focus > .icon {
@@ -303,16 +394,12 @@ article > section + section {
 	opacity: 1;
 }
 
-#sidebar a > .icon {
+#download a > .icon, #sidebar a > .icon {
 	display: block;
 	float: left;
 	margin-right: 5px;
 	position: relative;
 	top: -2px;
-}
-
-#sidebar #share > a {
-	margin-bottom: 5px;
 }
 
 .icon {
@@ -339,9 +426,10 @@ article > section + section {
 	margin-top: 5px;
 	margin-bottom: 15px;
 	text-shadow: #000 1px 1px 2px;
-	font-size: 8pt;
+	font-size: 85%;
 	text-align: center;
 	clear: left;
+	max-width: 100%;
 }
 
 .screenshot.right {
@@ -351,28 +439,58 @@ article > section + section {
 	clear: right;
 }
 
+@media (max-width: 550px) {
+	
+	article > div, article > section {
+		text-align: center;
+	}
+	
+	article > div > *, article > section > * {
+		text-align: left;
+	}
+	
+	.screenshot, .screenshot.right {
+		float: none;
+		clear: both;
+		display: inline-block;
+		margin: 5px;
+	}
+	
+}
+
+@media (max-width: 350px) {
+	
+	.screenshot, .screenshot.right {
+		margin-left: 5px;
+	}
+	
+}
+
 .screenshot img {
 	display: block;
 	box-shadow: 0px 0px 3px 1px #654;
 	margin-bottom: 7px;
-	border-radius: 5px;
+	border-radius: 3px;
+	max-width: 100%;
+	height: auto;
 }
 
-#share > a:focus, .screenshot a:focus img {
+.screenshot a:focus img {
 	box-shadow: 0px 0px 5px 1px #aaa;
 	background-color: #666;
 }
 
 /* news items */
 
-#news article {
-	clear: both;
+#news article > header {
+	position: relative;
 }
 
 #news article > header > h1 {
 	margin: 7px;
 	margin-top: 15px;
-	font-size: 1.17em;
+	font-size: 140%;
+	padding-right: 120px;
 }
 
 #news article > header > h1 a {
@@ -391,20 +509,44 @@ article > section + section {
 }
 
 #news article > header > time {
-	float: right;
 	font-size: 10pt;
 	color: #666;
 	text-shadow: #000 1px 1px 2px;
 	font-weight: bold;
-	margin-top: -1.95em;
 	margin-right: 7px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#news #rss + article > header > h1 {
+	margin-top: 9px;
+}
+
+#news #rss + article > header > time {
+	margin-right: 32px;
+}
+
+@media (max-width: 650px) {
+	
+	#news article > header > h1 {
+		padding-right: 0px;
+	}
+	
+	#news article > header > time {
+		margin-top: -1.1em;
+		padding-left: 15px;
+		position: relative;
+	}
+	
 }
 
 #news article h2 {
 	color: #ccc;
-	font-size: 10pt;
+	font-size: 110%;
 	text-align: left;
-	margin-bottom: 0px;
+	margin-top: 20px;
+	margin-bottom: 0;
 }
 
 #news article h2 + p {
@@ -418,6 +560,7 @@ article > section + section {
 
 #news article + article {
 	border-top: 1px dotted #555;
+	margin-top: 15px;
 }
 
 #news .navigate + article {
@@ -430,6 +573,7 @@ article > section + section {
 	padding-top: 2px;
 	padding-bottom: 6px;
 	border-top: 1px dotted #3a3a3a;
+	clear: both;
 }
 
 #news .navigate .next:before, #news .navigate .more:before {
@@ -462,34 +606,9 @@ article > section + section {
 	display: inline-block;
 	margin-left: 10px;
 	margin-right: 10px;
-}
-
-#news .navigate .options > #comment {
+	padding: 0 15px;
 	border-left: 1px dotted #3a3a3a;
-	padding-left: 15px;
-}
-
-#news .navigate .options > #share:before {
-	border-left: 1px dotted #3a3a3a;
-	padding-left: 16px;
-	content: 'share: ';
-	padding-right: 2px;
-	color: #777;
-}
-
-#news .navigate .options > #share {
-	padding-right: 10px;
 	border-right: 1px dotted #3a3a3a;
-}
-
-#news .navigate .options > #share > a:hover {
-	box-shadow: 0px 0px 5px 0px #111;
-	background-color: #222;
-}
-
-#news .navigate .options > #share > * {
-	margin-left: 3px;
-	margin-right: 3px;
 }
 
 #news .navigate .more {

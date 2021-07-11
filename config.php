@@ -35,8 +35,6 @@ PP::route('r', [
 	'icon-192'      => 'images/arx-libertatis-192.png',
 	'icon-256'      => 'images/arx-libertatis-256.png',
 	'icon-512'      => 'images/arx-libertatis-512.png',
-	'spellcasting'  => 'images/spellcasting.jpg',
-	'castle-of-arx' => 'images/castle-of-arx.jpg',
 	'video'         => 'https://www.youtube-nocookie.com/embed/mIribIqKee8?rel=0',
 ]);
 

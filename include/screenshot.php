@@ -3,8 +3,8 @@
 $p->param('float', 'Should the image float left or right?', 'right');
 $p->param('link', 'Where to link to?');
 $p->param('image', 'The image to display');
-$p->param('width', 'The image width', 156);
-$p->param('height', 'The image height', 130);
+$p->param('width', 'The image width');
+$p->param('height', 'The image height');
 $p->param('caption', 'Short text describing the image');
 $p->param('microcode', 'Generate microcode tags', false);
 $p->param('format', 'Generate the news screenshot as HTML or rss', 'html');
@@ -12,6 +12,11 @@ $p->param('format', 'Generate the news screenshot as HTML or rss', 'html');
 if(!isset($p->link)) {
 	$p->link = $p->image . '.jpg';
 	$p->image = $p->image . '-thumbnail.jpg';
+}
+
+$p->imagepath = PP::find_file($p->image, 'required', '');
+if(!isset($p->width) || !isset($p->height)) {
+	list($p->width, $p->height, $ignore___, $ignore___) = getimagesize($p->imagepath);
 }
 
 if($p->format == 'html'):

@@ -17,6 +17,7 @@ $p->mimetype = 'text/html';
 	
 	<head>
 		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="<?= ref('r:favicon_ie') ?>">
 		<link rel="icon" href="<?= ref('r:icon-512') ?>" sizes="512x512">
 		<link rel="icon" href="<?= ref('r:icon-256') ?>" sizes="256x256">

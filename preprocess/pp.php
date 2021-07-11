@@ -207,10 +207,10 @@ class PP {
 		return null;
 	}
 	
-	static function find_file($file, $use = 'required') {
+	static function find_file($file, $use = 'required', $extension = '.php') {
 		global $p;
 		foreach(self::$include_dirs as $dir) {
-			$path = $dir . $file . '.php';
+			$path = $dir . $file . $extension;
 			if(file_exists($path)) {
 				return realpath($path);
 			}
