@@ -88,7 +88,7 @@ foreach($news->items as $item) {
 		</p>
 		
 		<p>
-			There are <a href="<?= url('p:download') ?>">packages</a> for <span itemprop="operatingSystems"><?= $p->i_windows ?></span>, <span itemprop="operatingSystems"><?= $p->i_linux ?></span> and <span itemprop="operatingSystems"><?= $p->i_freebsd ?></span>, but you might also get it to compile and run under <span itemprop="operatingSystems"><?= $p->i_macos ?></span> and other operating systems.
+			We provide <a href="<?= url('p:download') ?>">builds</a> for <span itemprop="operatingSystems"><?= $p->i_windows ?></span> and <span itemprop="operatingSystems"><?= $p->i_linux ?></span>. Beyond that, Arx Libertatis has also been packaged for <span itemprop="operatingSystems"><?= $p->i_macos ?></span> (Homebrew), <span itemprop="operatingSystems"><?= $p->i_freebsd ?></span>, DragonFly BSD, NetBSD, OpenBSD, Haiku and Pandora, and will likely compile and work on other operating systems.
 		</p>
 		
 	</section>
