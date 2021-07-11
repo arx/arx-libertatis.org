@@ -32,7 +32,7 @@ foreach($news->items as $item) {
 	<link itemprop="image" href="<?= url('r:icon-80') ?>" />
 	
 	<p itemprop="description" id="description">
-		<b itemprop="name">Arx Libertatis</b> is a cross-platform, open source port of <a href="<?= url('p:arxfatalis') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<?= url('p:arkane') ?>">Arkane Studios</a>.
+		<b itemprop="name">Arx Libertatis</b> is an improved, cross-platform and open source engine for <a href="<?= url('p:arxfatalis') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<?= url('p:arkane') ?>">Arkane Studios</a>.
 	</p>
 	
 	<div id="download">
