@@ -27,6 +27,8 @@ find(php)
 find(jpegoptim)
 find(optipng)
 find(pngcrush)
+find(zopflipng)
+find(cwebp)
 
 set(source "${CMAKE_SOURCE_DIR}/htdocs")
 set(stage "${CMAKE_BINARY_DIR}/stage")
@@ -84,13 +86,33 @@ foreach(file IN LISTS all_files)
 				COMMAND cmake -E make_directory "${stage}/${dir}"
 				COMMAND "${pngcrush}" -q "${source}/${file}" "${stage}/${outfile}"
 				COMMAND "${optipng}" --silent "${stage}/${outfile}"
+				COMMAND "${zopflipng}" -y -m --lossy_transparent "${stage}/${outfile}" "${stage}/${outfile}"
 				MAIN_DEPENDENCY "${source}/${file}"
-				DEPENDS "${pngcrush}" "${optipng}"
+				DEPENDS "${pngcrush}" "${optipng}" "${zopflipng}"
 				COMMENT "Optimizing ${outfile}"
 				VERBATIM
 			)
 			
 			list(APPEND optimized "${stage}/${outfile}")
+			
+			string(REGEX REPLACE "\\.png$" ".webp" outwebp "${outfile}")
+			
+			add_custom_command(OUTPUT "${stage}/${outwebp}"
+				COMMAND cmake -E make_directory "${stage}/${dir}"
+				COMMAND "${cwebp}" -z 9 -m 6 -lossless "${stage}/${outfile}" -o "${stage}/${outwebp}"
+				MAIN_DEPENDENCY "${stage}/${outfile}"
+				DEPENDS "${cwebp}"
+				COMMENT "Converting to ${outwebp}"
+				VERBATIM
+			)
+			
+			list(APPEND optimized "${stage}/${outwebp}")
+			
+			add_custom_command(TARGET copy PRE_BUILD
+				COMMAND cmake -E make_directory "${output}/${dir}"
+				COMMAND cmake -E copy_if_different "${stage}/${outwebp}" "${output}/${outwebp}"
+				VERBATIM
+			)
 			
 		elseif("${ext}" STREQUAL ".jpg" OR "${ext}" STREQUAL ".jpeg")
 			
