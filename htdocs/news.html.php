@@ -9,7 +9,7 @@ $p->param('detail', 'Detail level', [
 $p->param('typed_detail', 'Forced detail for each news class', [ ]);
 
 $p->inherit('newsframe');
-$p->title = 'News';
+$p->title = 'Arx Libertatis News';
 $p->import('newslist');
 
 ?>
