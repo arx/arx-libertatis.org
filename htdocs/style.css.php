@@ -33,6 +33,11 @@ body {
 	padding-top: 15px;
 }
 
+code, pre {
+	white-space: pre;
+	font-family: "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Lucida Console", monospace;
+}
+
 iframe {
 	border: none;
 }
