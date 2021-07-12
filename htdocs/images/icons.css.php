@@ -9,22 +9,6 @@
 
 .no.icon { background: none; }
 
-<? if($p->url == 'https://arx-libertatis.org/style.css'): ?>
-
-/* share buttons */
-#sidebar  #share > a            { width: 32px; height: 32px; }
-#sidebar  #share > #identica    { background-position:   -0px  -0px; }
-#sidebar  #share > #reddit      { background-position:   -0px -32px; }
-#sidebar  #share > #google-plus { background-position:  -32px  -0px; }
-#sidebar  #share > #twitter     { background-position:  -32px -32px; }
-.navigate #share > a            { width: 16px; height: 16px; }
-.navigate #share > #identica    { background-position: -312px -32px; }
-.navigate #share > #reddit      { background-position: -248px -16px; }
-.navigate #share > #google-plus { background-position: -328px  -0px; }
-.navigate #share > #twitter     { background-position: -312px -48px; }
-
-<? endif ?>
-
 /* big (32x32) icons */
 .icon.big         { width: 32px; height: 32px; }
 .icon.windows.big { background-position:  -64px  -0px; }
@@ -79,9 +63,6 @@
 .icon.freshcode    { background-position: -296px -48px; }
 .icon.ttlg         { background-position: -312px  -0px; }
 .icon.openmw       { background-position: -312px -16px; }
-.icon.identica     { background-position: -312px -32px; }
-.icon.twitter      { background-position: -312px -48px; }
-.icon.google_plus  { background-position: -328px  -0px; }
 .icon.nexus        { background-position: -328px -48px; }
 
 /* misc icons */

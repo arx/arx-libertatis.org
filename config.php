@@ -169,52 +169,10 @@ PP::route('share', function ($name) {
 		}
 	}
 	
-	
 	switch($name) {
-		
-		case 'identica': {
-			$url = 'https://identi.ca//index.php';
-			$q['action'] = 'newnotice';
-			if(isset($title)) {
-				$q['status_textarea'] = $title . ' ' . $su;
-			} else {
-				$q['status_textarea'] = $su;
-			}
-			break;
-		}
-		
-		case 'reddit': {
-			$url = 'https://old.reddit.com/submit';
-			$q['url'] = $u;
-			if(isset($title)) {
-				$q['title'] = $title;
-			}
-			break;
-		}
 		
 		case 'reddit-comments': {
 			$url = get_url('p:subreddit') . $u;
-			break;
-		}
-		
-		case 'google-plus': {
-			$url = 'https://plus.google.com/share';
-			$q['url'] = $u;
-			break;
-		}
-		
-		case 'twitter': {
-			$url = 'https://twitter.com/share';
-			$q['url'] = $su;
-			if(isset($title)) {
-				$q['text'] = $title;
-			}
-			break;
-		}
-		
-		case 'facebook': {
-			$url = 'https://www.facebook.com/sharer/sharer.php';
-			$q['u'] = $u;
 			break;
 		}
 		
