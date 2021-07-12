@@ -222,10 +222,10 @@ class PP {
 		}
 	}
 	
-	static function find_files($pattern, $use = 'required') {
+	static function find_files($pattern, $use = 'required', $extension = '.php') {
 		$files = [ ];
 		foreach(self::$include_dirs as $dir) {
-			$path = $dir . $pattern . '.php';
+			$path = $dir . $pattern . $extension;
 			$files = array_merge($files, glob($path));
 		}
 		return $files;
