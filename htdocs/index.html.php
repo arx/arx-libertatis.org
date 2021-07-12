@@ -32,7 +32,7 @@ foreach($news->items as $item) {
 	<link itemprop="image" href="<?= url('r:icon-80') ?>" />
 	
 	<p itemprop="description" id="description">
-		<b itemprop="name">Arx Libertatis</b> is an improved, cross-platform and open source engine for <a href="<?= url('p:arxfatalis') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<?= url('p:arkane') ?>">Arkane Studios</a>.
+		<b itemprop="name">Arx Libertatis</b> is an improved, cross-platform and open source engine for <a href="<?= url('p:wp_arx') ?>">Arx Fatalis</a>, a 2002 first-person <span itemprop="softwareApplicationSubCategory">role-playing game</span> / dungeon crawler developed by <a href="<?= url('p:arkane') ?>">Arkane Studios</a>.
 	</p>
 	
 	<div id="download">
@@ -84,7 +84,7 @@ foreach($news->items as $item) {
 ?>
 		
 		<p>
-			Arx Libertatis is based on the publicly released <a href="<?= url('p:patch') ?>">Arx Fatalis sources</a> and available under the <a href="<?= url('p:gpl') ?>">GPL 3+ license</a>. This does however not include the game data, so you need to <a href="<?= url('wiki:Getting_the_game_data') ?>">obtain a copy of the original Arx Fatalis</a>  or its demo to play Arx Libertatis.
+			Arx Libertatis is based on the publicly released <a href="<?= url('p:patch') ?>">Arx Fatalis source code</a> and available under the <a href="<?= url('p:gpl') ?>">GPL 3+ license</a>. This does however not include the game data, so you need to <a href="<?= url('wiki:Getting_the_game_data') ?>">obtain a copy of the original Arx Fatalis</a>  or its demo to play Arx Libertatis.
 		</p>
 		
 		<p>
@@ -97,8 +97,6 @@ foreach($news->items as $item) {
 		<div>
 			Arx Fatalis:
 			<ul>
-				<li><a href="<?= url('p:arxfatalis')  ?>"><?= $p->arkane_icon ?>Official Website</a></li>
-				<li><a href="<?= url('p:arxjapanese') ?>"><?= $p->arkane_icon ?>Japanese Website</a></li>
 				<li><a href="<?= url('p:wp_arx')      ?>"><?= $p->i_wikipedia ?></a></li>
 				<li><a href="<?= url('p:pcgw_arx')    ?>"><?= $p->i_pcgamingwiki ?></a></li>
 				<li><a href="<?= url('p:gog_arx')     ?>"><?= $p->i_gog ?></a></li>
@@ -117,9 +115,11 @@ foreach($news->items as $item) {
 		<div>
 			Other Arx Projects:
 			<ul>
-				<li><a href="<?= url('p:arxinsanity') ?>"><?= $p->i_arxinsanity ?></a></li>
-				<li><a href="<?= url('p:arxue4') ?>"><?= $p->i_arxue4 ?></a></li>
-				<li><a href="<?= url('p:arxcatalyst') ?>"><?= $p->i_arxcatalyst ?></a></li>
+				<li><a href="<?= url('p:arxinsanity') ?>"><?= $p->no_icon ?> Arx Insanity Mod</a></li>
+				<li><a href="<?= url('p:neuralis') ?>"><?= $p->moddb_icon ?> Arx Neuralis</a></li>
+				<li><a href="<?= url('p:arxue4') ?>"><?= $p->no_icon ?> AF UE4 Remastered</a></li>
+				<li><a href="<?= url('p:arxendofsun') ?>"><?= $p->i_arxendofsun ?></a></li>
+				<li><a href="<?= url('p:mods') ?>"><?= $p->no_icon ?> More Arx mods…</a></li>
 			</ul>
 		</div>
 		<div>
@@ -130,6 +130,17 @@ foreach($news->items as $item) {
 				<li><a href="<?= url('p:forum_gog')   ?>"><?= $p->gog_icon ?> GOG.com Forum</a></li>
 				<li><a href="<?= url('p:comm_steam')  ?>"><?= $p->steam_icon ?> Steam Community</a></li>
 				<li><a href="<?= url('p:group_steam') ?>"><?= $p->steam_icon ?> Steam Group</a></li>
+				<li><a href="<?= url('p:noden_gaming') ?>"><?= $p->youtube_icon ?> Noden Gaming</a></li>
+			</ul>
+		</div>
+		<div>
+			Arx History:
+			<ul>
+				<li><a href="<?= url('p:arxfatalis')  ?>"><?= $p->arkane_icon ?>Arkane Website</a></li>
+				<li><a href="<?= url('p:arxjowood')  ?>"><?= $p->no_icon ?>JoWooD Website</a></li>
+				<li><a href="<?= url('p:arxakella')  ?>"><?= $p->no_icon ?>Akella Website</a></li>
+				<li><a href="<?= url('p:arxjapanese') ?>"><?= $p->no_icon ?>Capcom Website</a></li>
+				<li><a href="<?= url('p:arxxbox')  ?>"><?= $p->no_icon ?>Xbox Website</a></li>
 			</ul>
 		</div>
 	</footer>

@@ -337,17 +337,14 @@ article > section + section {
 		display: inline-block;
 		vertical-align: top;
 		margin-left: 5px;
-	}
-	
-	#sidebar > * + * {
-		margin-left: 15px;
+		margin-right: 15px;
 	}
 	
 }
 
 #sidebar a:not(:hover), #comment:not(:hover) {
 	text-shadow: #543 0px 0px 1px;
-	color: #766D5E;
+	color: #986;
 }
 
 /* Fade out icons in some links */

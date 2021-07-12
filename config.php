@@ -60,6 +60,7 @@ PP::route('p', [
 	'changelog'    => 'wiki:Changelog',
 	'forums'       => 'wiki:FAQ#Are_there_any_Arx_Libertatis_discussion_forums.3F',
 	'snapshots'    => 'wiki:Development_snapshots',
+	'mods'         => 'wiki:Arx_Fatalis_mods',
 	// external pages
 	'git'          => 'https://github.com/arx/ArxLibertatis',
 	'README'       => 'https://github.com/arx/ArxLibertatis/blob/master/README.md',
@@ -78,6 +79,9 @@ PP::route('p', [
 	'arkane'       => 'https://www.arkane-studios.com/',
 	'arxfatalis'   => 'https://web.archive.org/web/20180201053030/https://www.arkane-studios.com/uk/arx.php',
 	'patch'        => 'https://web.archive.org/web/20180105233341/https://www.arkane-studios.com/uk/arx_downloads.php',
+	'arxjowood'    => 'http://web.archive.org/web/20060202074754/http://arxfatalis-online.de/',
+	'arxxbox'      => 'http://web.archive.org/web/20110128083336/http://arx-fatalis.com/',
+	'arxakella'    => 'http://web.archive.org/web/20190123095115/http://ru.akella.com/Game.aspx?id=1858',
 	'arxjapanese'  => 'https://web.archive.org/web/20090421121337/http://www.capcom.co.jp/pc/arx/',
 	'zenimax'      => 'https://www.zenimax.com/',
 	'libera'       => 'https://libera.chat/',
@@ -99,6 +103,8 @@ PP::route('p', [
 	'forum_gog'    => 'https://www.gog.com/forum/arx_fatalis',
 	'comm_steam'   => 'https://steamcommunity.com/app/1700/',
 	'group_steam'  => 'https://steamcommunity.com/groups/Arx_Fatalis',
+	'noden_gaming' => 'https://www.youtube.com/c/NodenGaming',
+	'neuralis'     => 'https://www.moddb.com/mods/arx-neuralis',
 	// mods
 	'mod_polish'   => 'https://web.archive.org/web/20190503065440/http://www.portal24h.pl/gry/spolszczenia-gier/ac/arx-fatalis-plprojekt-655/',
 	'mod_turkish'  => 'https://pinkertonoyun.blogspot.com/2012/07/arx-fatalis-turkce-yama.html',

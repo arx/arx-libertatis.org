@@ -5,6 +5,8 @@ $p->param('format', 'Generate the icons as HTML or RSS', 'html');
 
 $p->all_icons = [
 	
+	'no' => '',
+	
 	/* 24x24 icons */
 	'rss'          => 'RSS',
 	'download'     => 'Download',
@@ -52,8 +54,6 @@ $p->all_icons = [
 	/* misc icons */
 	'arx'          => 'Arx Libertatis',
 	'arxendofsun'  => 'Arx – End Of Sun',
-	'arxinsanity'  => 'Arx Insanity Mod',
-	'arxue4'       => 'AF UE4 Remastered',
 	'arxcatalyst'  => 'Arx Catalyst',
 	'wine'         => 'Wine',
 	'bug'          => 'Bug',

@@ -7,6 +7,8 @@
 	vertical-align: text-bottom;
 }
 
+.no.icon { background: none; }
+
 <? if($p->url == 'https://arx-libertatis.org/style.css'): ?>
 
 /* share buttons */
