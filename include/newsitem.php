@@ -64,7 +64,7 @@ if($p->format == 'html'):
 			inject('updates');
 			
 			// Add a link to the next release if there is any
-			if($p->type == 'release'):
+			if($p->type == 'release' && (!isset($p->live) || $p->live)):
 			
 				$next = null;
 				foreach($p->items as $item) {
