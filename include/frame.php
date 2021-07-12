@@ -57,7 +57,11 @@ for(var i = 0; i < e.length; i++) { document.createElement(e[i]); }
 			
 			<h1>
 				<a href="<?= url('p:home') ?>">
-					<img src="<?= ref('r:logo') ?>" alt="Arx Libertatis" width="578" height="96">
+					<picture>
+						<source srcset="<?= ref('images/logo.webp') ?> 578w, <?= ref('images/logo-1.5x.webp') ?> 867w, <?= ref('images/logo-2x.webp') ?> 1156w" sizes="(max-width: 578px) 100vw, 578px" type="image/webp">
+						<source srcset="<?= ref('images/logo.png') ?> 578w, <?= ref('images/logo-1.5x.png') ?> 867w, <?= ref('images/logo-2x.png') ?> 1156w" sizes="(max-width: 578px) 100vw, 578px" type="image/png">
+						<img src="<?= ref('images/logo.png') ?>" width="578" height="96" alt="Arx Libertatis">
+					</picture>
 				</a>
 			</h1>
 			
