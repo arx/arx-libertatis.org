@@ -651,3 +651,7 @@ article > section + section {
 #news article .more a {
 	float: right;
 }
+
+img:-moz-loading {
+	color: transparent;
+}
