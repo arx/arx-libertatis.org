@@ -29,6 +29,7 @@ find(optipng)
 find(pngcrush)
 find(zopflipng)
 find(cwebp)
+find(convert)
 
 set(source "${CMAKE_SOURCE_DIR}/htdocs")
 set(stage "${CMAKE_BINARY_DIR}/stage")
@@ -99,7 +100,7 @@ foreach(file IN LISTS all_files)
 			
 			add_custom_command(OUTPUT "${stage}/${outwebp}"
 				COMMAND cmake -E make_directory "${stage}/${dir}"
-				COMMAND "${cwebp}" -z 9 -m 6 -lossless "${stage}/${outfile}" -o "${stage}/${outwebp}"
+				COMMAND "${cwebp}" -lossless -z 9 -m 6 "${stage}/${outfile}" -o "${stage}/${outwebp}"
 				MAIN_DEPENDENCY "${stage}/${outfile}"
 				DEPENDS "${cwebp}"
 				COMMENT "Converting to ${outwebp}"
@@ -129,6 +130,72 @@ foreach(file IN LISTS all_files)
 			)
 			
 			list(APPEND optimized "${stage}/${outfile}")
+			
+			if(outfile MATCHES "^(.*)-2x\\.jpe?g$")
+				
+				set(tempfile "${CMAKE_MATCH_1}-1.5x.png")
+				
+				add_custom_command(OUTPUT "${stage}/${tempfile}"
+					COMMAND cmake -E make_directory "${stage}/${dir}"
+					COMMAND "${convert}" "${source}/${file}" -resize 75% "${stage}/${tempfile}"
+					MAIN_DEPENDENCY "${source}/${file}"
+					DEPENDS "${convert}" "${jpegoptim}"
+					COMMENT "Resizing to ${tempfile}"
+					VERBATIM
+				)
+				
+				set(newfile "${CMAKE_MATCH_1}-1.5x.jpg")
+				
+				add_custom_command(OUTPUT "${stage}/${newfile}"
+					COMMAND cmake -E make_directory "${stage}/${dir}"
+					COMMAND "${convert}" "${stage}/${tempfile}" -quality 85 "${stage}/${newfile}"
+					COMMAND "${jpegoptim}" --quiet "${stage}/${newfile}"
+					MAIN_DEPENDENCY "${stage}/${tempfile}"
+					DEPENDS "${convert}" "${jpegoptim}"
+					COMMENT "Converting to ${newfile}"
+					VERBATIM
+				)
+				
+				list(APPEND optimized "${stage}/${newfile}")
+				
+				add_custom_command(TARGET copy PRE_BUILD
+					COMMAND cmake -E make_directory "${output}/${dir}"
+					COMMAND cmake -E copy_if_different "${stage}/${newfile}" "${output}/${newfile}"
+					VERBATIM
+				)
+				
+				set(tempfile "${CMAKE_MATCH_1}.png")
+				
+				add_custom_command(OUTPUT "${stage}/${tempfile}"
+					COMMAND cmake -E make_directory "${stage}/${dir}"
+					COMMAND "${convert}" "${source}/${file}" -resize 50% "${stage}/${tempfile}"
+					MAIN_DEPENDENCY "${source}/${file}"
+					DEPENDS "${convert}" "${jpegoptim}"
+					COMMENT "Resizing to ${tempfile}"
+					VERBATIM
+				)
+				
+				set(newfile "${CMAKE_MATCH_1}.jpg")
+				
+				add_custom_command(OUTPUT "${stage}/${newfile}"
+					COMMAND cmake -E make_directory "${stage}/${dir}"
+					COMMAND "${convert}" "${stage}/${tempfile}" -quality 85 "${stage}/${newfile}"
+					COMMAND "${jpegoptim}" --quiet "${stage}/${newfile}"
+					MAIN_DEPENDENCY "${stage}/${tempfile}"
+					DEPENDS "${convert}" "${jpegoptim}"
+					COMMENT "Converting to ${newfile}"
+					VERBATIM
+				)
+				
+				list(APPEND optimized "${stage}/${newfile}")
+				
+				add_custom_command(TARGET copy PRE_BUILD
+					COMMAND cmake -E make_directory "${output}/${dir}"
+					COMMAND cmake -E copy_if_different "${stage}/${newfile}" "${output}/${newfile}"
+					VERBATIM
+				)
+				
+			endif()
 			
 		endif()
 		
