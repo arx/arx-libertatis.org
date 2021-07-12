@@ -67,7 +67,7 @@ for(var i = 0; i < e.length; i++) { document.createElement(e[i]); }
 			
 			<div id="link-bar"><?
 					$link_bar = [
-						[ 'p:home',     'Home',     "Arx Libertatis Homepage" ],
+						[ 'p:home',     'About',    'Arx Libertatis Homepage' ],
 						[ 'p:download', 'Download', 'Downloads for Windows, Linux and more' ],
 						[ 'p:news',     'News',     'Arx Libertatis Announcements' ],
 						[ 'p:faq',      'FAQ',      'Frequently Asked Questions' ],
