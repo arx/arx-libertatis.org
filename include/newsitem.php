@@ -127,7 +127,7 @@ if($p->format == 'html'):
 			
 ?>
 			<div class="options">
-				<a href="<?= url('share:reddit-comments') ?>" id="comment">comments on <?= $p->i_reddit ?></a>
+				<!--<a href="<?= url('share:reddit-comments') ?>" id="comment">comments on <?= $p->i_reddit ?></a>-->
 			</div>
 <?
 ?>
