@@ -13,7 +13,7 @@ $p->mimetype = 'text/html';
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	
 	<head>
 		<meta charset='utf-8'>
