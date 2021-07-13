@@ -336,6 +336,7 @@ article > section + section {
 		margin-top: 20px;
 		height: auto;
 		clear: both;
+		padding-left: 10px;
 	}
 	
 	#sidebar > * {
@@ -343,6 +344,16 @@ article > section + section {
 		vertical-align: top;
 		margin-left: 5px;
 		margin-right: 15px;
+	}
+	
+}
+
+@media (max-width: 650px) {
+	
+	#sidebar {
+		display: grid;
+		grid: none / repeat(auto-fill, 170px);
+		justify-content: space-evenly;
 	}
 	
 }
@@ -458,6 +469,7 @@ article > section + section {
 		clear: both;
 		display: inline-block;
 		margin: 5px;
+		margin-right: 10px;
 	}
 	
 }
