@@ -243,6 +243,15 @@ $p->import('icons');
 			<td></td>
 		</tr>
 		
+		<tr id="luxtorpeda">
+			<td>Luxtorpeda</td>
+			<td><a href="https://https://github.com/luxtorpeda-dev/luxtorpeda">luxtorpeda-dev</a></td>
+			<td><a href="https://luxtorpeda-dev.github.io/packages.html">arxlibertatis</a></td>
+			<td class="good">1.2</td>
+			<td class="okay">user</td>
+			<td></td>
+		</tr>
+		
 		<tr id="macos">
 			<td id="macOS"><span class="macos icon"></span> macOS</td>
 			<td id="Mac_OS_X"><a href="https://brew.sh/">Homebrew</a></td>
