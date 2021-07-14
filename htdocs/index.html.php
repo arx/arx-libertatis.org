@@ -101,6 +101,8 @@ foreach($news->items as $item) {
 				<li><a href="<?= url('p:pcgw_arx')    ?>"><?= $p->i_pcgamingwiki ?></a></li>
 				<li><a href="<?= url('p:gog_arx')     ?>"><?= $p->i_gog ?></a></li>
 				<li><a href="<?= url('p:steam_arx')   ?>"><?= $p->i_steam ?></a></li>
+				<li><a href="<?= url('p:msstore_arx') ?>"><?= $p->no_icon ?>Microsoft Store</a></li>
+				<li><a href="<?= url('p:bethesda_arx') ?>"><?= $p->no_icon ?>Bethesda Store</a></li>
 			</ul>
 		</div>
 		<div>

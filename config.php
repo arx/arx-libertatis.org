@@ -95,6 +95,8 @@ PP::route('p', [
 	'pcgw_arx'     => 'https://pcgamingwiki.com/wiki/Arx_Fatalis',
 	'gog_arx'      => 'https://www.gog.com/game/arx_fatalis',
 	'steam_arx'    => 'https://store.steampowered.com/app/1700/Arx_Fatalis/',
+	'msstore_arx'  => 'https://www.microsoft.com/en-us/p/arx-fatalis/9NXQKPGMHH9G',
+	'bethesda_arx' => 'https://store.bethesda.net/store/bethesda/en_US/pd/ThemeID.39243600/productID.1268922700',
 	'arxendofsun'  => 'https://web.archive.org/web/20170709140048/http://arxendofsun.solarsplace.com/',
 	'arxinsanity'  => 'https://arxinsanity.weebly.com/',
 	'arxue4'       => 'https://www.moddb.com/mods/arx-fatalis-ue4-remastered',
