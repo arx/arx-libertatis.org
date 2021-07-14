@@ -92,6 +92,10 @@ $p->import('icons');
 	</ul>
 	
 	<p>
+		<a href="files/">Older releases are archived here.</a>
+	</p>
+	
+	<p>
 		The <a href="<?= url('p:git') ?>">Arx Libertatis repository on GitHub</a> contains the latest development code. Read-only access is available through the following URL:
 	</p>
 	
