@@ -36,6 +36,7 @@ PP::route('r', [
 	'icon-256'      => 'images/arx-libertatis-256.png',
 	'icon-512'      => 'images/arx-libertatis-512.png',
 	'video'         => 'https://www.youtube-nocookie.com/embed/mIribIqKee8?rel=0',
+	'git'           => 'https://github.com/arx/ArxLibertatis.git',
 ]);
 
 // Pages
@@ -53,10 +54,10 @@ PP::route('p', [
 	'wiki'         => 'https://wiki.arx-libertatis.org/',
 	'gallery'      => 'wiki:Gallery',
 	'faq'          => 'wiki:FAQ',
-	'download'     => 'wiki:Download',
-	'download_windows' => 'wiki:Download#Windows',
-	'download_linux'   => 'wiki:Download#Linux',
-	'download_freebsd' => 'wiki:Download#FreeBSD',
+	'download'     => 'download',
+	'download_windows' => 'download',
+	'download_linux'   => 'download',
+	'download_freebsd' => 'download#FreeBSD',
 	'changelog'    => 'wiki:Changelog',
 	'forums'       => 'wiki:FAQ#Are_there_any_Arx_Libertatis_discussion_forums.3F',
 	'snapshots'    => 'wiki:Development_snapshots',
@@ -79,6 +80,7 @@ PP::route('p', [
 	'arkane'       => 'https://www.arkane-studios.com/',
 	'arxfatalis'   => 'https://web.archive.org/web/20180201053030/https://www.arkane-studios.com/uk/arx.php',
 	'patch'        => 'https://web.archive.org/web/20180105233341/https://www.arkane-studios.com/uk/arx_downloads.php',
+	'patch_dl'     => 'https://cdn.bethsoft.com/arxfatalis/patches/1.21/ArxFatalis_1.21_MULTILANG.exe',
 	'arxjowood'    => 'https://web.archive.org/web/20060202074754/http://arxfatalis-online.de/',
 	'arxxbox'      => 'https://web.archive.org/web/20110128083336/http://arx-fatalis.com/',
 	'arxakella'    => 'https://web.archive.org/web/20190123095115/http://ru.akella.com/Game.aspx?id=1858',
@@ -107,6 +109,7 @@ PP::route('p', [
 	'group_steam'  => 'https://steamcommunity.com/groups/Arx_Fatalis',
 	'noden_gaming' => 'https://www.youtube.com/c/NodenGaming',
 	'neuralis'     => 'https://www.moddb.com/mods/arx-neuralis',
+	'repology'     => 'https://repology.org/project/arx-libertatis/versions',
 	// mods
 	'mod_polish'   => 'https://web.archive.org/web/20190503065440/http://www.portal24h.pl/gry/spolszczenia-gier/ac/arx-fatalis-plprojekt-655/',
 	'mod_turkish'  => 'https://pinkertonoyun.blogspot.com/2012/07/arx-fatalis-turkce-yama.html',

@@ -669,3 +669,94 @@ article > section + section {
 img:-moz-loading {
 	color: transparent;
 }
+
+.downloads {
+	padding-left: 0px;
+	line-height: initial;
+}
+
+.downloads > li {
+	color: #bbb;
+	border-radius: 10px;
+	background-color: #232;
+	border: 1px solid #575;
+	display: inline-block;
+	margin: 5px 5px 5px 20px;
+	vertical-align: middle;
+	position: relative;
+	padding: 3px 8px 3px 43px;
+	font-size: 85%;
+}
+
+.multi.downloads > li {
+	min-width: 330px;
+}
+
+.downloads > li > * {
+	margin: 1px 1px 2px 1px;
+}
+
+.downloads .icon {
+	position: absolute;
+	left: 3px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto 0 auto 4px;
+}
+
+.downloads a {
+	font-size: 130%;
+	font-weight: bold;
+	margin-left: 2px;
+	vertical-align: -10%;
+}
+
+.downloads a + a {
+	margin-left: 8px;
+}
+
+.multi.downloads a + a {
+	float: right;
+}
+
+.downloads .name, .downloads .checksum {
+	float: left;
+	clear: both;
+}
+
+.downloads .size, .downloads .signature {
+	float: right;
+	margin-top: 1px;
+	clear: right;
+}
+
+.downloads a.signature {
+	font-size: 100%;
+	color: #bbb;
+	font-weight: normal;
+}
+
+.good { color: #2b2; text-align: center; }
+.okay { color: #893; text-align: center; }
+.poor { color: #d91; text-align: center; }
+.bad  { color: #c22; text-align: center; }
+
+table {
+	min-height: 64px;
+	margin: 7px;
+	margin-left: 12px;
+	padding: 0px;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: center;
+	background: #2a2925;
+}
+tr:nth-child(odd)  { background: #161616; }
+tr:nth-child(even) { background: #1a1a1a; }
+
+th, td {
+	border: 1px solid #403a30;
+	padding: 4px 7px;
+}
