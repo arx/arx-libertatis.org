@@ -351,6 +351,15 @@ $p->import('icons');
 			<td></td>
 		</tr>
 		
+		<tr id="solus">
+			<td>Solus</td>
+			<td><a href="https://packages.getsol.us/unstable/">unstable</a></td>
+			<td><a href="https://packages.getsol.us/unstable/a/arx-libertatis/">arx-libertatis</a></td>
+			<td class="good">1.2</td>
+			<td class="good">distro</td>
+			<td></td>
+		</tr>
+		
 		<tr id="ubuntu">
 			<td><span class="ubuntu icon"></span> Ubuntu</td>
 			<td><a href="https://launchpad.net/~arx/+archive/release">ppa:arx/release</a></td>
