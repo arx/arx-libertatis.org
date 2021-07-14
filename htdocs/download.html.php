@@ -42,7 +42,7 @@ $p->import('icons');
 	</ul>
 	
 	<p>
-		To play Arx Libertatis you need <a href="<?= url('wiki:Getting_the_game_data') ?>">the original game</a> from either <a href="<?= url('p:gog_arx') ?>"><?= $p->i_gog ?></a>, <a href="<?= url('p:steam_arx')   ?>"><?= $p->i_steam ?></a>, the <a href="<?= url('p:msstore_arx') ?>">Microsoft Store</a> or the <a href="<?= url('p:bethesda_arx') ?>">Bethesda Store</a> or a CD.
+		To play Arx Libertatis you need <a href="<?= url('wiki:Getting_the_game_data') ?>">the original game</a> from either <a href="<?= url('p:gog_arx') ?>"><?= $p->i_gog ?></a>, <a href="<?= url('p:steam_arx')   ?>"><?= $p->i_steam ?></a>, the <a href="<?= url('p:msstore_arx') ?>">Microsoft Store</a>, the <a href="<?= url('p:bethesda_arx') ?>">Bethesda Store</a> or a CD.
 	</p>
 	
 	<p>
@@ -163,7 +163,7 @@ $p->import('icons');
 		</tr>
 		
 		<tr id="dragonflybsd">
-			<td>DragonFly</td>
+			<td>DragonFly BSD</td>
 			<td><a href="https://github.com/DragonFlyBSD/DPorts">DPorts</a></td>
 			<td><a href="https://github.com/DragonFlyBSD/DPorts/tree/master/games/arx-libertatis">arx-libertatis</a></td>
 			<td class="okay">1.1.2</td>
