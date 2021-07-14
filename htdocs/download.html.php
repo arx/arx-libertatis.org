@@ -139,7 +139,7 @@ $p->import('icons');
 			<td><span class="arch icon"></span> Arch Linux</td>
 			<td><a href="https://aur.archlinux.org/">Arch User Repository</a></td>
 			<td><a href="https://aur.archlinux.org/packages/arx-libertatis/">arx-libertatis</a></td>
-			<td class="okay">1.1.2</td>
+			<td class="good">1.2</td>
 			<td class="okay">user</td>
 			<td><a href="<?= url('wiki:Linux_packages#Arch_Linux') ?>">Instructions</a></td>
 		</tr>
