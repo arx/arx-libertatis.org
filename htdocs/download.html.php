@@ -265,7 +265,7 @@ $p->import('icons');
 			<td><span class="mageia icon"></span> Mageia</td>
 			<td>Core</td>
 			<td><a href="https://madb.mageia.org/package/show/release/cauldron/application/0/name/arx-libertatis">arx-libertatis</a></td>
-			<td class="bad">1.2-dev</td>
+			<td class="good">1.2</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Linux_packages#Mageia') ?>">Instructions</a></td>
 		</tr>
