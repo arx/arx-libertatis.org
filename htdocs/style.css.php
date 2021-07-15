@@ -31,11 +31,13 @@ body {
 	line-height: 140%;
 	text-rendering: optimizeLegibility;
 	padding-top: 15px;
+	overflow-x: hidden;
 }
 
 code, pre {
 	white-space: pre;
 	font-family: "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Lucida Console", monospace;
+	overflow: auto;
 }
 
 iframe {
@@ -336,14 +338,13 @@ article > section + section {
 		margin-top: 20px;
 		height: auto;
 		clear: both;
-		padding-left: 10px;
 	}
 	
 	#sidebar > * {
 		display: inline-block;
 		vertical-align: top;
-		margin-left: 5px;
-		margin-right: 15px;
+		margin-left: 15px;
+		margin-right: 5px;
 	}
 	
 }
@@ -472,12 +473,28 @@ article > section + section {
 		margin-right: 10px;
 	}
 	
+	body > section .screenshot {
+		margin-right: 10px;
+	}
+	
 }
 
 @media (max-width: 350px) {
 	
 	.screenshot, .screenshot.right {
-		margin-left: 5px;
+		display: block;
+		max-width: initial;
+		text-align: center;
+		margin: 5px -10px;
+	}
+	
+	.screenshot img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	body > section .screenshot, body > section .screenshot.right {
+		margin-left: -15px;
 	}
 	
 }
@@ -673,6 +690,10 @@ img:-moz-loading {
 .downloads {
 	padding-left: 0px;
 	line-height: initial;
+	text-align: center;
+	margin-left: -15px;
+	margin-right: -10px;
+	overflow-x: hidden;
 }
 
 .downloads > li {
@@ -681,15 +702,32 @@ img:-moz-loading {
 	background-color: #232;
 	border: 1px solid #575;
 	display: inline-block;
-	margin: 5px 5px 5px 20px;
+	margin: 5px 15px;
 	vertical-align: middle;
 	position: relative;
 	padding: 3px 8px 3px 43px;
 	font-size: 85%;
+	text-align: left;
 }
 
 .multi.downloads > li {
 	min-width: 330px;
+}
+
+@media (max-width: 660px) {
+	
+	.downloads > li {
+		margin: 5px -5px;
+	}
+	
+}
+
+@media (max-width: 381px) {
+	
+	.multi.downloads > li {
+		min-width: calc(100% - 43px);
+	}
+	
 }
 
 .downloads > li > * {
@@ -713,6 +751,7 @@ img:-moz-loading {
 
 .downloads a + a {
 	margin-left: 8px;
+	font-size: inherit;
 }
 
 .multi.downloads a + a {

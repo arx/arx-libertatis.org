@@ -385,6 +385,7 @@ $p->import('icons');
 
 table.packages {
 	min-width: 90%;
+	margin: 7px auto;
 }
 
 table.packages td:nth-child(3) {
@@ -444,12 +445,20 @@ table.packages td:nth-child(6) {
 		content: 'Package: ';
 	}
 	
+	table.packages td:nth-child(4) {
+		margin: 0px 7px;
+	}
+	
 	table.packages td:nth-child(5):before {
 		content: '(';
 	}
 	
 	table.packages td:nth-child(5):after {
 		content: ')';
+	}
+	
+	table.packages td:nth-child(6) {
+		text-align: left;
 	}
 	
 	table.packages td:nth-child(6) {
