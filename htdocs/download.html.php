@@ -60,7 +60,7 @@ $p->import('icons');
 		For other operating systems, build from Source. There is also a portable .zip version for the Windows binaries.
 	</p>
 	
-	<ul class="multi downloads">
+	<ul class="multi downloads other">
 		
 		<li>
 			<a href="files/arx-libertatis-1.2.tar.xz"><span class="big download icon"></span>Arx Libertatis Source Code</a>
@@ -149,7 +149,7 @@ $p->import('icons');
 		</tr>
 		
 		<tr id="debian">
-			<td><span class="debian icon"></span> Debian (stable)</td>
+			<td><span class="debian icon"></span> Debian</td>
 			<td><a href="https://build.opensuse.org/project/show/home:dscharrer">home:dscharrer</a> on <a href="https://build.opensuse.org/">OBS</a></td>
 			<td><a href="https://software.opensuse.org/download/package?project=home%3Adscharrer&amp;package=arx-libertatis">arx-libertatis</a></td>
 			<td class="good">1.2</td>

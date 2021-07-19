@@ -699,15 +699,21 @@ img:-moz-loading {
 .downloads > li {
 	color: #bbb;
 	border-radius: 10px;
-	background-color: #232;
+	background: #232;
 	border: 1px solid #575;
 	display: inline-block;
-	margin: 5px 15px;
+	margin: 5px 17px;
 	vertical-align: middle;
 	position: relative;
 	padding: 3px 8px 3px 43px;
 	font-size: 85%;
 	text-align: left;
+}
+
+.other.downloads > li {
+	background: #2326;
+	border-color: #5756;
+	
 }
 
 .multi.downloads > li {
@@ -740,6 +746,10 @@ img:-moz-loading {
 	top: 0px;
 	bottom: 0px;
 	margin: auto 0 auto 4px;
+}
+
+.other.downloads .icon {
+	opacity: 0.5;
 }
 
 .downloads a {
