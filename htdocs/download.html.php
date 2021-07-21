@@ -269,7 +269,7 @@ $p->import('icons');
 			<td>NetBSD</td>
 			<td><a href="http://pkgsrc.se/">pkgsrc</a></td>
 			<td><a href="https://pkgsrc.se/games/arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.1.2</td>
+			<td class="good">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
