@@ -323,7 +323,7 @@ $p->import('icons');
 			<td><span class="rosa icon"></span> ROSA</td>
 			<td>Contrib</td>
 			<td><a href="https://abf.io/import/arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.1.2</td>
+			<td class="good">1.2</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Linux_packages#ROSA') ?>">Instructions</a></td>
 		</tr>
