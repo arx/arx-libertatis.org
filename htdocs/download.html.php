@@ -224,7 +224,7 @@ $p->import('icons');
 			<td>Haiku</td>
 			<td><a href="https://depot.haiku-os.org/#!/repository/haikuports">HaikuPorts</a></td>
 			<td><a href="https://depot.haiku-os.org/#!/pkg/arx_libertatis">arx_libertatis</a></td>
-			<td class="bad">1.2-dev</td>
+			<td class="good">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
