@@ -688,7 +688,7 @@ img:-moz-loading {
 }
 
 .downloads {
-	padding-left: 0px;
+	padding: 10px 0px;
 	line-height: initial;
 	text-align: center;
 	margin-left: -15px;
