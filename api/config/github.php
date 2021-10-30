@@ -18,6 +18,7 @@ $GLOBALS['github_refault_repo'] = 'ArxLibertatis';
 // Rewrites to apply to github URLs
 $GLOBALS['github_rewrites'] = array(
 	# Generic rewrites for arx repos
+	'arx/([^/]*)/runs/(.*?)\\?check_suite_focus=true' => 'https://arx.vg/g/\1/run/\2',
 	'arx/([^/]*)/pull/(.*)' => 'https://arx.vg/g/\1/pull/\2',
 	'arx/([^/]*)/commits/(.*)' => 'https://arx.vg/g/\1/ref/\2',
 	'arx/([^/]*)/commit/([0-9a-f]{5,7})[0-9a-f]*' => 'https://arx.vg/g/\1/\2',

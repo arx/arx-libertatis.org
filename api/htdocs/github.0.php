@@ -218,6 +218,38 @@ function handle_fork($data) {
 	
 }
 
+function handle_workflow_job($data) {
+	
+	$job = $data->workflow_job;
+	
+	if($data->action != 'completed' || $job->status != 'completed' || $job->conclusion != 'failure') {
+		// We are only interested in failed jobs
+		return;
+	}
+	
+	$msg = $job->name . ' failed for ' . url($data->repository->html_url . '/commit/' . $job->head_sha);
+	
+	$end = ': ' . url($job->html_url);
+	
+	msg($msg, $end);
+	
+}
+
+function handle_workflow_run($data) {
+	
+	$run = $data->workflow_run;
+	
+	if($data->action != 'completed' || $run->status != 'completed' || $run->conclusion != 'success') {
+		// We are only interested in successful runs
+		return;
+	}
+	
+	$msg = $run->name . ' succeeded for ' . url($data->repository->html_url . '/commit/' . $run->head_sha);
+	
+	msg($msg);
+	
+}
+
 
 // This API has only one resource
 if(!isset($_GET['resource']) || $_GET['resource'] !== 'hook') {
@@ -261,6 +293,8 @@ try {
 		case 'push':         handle_push($data);         break;
 		case 'pull_request': handle_pull_request($data); break;
 		case 'fork':         handle_fork($data);         break;
+		case 'workflow_job': handle_workflow_job($data); break;
+		case 'workflow_run': handle_workflow_run($data); break;
 		default: error('unexpected event', 400); break;
 	}
 } catch(Exception $e) {
