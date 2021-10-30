@@ -19,6 +19,7 @@ $GLOBALS['appveyor_rewrites'] = array(
 	'/^https?\:\/\/github\.com\/arx\/([^\/]*)\/commit\/([0-9a-f]{5,7})[0-9a-f]*$/' => 'https://arx.vg/g/\1/\2',
 	# Special additional shortening for the main repo
 	'/^https:\/\/arx\.vg\/g\/ArxLibertatis\//' => 'https://arx.vg/',
+	'/^https:\/\/ci\.appveyor\.com\/project\/dscharrer\/arxlibertatis\/builds\/(.*)$/' => 'https://arx.vg/appveyor/\1',
 );
 
 include __DIR__ . '/private/appveyor.php';

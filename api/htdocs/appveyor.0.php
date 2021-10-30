@@ -48,11 +48,7 @@ function handle_build($data) {
 	$sha = substr($event->commitId, 0, $appveyor_sha_size);
 	
 	$msg = 'Windows build ' . ($event->passed ? 'passed' : 'failed') . ' for ';
-	if($event->isPullRequest) {
-		$msg .= url($baseurl . 'pull/' . $event->pullRequestId);
-	} else {
-		$msg .= url($baseurl . 'commit/' . $sha) . ' on ' . $event->branch;
-	}
+	$msg .= url($baseurl . 'commit/' . $sha);
 	
 	msg($msg, ': ' . url($event->buildUrl));
 	
@@ -75,16 +71,16 @@ if($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // Prevent spam, restrict access
-if(!isset($_REQUEST['passkey']) || $_REQUEST['passkey'] !== $appveyor_passkey) {
+if(!isset($_SERVER['HTTP_X_PASSKEY']) || $_SERVER['HTTP_X_PASSKEY'] !== $appveyor_passkey) {
 	error('bad key', 403);
 }
 
 // Decode the event data
-if(!isset($HTTP_RAW_POST_DATA)) {
+// See https://www.appveyor.com/docs/notifications/#webhooks for format
+$payload = file_get_contents("php://input");
+if($payload === FALSE) {
 	error('missing payload', 400);
 }
-// See https://www.appveyor.com/docs/notifications/#webhooks for format
-$payload = $HTTP_RAW_POST_DATA;
 $data = json_decode($payload);
 if($data === null) {
 	error('invalid payload', 400);
