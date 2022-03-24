@@ -46,8 +46,8 @@ $p->import('icons');
 	</p>
 	
 	<p>
-		On <?= $p->i_windows ?> you should install Arx Fatalis (and <a href="<?= url('p:patch_dl') ?>">apply the 1.21 patch</a> when installing from CD) before installing Arx Libertatis.<br>
-		On <?= $p->i_linux ?> see the wiki article for <a href="<?= url('wiki:Installing_the_game_data_under_Linux') ?>">installing the game data under Linux</a> or <a href="<?= url('wiki:Steam#Linux') ?>">configure <?= $p->i_steam ?> to use Arx Libertatis to play Arx Fatalis</a>.
+		On <?= $p->i_windows ?> install Arx Fatalis (and <a href="<?= url('p:patch_dl') ?>">the 1.21 patch</a> if installing from CD) before installing Arx Libertatis.<br>
+		On <?= $p->i_linux ?> see the wiki article for <a href="<?= url('wiki:Installing_the_game_data_under_Linux') ?>">installing the game data</a> or <a href="<?= url('wiki:Steam#Linux') ?>">configure <?= $p->i_steam ?> to use Arx Libertatis</a>.
 	</p>
 	
 	<p>
