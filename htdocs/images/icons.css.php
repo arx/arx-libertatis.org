@@ -188,18 +188,29 @@ body {
 	margin-top: 100px !important;
 }
 
-body:before {
+body:before, body:after {
 	position: absolute;
 	width: 100%;
-	height: 100px;
-	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="50" fill="%23005BBB"/><rect width="100%" height="50" y="50" fill="%23FFD500"/></svg>');
-	background: linear-gradient(#005BBB 50%, #FFD500 50%);
-	content: 'нет войне\a Русский военный корабль, иди нахуй';
-	top: 0;
+	height: 50px;
 	text-align: center;
-	white-space: pre;
 	line-height: 50px;
 	font-size: 25px;
+	left: 0;
+	z-index: -1;
+}
+
+body:before {
+	background: #005BBB;
+	top: 0;
 	color: #fff;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	content: 'нет войне';
+}
+
+body:after {
+	background: #FFD500;
+	top: 50px;
+	color: #000;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	content: 'Русский военный корабль, иди нахуй';
 }
