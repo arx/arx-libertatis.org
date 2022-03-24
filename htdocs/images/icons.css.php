@@ -177,13 +177,16 @@ a.external[href*=".blogspot.com/"]:after {
 	background-position: -184px  -0px;
 }
 
-<? else: ?>
+#mw-head {
+	top: 100px !important;
+}
+
+
+<? endif ?>
 
 body {
 	margin-top: 100px !important;
 }
-
-<? endif ?>
 
 body:before {
 	position: absolute;
