@@ -213,4 +213,5 @@ body:after {
 	color: #000;
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 	content: 'Русский военный корабль, иди нахуй';
+	font-size: min(25px, 4vw);
 }
