@@ -102,7 +102,7 @@ $p->import('icons');
 	
 </section>
 
-<section>
+<section id="packages">
 	
 	<h2>Packages</h2>
 	
@@ -125,7 +125,7 @@ $p->import('icons');
 			<td>ALT Linux</td>
 			<td><a href="https://packages.altlinux.org/en/sisyphus/home">Sisyphus repository</a></td>
 			<td><a href="https://packages.altlinux.org/en/sisyphus/srpms/ArxLibertatis">ArxLibertatis</a></td>
-			<td class="bad">1.2-dev</td>
+			<td class="good">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
