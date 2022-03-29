@@ -143,7 +143,7 @@ $p->import('icons');
 			<td><span class="chakra icon"></span> Chakra</td>
 			<td><a href="https://ccr.chakralinux.org/">Chakra Community Repo</a></td>
 			<td><a href="https://ccr.chakralinux.org/packages.php?K=arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.1.2</td>
+			<td class="poor">1.1.2</td>
 			<td class="okay">user</td>
 			<td><a href="<?= url('wiki:Linux_packages#Chakra') ?>">Instructions</a></td>
 		</tr>
@@ -161,7 +161,7 @@ $p->import('icons');
 			<td>DragonFly BSD</td>
 			<td><a href="https://github.com/DragonFlyBSD/DPorts">DPorts</a></td>
 			<td><a href="https://github.com/DragonFlyBSD/DPorts/tree/master/games/arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.1.2</td>
+			<td class="poor">1.1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
@@ -170,7 +170,7 @@ $p->import('icons');
 			<td>Exherbo</td>
 			<td><a href="https://git.exherbo.org/summer/repositories/hasufell/index.html">hasufell</a></td>
 			<td><a href="https://git.exherbo.org/summer/packages/games-rpg/arx-libertatis/index.html">arx-libertatis</a></td>
-			<td class="okay">1.1.2</td>
+			<td class="poor">1.1.2</td>
 			<td class="okay">user</td>
 			<td></td>
 		</tr>
@@ -197,7 +197,7 @@ $p->import('icons');
 			<td>Funtoo</td>
 			<td><a href="https://github.com/funtoo/games-kit">games-kit</a></td>
 			<td><a href="https://github.com/funtoo/games-kit/tree/1.4-release/games-rpg/arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.1.2</td>
+			<td class="poor">1.1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
@@ -296,7 +296,7 @@ $p->import('icons');
 			<td><span class="openmandriva icon"></span> OpenMandriva</td>
 			<td>Contrib</td>
 			<td><a href="https://github.com/OpenMandrivaAssociation/arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.1.2</td>
+			<td class="poor">1.1.2</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Linux_packages#Mandriva') ?>">Instructions</a></td>
 		</tr>
@@ -332,7 +332,7 @@ $p->import('icons');
 			<td><span class="slackware icon"></span> Slackware</td>
 			<td><a href="https://slackbuilds.org/">slackbuilds.org</a></td>
 			<td><a href="https://slackbuilds.org/result/?search=arx-libertatis&amp;sv=">arx-libertatis</a></td>
-			<td class="okay">1.1.2</td>
+			<td class="poor">1.1.2</td>
 			<td class="okay">user</td>
 			<td></td>
 		</tr>
