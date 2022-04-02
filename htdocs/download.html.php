@@ -274,6 +274,15 @@ $p->import('icons');
 			<td></td>
 		</tr>
 		
+		<tr id="nintendoswitch">
+			<td>Nintendo Switch</td>
+			<td>Homebrew</td>
+			<td><a href="https://gbatemp.net/threads/arx-libertatis-port-arx-fatalis-for-the-switch.591621/">arx</a></td>
+			<td class="good">1.2</td>
+			<td class="okay">user</td>
+			<td></td>
+		</tr>
+		
 		<tr id="nixos">
 			<td>NixOS</td>
 			<td><a href="https://nixos.org/nixos/packages.html">NixOS packages</a></td>
