@@ -19,4 +19,4 @@ $wgExtensionCredits['other'][] = array(
 $wgAutoloadClasses['Arx'] = __DIR__ . DIRECTORY_SEPARATOR . 'Arx.body.php';
 
 // Register a page save hook
-$wgHooks['PageContentSaveComplete'][] = 'Arx::pageContentSaveComplete';
+$wgHooks['PageSaveComplete'][] = 'Arx::onPageSaveComplete';

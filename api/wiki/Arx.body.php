@@ -10,9 +10,7 @@ require_once __DIR__ . '/../lib/irc.php';
 
 class Arx {
 	
-	public static function pageContentSaveComplete($article, $user, $content, $summary,
-	                                               $isMinor, $isWatch, $section, $flags,
-	                                               $revision, $status, $baseRevId) {
+	public static function onPageSaveComplete($article, $user, $summary, $flags, $revision, $result) {
 		
 		global $wiki_channel, $wiki_prefix, $wiki_namespaces, $wiki_ignore_minor, $wiki_users;
 		
@@ -29,7 +27,7 @@ class Arx {
 				return true;
 			}
 			
-			if($wiki_ignore_minor && $isMinor) {
+			if($wiki_ignore_minor && ($flags & EDIT_MINOR)) {
 				return true;
 			}
 			
