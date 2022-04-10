@@ -229,15 +229,6 @@ $p->import('icons');
 			<td></td>
 		</tr>
 		
-		<tr id="linuxbrew">
-			<td>Linuxbrew</td>
-			<td><a href="https://docs.brew.sh/Homebrew-on-Linux">linuxbrew-core</a></td>
-			<td><a href="https://formulae.brew.sh/formula-linux/arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
-			<td class="good">distro</td>
-			<td></td>
-		</tr>
-		
 		<tr id="luxtorpeda">
 			<td>Luxtorpeda</td>
 			<td><a href="https://https://github.com/luxtorpeda-dev/luxtorpeda">luxtorpeda-dev</a></td>
