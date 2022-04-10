@@ -63,19 +63,19 @@ $p->import('icons');
 	<ul class="multi downloads other">
 		
 		<li>
-			<a href="files/arx-libertatis-1.2.tar.xz"><span class="big download icon"></span>Arx Libertatis Source Code</a>
-			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2/arx-libertatis-1.2.tar.xz">(mirror)</a>
+			<a href="files/arx-libertatis-1.2.1.tar.xz"><span class="big download icon"></span>Arx Libertatis Source Code</a>
+			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2.1/arx-libertatis-1.2.1.tar.xz">(mirror)</a>
 			<br>
-			<span class="name">arx-libertatis-1.2.tar.xz</span>
+			<span class="name">arx-libertatis-1.2.1.tar.xz</span>
 			<span class="size">2.4 MiB</span>
 			<br>
 			<span class="checksum">MD5: <code>e5bc9482dada975b6b8a2dc5451f3671</code></span>
-			<a class="signature" href="files/arx-libertatis-1.2.tar.xz.sig">signature</a>
+			<a class="signature" href="files/arx-libertatis-1.2.1.tar.xz.sig">signature</a>
 		</li>
 		
 		<li>
 			<a href="files/arx-libertatis-1.2.1-windows.zip"><span class="big windows icon"></span>Arx Libertatis Windows Binaries</a>
-			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2/arx-libertatis-1.2.1-windows.zip">(mirror)</a>
+			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2.1/arx-libertatis-1.2.1-windows.zip">(mirror)</a>
 			<br>
 			<span class="name">arx-libertatis-1.2.1-windows.zip</span>
 			<span class="size">11.2 MiB</span>
