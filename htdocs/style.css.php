@@ -603,6 +603,7 @@ article > section + section {
 #news article + article {
 	border-top: 1px dotted #555;
 	margin-top: 15px;
+	clear: both;
 }
 
 #news .navigate + article {
