@@ -152,7 +152,7 @@ $p->import('icons');
 			<td><span class="debian icon"></span> Debian</td>
 			<td><a href="https://build.opensuse.org/project/show/home:dscharrer">home:dscharrer</a> on <a href="https://build.opensuse.org/">OBS</a></td>
 			<td><a href="https://software.opensuse.org/download/package?project=home%3Adscharrer&amp;package=arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#Debian') ?>">Instructions</a></td>
 		</tr>
@@ -179,7 +179,7 @@ $p->import('icons');
 			<td><span class="fedora icon"></span> Fedora</td>
 			<td><a href="https://build.opensuse.org/project/show/home:dscharrer">home:dscharrer</a> on <a href="https://build.opensuse.org/">OBS</a></td>
 			<td><a href="https://software.opensuse.org/download/package?project=home%3Adscharrer&amp;package=arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#Fedora') ?>">Instructions</a></td>
 		</tr>
@@ -206,7 +206,7 @@ $p->import('icons');
 			<td><span class="gentoo icon"></span> Gentoo</td>
 			<td><a href="https://github.com/arx/ArxGentoo">arx-libertatis overlay</a></td>
 			<td><a href="https://gpo.zugaina.org/games-rpg/arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#Gentoo_Linux') ?>">Instructions</a></td>
 		</tr>
@@ -314,7 +314,7 @@ $p->import('icons');
 			<td><span class="opensuse icon"></span> openSUSE</td>
 			<td><a href="https://build.opensuse.org/project/show/home:dscharrer">home:dscharrer</a> on <a href="https://build.opensuse.org/">OBS</a></td>
 			<td><a href="https://software.opensuse.org/download/package?project=home%3Adscharrer&amp;package=arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#openSUSE') ?>">Instructions</a></td>
 		</tr>
@@ -359,7 +359,7 @@ $p->import('icons');
 			<td><span class="ubuntu icon"></span> Ubuntu</td>
 			<td><a href="https://launchpad.net/~arx/+archive/release">ppa:arx/release</a></td>
 			<td><a href="https://launchpad.net/~arx/+archive/release">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#Ubuntu') ?>">Instructions</a></td>
 		</tr>
