@@ -12,31 +12,31 @@ $p->import('icons');
 	<h2>Download</h2>
 	
 	<p>
-		The current version of Arx Libertatis is <b>1.2</b> (<a href="/releases/1.2" itemprop="releaseNotes">announcement</a>):
+		The current version of Arx Libertatis is <b>1.2.1</b> (<a href="/releases/1.2" itemprop="releaseNotes">announcement</a>):
 	</p>
 	
 	<ul class="multi downloads">
 		
 		<li>
-			<a href="files/arx-libertatis-1.2-windows.exe"><span class="big windows icon"></span>Arx Libertatis Windows Installer</a>
-			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2/arx-libertatis-1.2-windows.exe">(mirror)</a>
+			<a href="files/arx-libertatis-1.2.1-windows.exe"><span class="big windows icon"></span>Arx Libertatis Windows Installer</a>
+			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2.1/arx-libertatis-1.2.1-windows.exe">(mirror)</a>
 			<br>
-			<span class="name">arx-libertatis-1.2-windows.exe</span>
-			<span class="size">9.1 MiB</span>
+			<span class="name">arx-libertatis-1.2.1-windows.exe</span>
+			<span class="size">9.2 MiB</span>
 			<br>
-			<span class="checksum">MD5: <code>ebeb1fb140dad4bcf426d9b18927e6a0</code></span>
-			<a class="signature" href="files/arx-libertatis-1.2-windows.exe.sig">signature</a>
+			<span class="checksum">MD5: <code>539cd327b673a0b80ddb2ec2f91111e8</code></span>
+			<a class="signature" href="files/arx-libertatis-1.2.1-windows.exe.sig">signature</a>
 		</li>
 		
 		<li>
-			<a href="files/arx-libertatis-1.2-linux.tar.xz"><span class="big linux icon"></span>Arx Libertatis Linux Binaries</a>
-			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2/arx-libertatis-1.2-linux.tar.xz">(mirror)</a>
+			<a href="files/arx-libertatis-1.2.1-linux.tar.xz"><span class="big linux icon"></span>Arx Libertatis Linux Binaries</a>
+			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2.1/arx-libertatis-1.2.1-linux.tar.xz">(mirror)</a>
 			<br>
-			<span class="name">arx-libertatis-1.2-linux.tar.xz</span>
-			<span class="size">5.5 MiB</span>
+			<span class="name">arx-libertatis-1.2.1-linux.tar.xz</span>
+			<span class="size">5.6 MiB</span>
 			<br>
-			<span class="checksum">MD5: <code>d69330c67033628c1fafa5dc781079dd</code></span>
-			<a class="signature" href="files/arx-libertatis-1.2-linux.tar.xz.sig">signature</a>
+			<span class="checksum">MD5: <code>af3c124ecd0a2c5d98f7b995cb4c36f2</code></span>
+			<a class="signature" href="files/arx-libertatis-1.2.1-linux.tar.xz.sig">signature</a>
 		</li>
 		
 	</ul>
@@ -69,19 +69,19 @@ $p->import('icons');
 			<span class="name">arx-libertatis-1.2.tar.xz</span>
 			<span class="size">2.4 MiB</span>
 			<br>
-			<span class="checksum">MD5: <code>8e05754b75af0ed7fbf709d30b28df3c</code></span>
+			<span class="checksum">MD5: <code>e5bc9482dada975b6b8a2dc5451f3671</code></span>
 			<a class="signature" href="files/arx-libertatis-1.2.tar.xz.sig">signature</a>
 		</li>
 		
 		<li>
-			<a href="files/arx-libertatis-1.2-windows.zip"><span class="big windows icon"></span>Arx Libertatis Windows Binaries</a>
-			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2/arx-libertatis-1.2-windows.zip">(mirror)</a>
+			<a href="files/arx-libertatis-1.2.1-windows.zip"><span class="big windows icon"></span>Arx Libertatis Windows Binaries</a>
+			<a href="https://github.com/arx/ArxLibertatis/releases/download/1.2/arx-libertatis-1.2.1-windows.zip">(mirror)</a>
 			<br>
-			<span class="name">arx-libertatis-1.2-windows.zip</span>
-			<span class="size">11.0 MiB</span>
+			<span class="name">arx-libertatis-1.2.1-windows.zip</span>
+			<span class="size">11.2 MiB</span>
 			<br>
-			<span class="checksum">MD5: <code>ea6ab380a93cb418cb0bc18bcdcd9eb7</code></span>
-			<a class="signature" href="files/arx-libertatis-1.2-windows.zip.sig">signature</a>
+			<span class="checksum">MD5: <code>f256ad08d83b9ca1878faceb84b5e73f</code></span>
+			<a class="signature" href="files/arx-libertatis-1.2.1-windows.zip.sig">signature</a>
 		</li>
 		
 	</ul>
@@ -125,7 +125,7 @@ $p->import('icons');
 			<td>ALT Linux</td>
 			<td><a href="https://packages.altlinux.org/en/sisyphus/home">Sisyphus repository</a></td>
 			<td><a href="https://packages.altlinux.org/en/sisyphus/srpms/ArxLibertatis">ArxLibertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
@@ -134,7 +134,7 @@ $p->import('icons');
 			<td><span class="arch icon"></span> Arch Linux</td>
 			<td><a href="https://aur.archlinux.org/">Arch User Repository</a></td>
 			<td><a href="https://aur.archlinux.org/packages/arx-libertatis/">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="okay">user</td>
 			<td><a href="<?= url('wiki:Linux_packages#Arch_Linux') ?>">Instructions</a></td>
 		</tr>
@@ -152,7 +152,7 @@ $p->import('icons');
 			<td><span class="debian icon"></span> Debian</td>
 			<td><a href="https://build.opensuse.org/project/show/home:dscharrer">home:dscharrer</a> on <a href="https://build.opensuse.org/">OBS</a></td>
 			<td><a href="https://software.opensuse.org/download/package?project=home%3Adscharrer&amp;package=arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#Debian') ?>">Instructions</a></td>
 		</tr>
@@ -179,7 +179,7 @@ $p->import('icons');
 			<td><span class="fedora icon"></span> Fedora</td>
 			<td><a href="https://build.opensuse.org/project/show/home:dscharrer">home:dscharrer</a> on <a href="https://build.opensuse.org/">OBS</a></td>
 			<td><a href="https://software.opensuse.org/download/package?project=home%3Adscharrer&amp;package=arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#Fedora') ?>">Instructions</a></td>
 		</tr>
@@ -188,7 +188,7 @@ $p->import('icons');
 			<td id="FreeBSD"><span class="freebsd icon"></span> FreeBSD</td>
 			<td><a href="https://www.freebsd.org/ports/">FreeBSD ports</a></td>
 			<td><a href="https://www.freshports.org/games/arx-libertatis/">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Other_packages#FreeBSD') ?>">Instructions</a></td>
 		</tr>
@@ -206,7 +206,7 @@ $p->import('icons');
 			<td><span class="gentoo icon"></span> Gentoo</td>
 			<td><a href="https://github.com/arx/ArxGentoo">arx-libertatis overlay</a></td>
 			<td><a href="https://gpo.zugaina.org/games-rpg/arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#Gentoo_Linux') ?>">Instructions</a></td>
 		</tr>
@@ -215,7 +215,7 @@ $p->import('icons');
 			<td>GuixSD</td>
 			<td>GNU Guix</td>
 			<td><a href="https://guix.gnu.org/packages/arx-libertatis-1.2/">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
@@ -224,7 +224,7 @@ $p->import('icons');
 			<td>Haiku</td>
 			<td><a href="https://depot.haiku-os.org/#!/repository/haikuports">HaikuPorts</a></td>
 			<td><a href="https://depot.haiku-os.org/#!/pkg/arx_libertatis">arx_libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
@@ -233,7 +233,7 @@ $p->import('icons');
 			<td>Linuxbrew</td>
 			<td><a href="https://docs.brew.sh/Homebrew-on-Linux">linuxbrew-core</a></td>
 			<td><a href="https://formulae.brew.sh/formula-linux/arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
@@ -242,7 +242,7 @@ $p->import('icons');
 			<td>Luxtorpeda</td>
 			<td><a href="https://https://github.com/luxtorpeda-dev/luxtorpeda">luxtorpeda-dev</a></td>
 			<td><a href="https://luxtorpeda-dev.github.io/packages.html">arxlibertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="okay">user</td>
 			<td></td>
 		</tr>
@@ -251,7 +251,7 @@ $p->import('icons');
 			<td id="macOS"><span class="macos icon"></span> macOS</td>
 			<td id="Mac_OS_X"><a href="https://brew.sh/">Homebrew</a></td>
 			<td><a href="https://formulae.brew.sh/formula/arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Other_packages#macOS') ?>">Instructions</a></td>
 		</tr>
@@ -260,7 +260,7 @@ $p->import('icons');
 			<td><span class="mageia icon"></span> Mageia</td>
 			<td>Core</td>
 			<td><a href="https://madb.mageia.org/package/show/release/cauldron/application/0/name/arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Linux_packages#Mageia') ?>">Instructions</a></td>
 		</tr>
@@ -269,7 +269,7 @@ $p->import('icons');
 			<td>NetBSD</td>
 			<td><a href="http://pkgsrc.se/">pkgsrc</a></td>
 			<td><a href="https://pkgsrc.se/games/arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
@@ -278,7 +278,7 @@ $p->import('icons');
 			<td>Nintendo Switch</td>
 			<td>Homebrew</td>
 			<td><a href="https://gbatemp.net/threads/arx-libertatis-port-arx-fatalis-for-the-switch.591621/">arx</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="okay">user</td>
 			<td></td>
 		</tr>
@@ -296,7 +296,7 @@ $p->import('icons');
 			<td>OpenBSD</td>
 			<td><a href="http://openports.se/">OpenBSD ports</a></td>
 			<td><a href="https://openports.se/games/arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
@@ -314,7 +314,7 @@ $p->import('icons');
 			<td><span class="opensuse icon"></span> openSUSE</td>
 			<td><a href="https://build.opensuse.org/project/show/home:dscharrer">home:dscharrer</a> on <a href="https://build.opensuse.org/">OBS</a></td>
 			<td><a href="https://software.opensuse.org/download/package?project=home%3Adscharrer&amp;package=arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#openSUSE') ?>">Instructions</a></td>
 		</tr>
@@ -332,7 +332,7 @@ $p->import('icons');
 			<td><span class="rosa icon"></span> ROSA</td>
 			<td>Contrib</td>
 			<td><a href="https://abf.io/import/arx-libertatis">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Linux_packages#ROSA') ?>">Instructions</a></td>
 		</tr>
@@ -350,7 +350,7 @@ $p->import('icons');
 			<td>Solus</td>
 			<td><a href="https://packages.getsol.us/shannon/">shannon</a></td>
 			<td><a href="https://packages.getsol.us/shannon/a/arx-libertatis/">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
@@ -359,7 +359,7 @@ $p->import('icons');
 			<td><span class="ubuntu icon"></span> Ubuntu</td>
 			<td><a href="https://launchpad.net/~arx/+archive/release">ppa:arx/release</a></td>
 			<td><a href="https://launchpad.net/~arx/+archive/release">arx-libertatis</a></td>
-			<td class="good">1.2</td>
+			<td class="okay">1.2</td>
 			<td class="okay">own</td>
 			<td><a href="<?= url('wiki:Linux_packages#Ubuntu') ?>">Instructions</a></td>
 		</tr>
