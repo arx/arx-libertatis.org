@@ -139,15 +139,6 @@ $p->import('icons');
 			<td><a href="<?= url('wiki:Linux_packages#Arch_Linux') ?>">Instructions</a></td>
 		</tr>
 		
-		<tr id="chakra">
-			<td><span class="chakra icon"></span> Chakra</td>
-			<td><a href="https://ccr.chakralinux.org/">Chakra Community Repo</a></td>
-			<td><a href="https://ccr.chakralinux.org/packages.php?K=arx-libertatis">arx-libertatis</a></td>
-			<td class="poor">1.1.2</td>
-			<td class="okay">user</td>
-			<td><a href="<?= url('wiki:Linux_packages#Chakra') ?>">Instructions</a></td>
-		</tr>
-		
 		<tr id="debian">
 			<td><span class="debian icon"></span> Debian</td>
 			<td><a href="https://build.opensuse.org/project/show/home:dscharrer">home:dscharrer</a> on <a href="https://build.opensuse.org/">OBS</a></td>
