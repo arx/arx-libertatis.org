@@ -242,7 +242,7 @@ $p->import('icons');
 			<td id="macOS"><span class="macos icon"></span> macOS</td>
 			<td id="Mac_OS_X"><a href="https://brew.sh/">Homebrew</a></td>
 			<td><a href="https://formulae.brew.sh/formula/arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Other_packages#macOS') ?>">Instructions</a></td>
 		</tr>
