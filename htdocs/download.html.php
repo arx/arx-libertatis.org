@@ -233,7 +233,7 @@ $p->import('icons');
 			<td>Luxtorpeda</td>
 			<td><a href="https://https://github.com/luxtorpeda-dev/luxtorpeda">luxtorpeda-dev</a></td>
 			<td><a href="https://luxtorpeda-dev.github.io/packages.html">arxlibertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="okay">user</td>
 			<td></td>
 		</tr>
