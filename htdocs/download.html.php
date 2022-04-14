@@ -278,7 +278,7 @@ $p->import('icons');
 			<td>OpenBSD</td>
 			<td><a href="http://openports.se/">OpenBSD ports</a></td>
 			<td><a href="https://openports.se/games/arx-libertatis">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
