@@ -179,7 +179,7 @@ $p->import('icons');
 			<td id="FreeBSD"><span class="freebsd icon"></span> FreeBSD</td>
 			<td><a href="https://www.freebsd.org/ports/">FreeBSD ports</a></td>
 			<td><a href="https://www.freshports.org/games/arx-libertatis/">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Other_packages#FreeBSD') ?>">Instructions</a></td>
 		</tr>
