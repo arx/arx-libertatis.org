@@ -341,12 +341,13 @@ $p->import('icons');
 			<td>Solus</td>
 			<td><a href="https://packages.getsol.us/shannon/">shannon</a></td>
 			<td><a href="https://packages.getsol.us/shannon/a/arx-libertatis/">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
 		
-		<tr id="solus">
+		<!--
+		<tr id="solusunstable">
 			<td>Solus</td>
 			<td><a href="https://packages.getsol.us/unstable/">unstable</a></td>
 			<td><a href="https://dev.getsol.us/source/arx-libertatis/repository/master/">arx-libertatis</a></td>
@@ -354,6 +355,7 @@ $p->import('icons');
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
+		-->
 		
 		<tr id="ubuntu">
 			<td><span class="ubuntu icon"></span> Ubuntu</td>
