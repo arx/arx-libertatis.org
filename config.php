@@ -90,7 +90,6 @@ PP::route('p', [
 	'libera_rules' => 'https://libera.chat/policies',
 	'matrix'       => 'https://matrix.org/',
 	'opengameart'  => 'https://opengameart.org/',
-	'constexpr'    => 'https://constexpr.org/',
 	'gpl'          => 'https://www.gnu.org/licenses/gpl.html',
 	'openmw'       => 'https://openmw.org/',
 	'wp_arx'       => 'https://en.wikipedia.org/wiki/Arx_Fatalis',

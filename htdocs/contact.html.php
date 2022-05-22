@@ -59,7 +59,7 @@ $p->import('icons');
 	<p class="center">
 		This website is hosted and administered by
 		<span itemscope itemtype="https://schema.org/Person">
-			<a href="<?= url('p:constexpr') ?>" itemprop="url"><span itemprop="name"><?= $p->i_daniel ?></span></a>.
+			<a href="<?= url('https://ds.me/') ?>" itemprop="url"><span itemprop="name"><?= $p->i_daniel ?></span></a>.
 		</span>
 	</p>
 	
