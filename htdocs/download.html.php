@@ -238,6 +238,15 @@ $p->import('icons');
 			<td><a href="<?= url('wiki:Other_packages#macOS') ?>">Instructions</a></td>
 		</tr>
 		
+		<tr id="macsourceports">
+			<td><span class="macos icon"></span> macOS</td>
+			<td><a href="https://macsourceports.com/">Mac Source Ports</a></td>
+			<td><a href="https://macsourceports.com/game/arxfatalis">arx-libertatis</a></td>
+			<td class="bad">1.3-dev</td>
+			<td class="good">distro</td>
+			<td><a href="<?= url('wiki:Other_packages#macOS') ?>">Instructions</a></td>
+		</tr>
+		
 		<tr id="mageia">
 			<td><span class="mageia icon"></span> Mageia stable</td>
 			<td>Core</td>
