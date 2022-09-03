@@ -12,7 +12,7 @@ $p->import('icons');
 	<h2>Download</h2>
 	
 	<p>
-		The current version of Arx Libertatis is <b>1.2.1</b> (<a href="/releases/1.2" itemprop="releaseNotes">announcement</a>):
+		The current version of Arx Libertatis is <b>1.2.1</b> (<a href="/releases/1.2.1" itemprop="releaseNotes">announcement</a>):
 	</p>
 	
 	<ul class="multi downloads">
