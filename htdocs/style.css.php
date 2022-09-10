@@ -27,7 +27,6 @@ body {
 	color: #ccc;
 	font-family: "DejaVu Sans", "Verdana", "Bitstream Vera Sans", "Liberation Sans", sans-serif;
 	font-size: 13px;
-	font-size-adjust: 0.55;
 	line-height: 140%;
 	text-rendering: optimizeLegibility;
 	padding-top: 15px;
