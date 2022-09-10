@@ -253,7 +253,7 @@ $p->import('icons');
 			<td><a href="https://macsourceports.com/game/arxfatalis">arx-libertatis</a></td>
 			<td class="bad">1.3-dev</td>
 			<td class="good">distro</td>
-			<td><a href="<?= url('wiki:Other_packages#macOS') ?>">Instructions</a></td>
+			<td></td>
 		</tr>
 		
 		<tr id="mageia">
