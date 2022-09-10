@@ -167,7 +167,7 @@ $p->import('icons');
 		</tr>
 		
 		<tr id="fedora">
-			<td><span class="fedora icon"></span> Fedora 26 or newer</td>
+			<td><span class="fedora icon"></span> Fedora 36 or newer</td>
 			<td><a href="https://docs.fedoraproject.org/en-US/quick-docs/repositories/#The_fedora_repository">fedora</a></td>
 			<td><a href="https://packages.fedoraproject.org/pkgs/arx-libertatis/arx-libertatis/">arx-libertatis</a></td>
 			<td class="good">1.2.1</td>
