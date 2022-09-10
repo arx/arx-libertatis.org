@@ -87,7 +87,7 @@ foreach(file IN LISTS all_files)
 				COMMAND cmake -E make_directory "${stage}/${dir}"
 				COMMAND "${pngcrush}" -q "${source}/${file}" "${stage}/${outfile}"
 				COMMAND "${optipng}" --silent "${stage}/${outfile}"
-				COMMAND "${zopflipng}" -y -m --lossy_transparent "${stage}/${outfile}" "${stage}/${outfile}"
+				COMMAND "${zopflipng}" -y --iterations=500 --filters=01234mepb --lossy_transparent --keepchunks=cHRM,gAMA,pHYs,iCCP,sRGB,oFFs,sTER "${stage}/${outfile}" "${stage}/${outfile}"
 				MAIN_DEPENDENCY "${source}/${file}"
 				DEPENDS "${pngcrush}" "${optipng}" "${zopflipng}"
 				COMMENT "Optimizing ${outfile}"
