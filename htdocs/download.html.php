@@ -167,6 +167,15 @@ $p->import('icons');
 		</tr>
 		
 		<tr id="fedora">
+			<td><span class="fedora icon"></span> Fedora 26 or newer</td>
+			<td><a href="https://docs.fedoraproject.org/en-US/quick-docs/repositories/#The_fedora_repository">fedora</a></td>
+			<td><a href="https://packages.fedoraproject.org/pkgs/arx-libertatis/arx-libertatis/">arx-libertatis</a></td>
+			<td class="good">1.2.1</td>
+			<td class="good">distro</td>
+			<td><a href="<?= url('wiki:Linux_packages#Fedora') ?>">Instructions</a></td>
+		</tr>
+		
+		<tr>
 			<td><span class="fedora icon"></span> Fedora</td>
 			<td><a href="https://build.opensuse.org/project/show/home:dscharrer">home:dscharrer</a> on <a href="https://build.opensuse.org/">OBS</a></td>
 			<td><a href="https://software.opensuse.org/download/package?project=home%3Adscharrer&amp;package=arx-libertatis">arx-libertatis</a></td>
