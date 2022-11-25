@@ -92,7 +92,7 @@ PP::route('p', [
 	'opengameart'  => 'https://opengameart.org/',
 	'gpl'          => 'https://www.gnu.org/licenses/gpl.html',
 	'openmw'       => 'https://openmw.org/',
-	'wp_arx'       => 'https://en.wikipedia.org/wiki/Arx_Fatalis',
+	'wp_arx'       => 'https://wikiless.org/wiki/Arx_Fatalis',
 	'pcgw_arx'     => 'https://pcgamingwiki.com/wiki/Arx_Fatalis',
 	'gog_arx'      => 'https://www.gog.com/game/arx_fatalis',
 	'steam_arx'    => 'https://store.steampowered.com/app/1700/Arx_Fatalis/',
