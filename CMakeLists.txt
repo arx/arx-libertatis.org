@@ -29,6 +29,7 @@ find(optipng)
 find(pngcrush)
 find(zopflipng)
 find(cwebp)
+find(cjxl)
 find(convert)
 
 set(source "${CMAKE_SOURCE_DIR}/htdocs")
@@ -112,6 +113,26 @@ foreach(file IN LISTS all_files)
 			add_custom_command(TARGET copy PRE_BUILD
 				COMMAND cmake -E make_directory "${output}/${dir}"
 				COMMAND cmake -E copy_if_different "${stage}/${outwebp}" "${output}/${outwebp}"
+				VERBATIM
+			)
+			
+			string(REGEX REPLACE "\\.png$" ".jxl" outjxl "${outfile}")
+			
+			# TODO -d 1 is OK for most but not for noise background, -d 0 is not always smaller than png
+			add_custom_command(OUTPUT "${stage}/${outjxl}"
+				COMMAND cmake -E make_directory "${stage}/${dir}"
+				COMMAND "${cjxl}" -d 1 --brotli_effort=11 "${stage}/${outfile}" "${stage}/${outjxl}"
+				MAIN_DEPENDENCY "${stage}/${outfile}"
+				DEPENDS "${cjxl}"
+				COMMENT "Converting to ${outjxl}"
+				VERBATIM
+			)
+			
+			list(APPEND optimized "${stage}/${outjxl}")
+			
+			add_custom_command(TARGET copy PRE_BUILD
+				COMMAND cmake -E make_directory "${output}/${dir}"
+				COMMAND cmake -E copy_if_different "${stage}/${outjxl}" "${output}/${outjxl}"
 				VERBATIM
 			)
 			
