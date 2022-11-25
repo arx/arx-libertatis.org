@@ -305,7 +305,7 @@ $p->import('icons');
 			<td><span class="openmandriva icon"></span> OpenMandriva</td>
 			<td>Contrib</td>
 			<td><a href="https://github.com/OpenMandrivaAssociation/arx-libertatis">arx-libertatis</a></td>
-			<td class="poor">1.1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="good">distro</td>
 			<td><a href="<?= url('wiki:Linux_packages#Mandriva') ?>">Instructions</a></td>
 		</tr>
