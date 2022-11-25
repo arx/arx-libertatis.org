@@ -157,15 +157,6 @@ $p->import('icons');
 			<td></td>
 		</tr>
 		
-		<tr id="exherbo">
-			<td>Exherbo</td>
-			<td><a href="https://git.exherbo.org/summer/repositories/hasufell/index.html">hasufell</a></td>
-			<td><a href="https://git.exherbo.org/summer/packages/games-rpg/arx-libertatis/index.html">arx-libertatis</a></td>
-			<td class="poor">1.1.2</td>
-			<td class="okay">user</td>
-			<td></td>
-		</tr>
-		
 		<tr id="fedora">
 			<td><span class="fedora icon"></span> Fedora 36 or newer</td>
 			<td><a href="https://docs.fedoraproject.org/en-US/quick-docs/repositories/#The_fedora_repository">fedora</a></td>
