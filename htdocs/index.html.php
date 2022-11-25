@@ -100,7 +100,6 @@ foreach($news->items as $item) {
 				<li><a href="<?= url('p:wp_arx')      ?>"><?= $p->i_wikipedia ?></a></li>
 				<li><a href="<?= url('p:pcgw_arx')    ?>"><?= $p->i_pcgamingwiki ?></a></li>
 				<li><a href="<?= url('p:gog_arx')     ?>"><?= $p->i_gog ?></a></li>
-				<li><a href="<?= url('p:steam_arx')   ?>"><?= $p->i_steam ?></a></li>
 				<li><a href="<?= url('p:msstore_arx') ?>"><?= $p->no_icon ?>Microsoft Store</a></li>
 				<li><a href="<?= url('p:bethesda_arx') ?>"><?= $p->no_icon ?>Bethesda Store</a></li>
 			</ul>
@@ -130,8 +129,6 @@ foreach($news->items as $item) {
 				<li><a href="<?= url('p:forum_ttlg')  ?>"><?= $p->ttlg_icon ?> TTLG Forum</a></li>
 				<li><a href="<?= url('p:subreddit')   ?>"><?= $p->i_reddit ?></a></li>
 				<li><a href="<?= url('p:forum_gog')   ?>"><?= $p->gog_icon ?> GOG.com Forum</a></li>
-				<li><a href="<?= url('p:comm_steam')  ?>"><?= $p->steam_icon ?> Steam Community</a></li>
-				<li><a href="<?= url('p:group_steam') ?>"><?= $p->steam_icon ?> Steam Group</a></li>
 				<li><a href="<?= url('p:noden_gaming') ?>"><?= $p->youtube_icon ?> Noden Gaming</a></li>
 			</ul>
 		</div>

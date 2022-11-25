@@ -42,12 +42,12 @@ $p->import('icons');
 	</ul>
 	
 	<p>
-		To play Arx Libertatis you need <a href="<?= url('wiki:Getting_the_game_data') ?>">the original game</a> from <a href="<?= url('p:gog_arx') ?>"><?= $p->i_gog ?></a>, <a href="<?= url('p:steam_arx')   ?>"><?= $p->i_steam ?></a>, the <a href="<?= url('p:msstore_arx') ?>">Microsoft Store</a>, the <a href="<?= url('p:bethesda_arx') ?>">Bethesda Store</a> or a CD.
+		To play Arx Libertatis you need <a href="<?= url('wiki:Getting_the_game_data') ?>">the original game</a> from <a href="<?= url('p:gog_arx') ?>"><?= $p->i_gog ?></a>, the <a href="<?= url('p:msstore_arx') ?>">Microsoft Store</a>, or a CD.
 	</p>
 	
 	<p>
 		On <?= $p->i_windows ?> install Arx Fatalis (and <a href="<?= url('p:patch_dl') ?>">the 1.21 patch</a> if installing from CD) before installing Arx Libertatis.<br>
-		On <?= $p->i_linux ?> see the wiki article for <a href="<?= url('wiki:Installing_the_game_data_under_Linux') ?>">installing the game data</a> or <a href="<?= url('wiki:Steam#Linux') ?>">configure <?= $p->i_steam ?> to use Arx Libertatis</a>.
+		On <?= $p->i_linux ?> see the wiki article for <a href="<?= url('wiki:Installing_the_game_data_under_Linux') ?>">installing the game data</a>.
 	</p>
 	
 	<p>
