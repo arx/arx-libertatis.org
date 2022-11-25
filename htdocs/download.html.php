@@ -205,8 +205,8 @@ $p->import('icons');
 		<tr id="guix">
 			<td>GuixSD</td>
 			<td>GNU Guix</td>
-			<td><a href="https://guix.gnu.org/packages/arx-libertatis-1.2/">arx-libertatis</a></td>
-			<td class="okay">1.2</td>
+			<td><a href="https://packages.guix.gnu.org/packages/arx-libertatis/1.2.1/">arx-libertatis</a></td>
+			<td class="good">1.2.1</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
