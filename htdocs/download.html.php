@@ -42,7 +42,7 @@ $p->import('icons');
 	</ul>
 	
 	<p>
-		To play Arx Libertatis you need <a href="<?= url('wiki:Getting_the_game_data') ?>">the original game</a> from <a href="<?= url('p:gog_arx') ?>"><?= $p->i_gog ?></a>, the <a href="<?= url('p:msstore_arx') ?>">Microsoft Store</a>, or a CD.
+		To play Arx Libertatis you need <a href="<?= url('wiki:Getting_the_game_data') ?>">the original game</a>, e.g. from <a href="<?= url('p:gog_arx') ?>"><?= $p->i_gog ?></a>, the <a href="<?= url('p:msstore_arx') ?>">Microsoft Store</a>, or a CD.
 	</p>
 	
 	<p>
@@ -267,8 +267,8 @@ $p->import('icons');
 		
 		<tr id="netbsd">
 			<td>NetBSD</td>
-			<td><a href="http://pkgsrc.se/">pkgsrc</a></td>
-			<td><a href="https://pkgsrc.se/games/arx-libertatis">arx-libertatis</a></td>
+			<td><a href="http://www.netbsd.org/docs/software/packages.html">pkgsrc</a></td>
+			<td><a href="https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/games/arx-libertatis/">arx-libertatis</a></td>
 			<td class="okay">1.2</td>
 			<td class="good">distro</td>
 			<td></td>
@@ -294,8 +294,8 @@ $p->import('icons');
 		
 		<tr id="openbsd">
 			<td>OpenBSD</td>
-			<td><a href="http://openports.se/">OpenBSD ports</a></td>
-			<td><a href="https://openports.se/games/arx-libertatis">arx-libertatis</a></td>
+			<td><a href="https://www.openbsd.org/faq/ports/ports.html">OpenBSD ports</a></td>
+			<td><a href="https://openports.pl/path/games/arx-libertatis">arx-libertatis</a></td>
 			<td class="good">1.2.1</td>
 			<td class="good">distro</td>
 			<td></td>
