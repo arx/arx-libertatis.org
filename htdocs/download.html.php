@@ -287,7 +287,7 @@ $p->import('icons');
 			<td>NixOS</td>
 			<td><a href="https://nixos.org/nixos/packages.html">NixOS packages</a></td>
 			<td><a href="https://github.com/NixOS/nixpkgs/blob/master/pkgs/games/arx-libertatis/default.nix">arx-libertatis</a></td>
-			<td class="bad">1.2-dev</td>
+			<td class="good">1.2.1</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
