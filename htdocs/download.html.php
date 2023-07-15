@@ -341,7 +341,7 @@ $p->import('icons');
 			<td><span class="slackware icon"></span> Slackware</td>
 			<td><a href="https://slackbuilds.org/">slackbuilds.org</a></td>
 			<td><a href="https://slackbuilds.org/result/?search=arx-libertatis&amp;sv=">arx-libertatis</a></td>
-			<td class="poor">1.1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="okay">user</td>
 			<td></td>
 		</tr>
