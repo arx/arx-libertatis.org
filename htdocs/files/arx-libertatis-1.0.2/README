@@ -1,0 +1,44 @@
+
+ Arx Libertatis 1.0.2 (https://arx-libertatis.org/)
+---------------------------------------------------
+
+This directory contains source code and binaries for version 1.0.2
+of Arx Libertatis, a cross-platform, open source port of Arx Fatalis
+
+See the main downloads page at https://wiki.arx-libertatis.org/Download for
+alternate download locations and Linux packages.
+
+MD5 Checksums:
+
+ - 8a04b394ac389d60189a8ad1d34da7bc arx-libertatis-1.0.2.tar.xz
+ - 0c61c2e0977d1dee737eb2dd988bc553 arx-libertatis-1.0.2.zip
+ - 5ac6ab93f9267ede47e58ca04523c556 arx-libertatis-1.0.2-linux.tar.xz
+ - 79d6eef6fe07b5a6b7eaf015f839fb80 arx-libertatis-1.0.2-win-x64.exe
+ - 53adb0b9ad24fb5ec45df2ee0c35f24c arx-libertatis-1.0.2-win-x86.exe
+
+Changelog:
+
+ - Fixed problems with the unity build under Linux (crash reports #243, #245)
+ - Fixed crashes and disappearing items when sorting the inventory
+ - Crafting now always adds items to an existing stack if there is one
+ - Inventory sorting now works on all bags at once
+ - Fixed a script execution error when changing the heartbeat event while
+   executing the heartbeat event
+ - Fixed compile errors with older Qt and SDL versions
+ - Fixed crashes due to random numbers, mostly occurring on Windows (crash
+   report #258)
+ - Fixed a bug in loading the Spanish localization files (bug #259)
+ - Fixed transparent objects being drawn in front of opaque objects when a
+   book/note is open (bug #252)
+ - Fixed a regression from the original game that made the player super
+   stealthy (bug #262)
+ - Fixed a regression in the script timer code (crash report #251)
+ - Fixed label for the 'Full screen' checkbox not being shown in the German
+   version
+ - Fixed cursor position not aligning with absolute input devices
+   (e.g. tablets) in fullscreen mode (bug #269)
+ - Mouse sensitivity setting now only applies to turning the camera, not to
+   cursor movement
+
+See the full changelog at https://wiki.arx-libertatis.org/Changelog for
+changes in other versions.

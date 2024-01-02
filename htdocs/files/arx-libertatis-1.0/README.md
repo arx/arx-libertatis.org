@@ -1,0 +1,63 @@
+
+# Arx Libertatis 1.0 "Bloody Gobblers!"
+
+This directory contains source code and binaries for version 1.0 of [Arx Libertatis](https://arx-libertatis.org/), a cross-platform, open source port of Arx Fatalis.
+
+See the main [downloads page](https://wiki.arx-libertatis.org/Download) for alternate download locations and Linux packages.
+
+## MD5 Checksums
+
+* `836737327340baed0c3955256ed3134a`  arx-libertatis-1.0.tar.xz
+* `1ef403e196d9294b54771dae7c292577`  arx-libertatis-1.0.zip
+* `4ab77bb28d50c07c87370330c6dd040d`  arx-libertatis-1.0-linux.tar.xz
+* `d14001a003afa5632aad09a16d9b68c6`  arx-libertatis-1.0-win-x64.exe
+* `ddb75926b4f9960af6c66a65b61ce764`  arx-libertatis-1.0-win-x86.exe
+
+## Changelog
+
+New Features
+
+* Cross-platform support: Windows, Linux and possibly other UNIX-likes
+* Configurable windowing + renderer, input and audio backends
+* Save game list is sorted so that latest save is at the top
+* Configurable number of quicksave slots
+* Shortcut to toggle windowed and fullscreen mode (default is Alt+Enter)
+* Video config menu displays the aspect ratio along with resolutions
+* Separated window size and fullscreen resolution
+* Added an "automatic" fullscreen resolution setting that always chooses the highest available one
+* Support for system-wide installation and per-user configuration / savegames (follows the XDG Base Directory Specification under linux)
+* Ported to amd64 architecture
+* A single binary can automatically run the demo or full game data
+* Automatic language detection for the data files
+* Added a crash reporter tool
+* Added tools to extract .pak and savegame files
+
+Fixed Bugs
+
+* Fixed aspect ratio for interface elements when using non 5:4-resolutions (some are still stretched)
+* Fixed various crashes
+* Improved level loading speed by limiting the progress bar update rate
+
+Technical Changes
+
+* Ported text rendering from Windows GDI to Freetype
+* Removed dependency on the proprietary PKWARE implode library
+  * This required changing the savegame format - saves produced by Arx Libertatis cannot be read by the original Arx Fatalis, but Arx Libertatis can still read the original save files.
+* Abstracted windowing framework, with SDL and Win32 implementations
+* Abstracted audio backend, with OpenAL and DirectSound 9 implementations
+* Abstracted input backend, with SDL and DirectInput 8 implementations
+* Abstracted renderer backend, with OpenGL and Direct3D 9 implementations
+* Replaced custom image loading/saving code with DevIL
+* Various code cleanup and performance improvements
+
+Removed Features
+
+* Editor mode (will be re-added)
+* Texture size option (will be re-added)
+* "Bump mapping" (proper bump/normal mapping will be re-added)
+* PNUX texture effect
+* Support for reducing textures to 16-bit
+* Non-newcontrol mode
+* Gamma/brightness/contrast correction
+
+See the full [changelog](https://wiki.arx-libertatis.org/Changelog) for changes in other versions.

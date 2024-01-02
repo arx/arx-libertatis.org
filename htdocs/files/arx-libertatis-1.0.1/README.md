@@ -1,0 +1,23 @@
+
+# Arx Libertatis 1.0.1
+
+This directory contains source code and binaries for version 1.0.1 of [Arx Libertatis](https://arx-libertatis.org/), a cross-platform, open source port of Arx Fatalis.
+
+See the main [downloads page](https://wiki.arx-libertatis.org/Download) for alternate download locations and Linux packages.
+
+## MD5 Checksums
+
+* `536a93e1faad34eebc10740e9aa2092b`  arx-libertatis-1.0.1.tar.xz
+* `6b2953cff354c0b92040632ddf2eaec8`  arx-libertatis-1.0.1.zip
+* `57e7c21bede73d31522dedb343c417fb`  arx-libertatis-1.0.1-linux.tar.xz
+* `685ac41e342cb61be5f8c8d4836625ca`  arx-libertatis-1.0.1-win-x64.exe
+* `5481d61f1f94b72fd1acf3e368474d5a`  arx-libertatis-1.0.1-win-x86.exe
+
+## Changelog
+
+* Fixed garbled text rendering in the Russian version (bug #226)
+* Fixed a crash in the critical error dialog on some Linux systems (crash report #229)
+* Loading files from the 'graph' and 'misc' directories is now case-insensitive
+* Switched to D3D and DInput backends by default on Windows
+
+See the full [changelog](https://wiki.arx-libertatis.org/Changelog) for changes in other versions.
