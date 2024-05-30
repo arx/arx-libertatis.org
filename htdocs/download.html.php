@@ -152,7 +152,7 @@ $p->import('icons');
 			<td>DragonFly BSD</td>
 			<td><a href="https://github.com/DragonFlyBSD/DPorts">DPorts</a></td>
 			<td><a href="https://github.com/DragonFlyBSD/DPorts/tree/master/games/arx-libertatis">arx-libertatis</a></td>
-			<td class="poor">1.1.2</td>
+			<td class="good">1.2.1</td>
 			<td class="good">distro</td>
 			<td></td>
 		</tr>
