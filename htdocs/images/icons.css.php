@@ -177,41 +177,4 @@ a.external[href*=".blogspot.com/"]:after {
 	background-position: -184px  -0px;
 }
 
-#mw-head {
-	top: 100px !important;
-}
-
-
 <? endif ?>
-
-body {
-	margin-top: 100px !important;
-}
-
-body:before, body:after {
-	position: absolute;
-	width: 100%;
-	height: 50px;
-	text-align: center;
-	line-height: 50px;
-	font-size: 25px;
-	left: 0;
-	z-index: -1;
-}
-
-body:before {
-	background: #005BBB;
-	top: 0;
-	color: #fff;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-	content: 'нет войне';
-}
-
-body:after {
-	background: #FFD500;
-	top: 50px;
-	color: #000;
-	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-	content: 'Русский военный корабль, иди нахуй';
-	font-size: min(25px, 4vw);
-}
