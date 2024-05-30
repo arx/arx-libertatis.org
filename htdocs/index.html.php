@@ -66,7 +66,7 @@ foreach($news->items as $item) {
 		</p>
 		
 		<p>
-			Arx Libertatis <b><?= encode_text($version) ?></b> updates and improves Arx Fatalis by supporting modern systems, porting the game to new systems, as well as eliminating bugs and limitations. In the future we plan to improve and modernize the engine as well as enable customizations and mods by the community.
+			Arx Libertatis <b><?= encode_text($version) ?></b> updates and improves Arx Fatalis by supporting modern systems, porting the game to new platforms, as well as eliminating bugs and limitations. In the future we plan to improve and modernize the engine as well as enable customizations and mods by the community.
 		</p>
 		
 	</section>
